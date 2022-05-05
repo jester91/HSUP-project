@@ -1,0 +1,89 @@
+.container{
+    flex-direction: row-reverse;
+    font-size: 300%;
+    flex-basis: 200%;
+}
+
+h2{
+    font-size: 300%;
+}
+
+
+
+
+
+#nagylogo { 
+    display: block;
+    float: right;
+    width: 40%;
+    margin: 5%;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+button{
+    font-size: 150% !important;
+    height: 7% !important;
+}
+#buttonSimaUser{
+    display: block;
+    float: left;
+    margin: 0;
+    width: 40%;
+    margin-right: 55%;
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 50px;
+}
+#TuddMeg {
+    display: inline-block;
+    width: 50%;
+    font-size: 300%;
+}
+#buttonKitoltom{
+    width: 20%;
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+#buttonContactUs{
+    width: 20%;
+    margin-right: 0%;
+}
+
+.infoArt1{
+    display: inline-block;
+    width: 25%;
+    font-size: 300%;
+}
+.infoMagyarazat{
+    display: inline-block;
+    width: 25%;
+    font-size: 150%;
+}
+#projektnev{
+    display: block;
+}
+
+#projektnevMob{
+    display: none;
+}
+#coinMarketcap{
+    height: 600px;
+    width: 100%;
+}
+
+#coinmarketcap-widget-marquee{
+}
+
+#Erdekel{
+    height: 20% !important;
+    margin-bottom: 5%;
+}
+
+footer{
+    font-size: 300%;
+}
+.fa{
+    font-size: 200%;
+}
