@@ -163,7 +163,7 @@ article {
 }
 
 #CicrLogoPng {
-  width: 100%;
+  width: 90%;
 }
 
 #Art1Buttons {
@@ -521,6 +521,8 @@ footer .fa {
   }
 
   #CicrLogoArt1 {
+    display: flex;
+    justify-content: center;
     width: 95%;
     margin-right: 5%;
   }
