@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <title>HSUP PROJECT</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="Style/style.css" />
+    <script src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./Scripts/myScript.js"></script>
+
+    <link rel="icon" type="image/png" href="./Images/CICR_logo_no_bg.png" />
+  </head>
+
+  <body id="indexBody">
+    <div class="container">
+      <p id="ProjectNameMobile">HSUP PROJECT</p>
+
+      <div id="myLinks">
+        <nav>
+          <p id="ProjectName">HSUP PROJECT</p>
+          <ul>
+            <li id="NavAbout" onclick="FunctionAbout()"><a>About</a></li>
+            <li id="NavProduct" onclick="FunctionProduct()"><a>Product</a></li>
+            <li id="NavTeam" onclick="FunctionTeam()"><a>Team</a></li>
+            <li id="NavContact" onclick="FunctionContact()"><a> Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <i id="MenuIcon" class="fa fa-bars" onclick="menu()"></i>
+
+      <article id="HomeArticle1">
+        <div id="CicrLogoArt1">
+          <img id="CicrLogoPng" src="./Images/CICR_logo.png" alt="Céglogó" />
+        </div>
+
+        <div id="Art1Conent">
+          <button id="ButtonUser" type="button">Sima user Nagy cég</button>
+          <h2 id="Art1Txt1">Tudd meg számodra melyik a legideálisabb tárca.</h2>
+          <div id="Art1Buttons">
+            <button id="ButtonFillOut" type="button">Kitöltöm</button>
+            <button
+              onclick="FunctionContact()"
+              id="ButtonContactUs"
+              type="button"
+            >
+              Contact Us
+            </button>
+          </div>
+
+          <div id="info">
+            <div>
+              <h2 class="InfoArt1">$300b</h2>
+              <h2 class="InfoArt1">$1k</h2>
+            </div>
+            <div>
+              <p class="InfoTxtArt1">
+                Pénz mozgott már<br />az általunk ajánlott<br />walletekben
+              </p>
+              <p class="InfoTxtArt1">
+                User választotta már<br />az általunk ajánlott<br />tárcát
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="coin-list">
+        <div class="coin">
+          <img
+            src="./Images/bitcoin-btc-logo.png"
+            alt="Bitcoin"
+            width="100"
+            height="100"
+          />
+          <div class="CoinPrice">
+            <h3>$ <span id="bitcoin"></span></h3>
+            <p>Bitcoin</p>
+          </div>
+        </div>
+
+        <div class="coin">
+          <img src="./Images/ethereum-eth-logo.png" alt="Ethereum width="100"
+          height="100" />
+          <div class="CoinPrice">
+            <h3>$ <span id="eth"></span></h3>
+            <p>Ethereum</p>
+          </div>
+        </div>
+
+        <div class="coin">
+          <img
+            src="./Images/terra-luna-luna-logo.png"
+            alt="Luna"
+            width="100"
+            height="100"
+          />
+          <div class="CoinPrice"> 
+            <h3>$ <span id="luna"></span></h3>
+            <p>Luna</p>
+          </div>
+        </div>
+
+        <div class="coin">
+          <img
+            src="./Images/solana-sol-logo.png"
+            alt="Solana"
+            width="100"
+            height="100"
+          />
+          <div class="CoinPrice">
+            <h3>$ <span id="solana"></span></h3>
+            <p>Solana</p>
+          </div>
+        </div>
+      </div>
+
+      <article id="HomeArticle2">
+        <h2>Megoldásunk</h2>
+        <p>
+          Csapatunkkal egy olyan megoldáson dolgozunk amivel a felhasználóink
+          részére a legtökéletesebb tárcát tudjuk ajánlani, ezzel is elősegítve
+          a felhasználói élményt és a biztonságot
+        </p>
+
+        <button id="ButtonInterest" type="button">Érdekel</button>
+      </article>
+
+      <article id="HomeArticle3">
+        <h2>Rólunk mondták:</h2>
+      </article>
+      <article id="HomeArticle4">
+        <h2>Case Studies</h2>
+        <div id="CS1">
+          <img
+            class="Art4image"
+            src="./Images/Article4.png"
+            alt="Article4.png"
+          />
+          <p>
+            Ez egy case study amit amiatt csináltunk, hogy még több leadet
+            érjünk el és még több pénzt keressünk, hidd el minden igaz benne,
+            bizz bennünk.Ez egy case study amit amiatt csináltunk, hogy még több
+            leadet érjünk el és még több pénzt keressünk, hidd el minden igaz
+            benne, bizz bennünk.
+          </p>
+        </div>
+        <div id="CS2">
+          <img
+            class="Art4image"
+            src="./Images/Article4.png"
+            alt="Article4.png"
+          />
+          <p>
+            Ez egy case study amit amiatt csináltunk, hogy még több leadet
+            érjünk el és még több pénzt keressünk, hidd el minden igaz benne,
+            bizz bennünk.Ez egy case study amit amiatt csináltunk, hogy még több
+            leadet érjünk el és még több pénzt keressünk, hidd el minden igaz
+            benne, bizz bennünk.
+          </p>
+        </div>
+        <div id="CS3">
+          <img
+            class="Art4image"
+            src="./Images/Article4.png"
+            alt="Article4.png"
+          />
+          <p>
+            Ez egy case study amit amiatt csináltunk, hogy még több leadet
+            érjünk el és még több pénzt keressünk, hidd el minden igaz benne,
+            bizz bennünk.Ez egy case study amit amiatt csináltunk, hogy még több
+            leadet érjünk el és még több pénzt keressünk, hidd el minden igaz
+            benne, bizz bennünk.
+          </p>
+        </div>
+      </article>
+
+      <article id="HomeArticle5">
+        <h2>Csapatunk</h2>
+        <div id="TeamMembers">
+          <div class="TeamMember">
+            <img
+              class="TeamMemberImg"
+              src="./Images/Csapattag1.png"
+              alt="Csapattag1.png"
+            />
+            <p>Vezetéknév Keresztnév</p>
+          </div>
+          <div class="TeamMember">
+            <img
+              class="TeamMemberImg"
+              src="./Images/Csapattag2.png"
+              alt="Csapattag2.png"
+            />
+            <p>Vezetéknév Keresztnév</p>
+          </div>
+
+          <div class="TeamMember">
+            <img
+              class="TeamMemberImg"
+              src="./Images/Csapattag3.png"
+              alt="Csapattag3.png"
+            />
+            <p>Vezetéknév Keresztnév</p>
+          </div>
+
+          <div class="TeamMember">
+            <img
+              class="TeamMemberImg"
+              src="./Images/Csapattag4.png"
+              alt="Csapattag4.png"
+            />
+            <p>Vezetéknév Keresztnév</p>
+          </div>
+
+          <div class="TeamMember">
+            <img
+              class="TeamMemberImg"
+              src="./Images/Csapattag5.png"
+              alt="Csapattag5.png"
+            />
+            <p>Vezetéknév Keresztnév</p>
+          </div>
+        </div>
+      </article>
+
+      <article id="HomeArticle6">
+        <h2 id="Contact">Contact Us</h2>
+        <input id="inName" type="text" placeholder="Name" />
+        <input id="inMail" type="email" placeholder="Email" />
+        <textarea id="inMessage" placeholder="Message"></textarea>
+        <button id="ButtonSendMessage" type="button">Send Message</button>
+      </article>
+    </div>
+    <footer>
+      <div id="FooterList">
+        <div id="FooterList1">
+          <h2>SOLUTIONS</h2>
+          <p>Marketing</p>
+          <p>Analitics</p>
+          <p>Commerce</p>
+          <p>Insights</p>
+        </div>
+        <div id="FooterList2">
+          <h2>SUPPORT</h2>
+          <p>Pricing</p>
+          <p>Documentation</p>
+          <p>Guides</p>
+          <p>API Status</p>
+        </div>
+        <div id="FooterList3">
+          <h2>COMPANY</h2>
+          <p>About</p>
+          <p>Blog</p>
+          <p>Press</p>
+          <p>Partners</p>
+        </div>
+        <div id="FooterList4">
+          <h2>LEGAL</h2>
+          <p>Claim</p>
+          <p>Privacy</p>
+          <p>Terms</p>
+        </div>
+      </div>
+      <div id="FooterLent">
+        <p>© 2022 HSUP projekt, Inc. All Rights reserved</p>
+        <div id="FooterSocial">
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-github"></a>
+          <a href="#" class="fa fa-dribbble"></a>
+        </div>
+      </div>
+    </footer>
+    <script src="./Scripts/myScript.js"></script>
+    <script src="./Scripts/apiCall.js"></script>
+  </body>
+</html>
