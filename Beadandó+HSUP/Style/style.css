@@ -23,11 +23,15 @@ a {
 button {
   font-family: "DM_Sans";
 }
+
+input {
+  font-family: "DM_Sans";
+}
 body#contactBody {
   background-color: #ffffff;
 }
 
-.container {
+.container1 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -291,9 +295,11 @@ justify-content: center;
 }
 
 #HomeArticle4 {
+  width: 90%;
   display: flex;
   flex-direction: column;
   background-color: #00e091;
+  padding: 5%;
 }
 
 #HomeArticle4 h2 {
@@ -373,7 +379,7 @@ justify-content: center;
   top: 0;
 }
 /*Contact Form*/
-#HomeArticle6 {
+#HomeForm {
   padding: 3%;
   width: 94%;
   left: 0;
@@ -405,7 +411,8 @@ justify-content: center;
   background-color: #99999931;
   font-size: 25px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 #inMessage {
@@ -420,6 +427,7 @@ justify-content: center;
 
 #ButtonSendMessage {
   margin-top: 20px;
+  font-size: 20px;
   background-color: #182722;
   color: #ffffff;
   text-align: center;
@@ -427,6 +435,10 @@ justify-content: center;
   border-radius: 10px;
   width: 60%;
   height: 35px;
+}
+
+label.error {
+  color: #FB3A3A;
 }
 
 /*Footer*/
@@ -474,24 +486,67 @@ footer .fa {
 }
 
 /*-------------question page---------------------------*/
+
+.progressnumber{
+  color: #ffffff;
+  margin-top: 100px;
+  text-align: center;
+}
+#progressnumber1{
+  display: block;
+}
+#progressnumber2{
+  display: none;
+}
+#progressnumber3{
+  display: none;
+}
+#progressnumber4{
+  display: none;
+}
+#progressnumber5{
+  display: none;
+}
+#progressnumber6{
+  display: none;
+}
+
+.progressbar{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  padding-right: 10%;
+  padding-left: 10%;
+  justify-content: center;
+
+}
+
+.progressbarpart{
+  height: 5px;
+  border: solid 1px #00e091;
+  width: 10%;
+}
+
 .question{
   margin-top: 100px;
   padding: 3%;
   width: 94%;
   left: 0;
-  background-color: #0a120f;
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: center;
   color: #ffffff;
+  background-color: #00e091;
+  color: #182722;
 }
 
 .question h2 {
-  color: #ffffff;
+  color:#182722;
   font-size: 30px;
   width: 100%;
 }
+
 
 .intext{
   width: 100%;
@@ -554,6 +609,7 @@ label {
   font-size: 25px;
   border-radius: 10px;
   color: #666666;
+  font-family: "DM_Sans";
   
 }
 
@@ -723,17 +779,20 @@ label {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 20px;
   }
 
   #CS2 {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    margin: 20px;
   }
   #CS3 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 20px;
   }
 
   #TeamMembers {
