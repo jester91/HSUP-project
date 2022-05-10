@@ -482,12 +482,15 @@ footer .fa {
   background-color: #0a120f;
   display: flex;
   flex-direction: column;
+  justify-content: left;
   align-items: center;
   color: #ffffff;
 }
 
 .question h2 {
   color: #ffffff;
+  font-size: 30px;
+  width: 100%;
 }
 
 .intext{
@@ -501,18 +504,33 @@ footer .fa {
 }
 
 .inratio{
+  border-radius: 50%;
+  width: 40px;
+  height: 20px;
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.incheckbox{
   margin: 15px;
   
 }
-
-.ButtonQuestionNext{
+.questionbuttons{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.ButtonQuestionButton{
   margin-top: 20px;
   background-color: #182722;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
-  width: 60%;
+  width: 40%;
   height: 35px;
 }
 
@@ -522,9 +540,42 @@ label {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
+  font-size: 20px;
+  margin: 10px;
 }
 
+.indropdown{
+  width: 100%;
+  height: 35px;
+  border: none;
+  margin: 2%;
+  background-color: #99999931;
+  font-size: 25px;
+  border-radius: 10px;
+  color: #666666;
+  
+}
+
+#question2{
+  display: none;
+}
+
+#question3{
+  display: none;
+}
+
+#question4{
+  display: none;
+}
+
+#question5{
+  display: none;
+}
+
+#question6{
+  display: none;
+}
 
 @media only screen and (min-width: 600px) {
   /*Footer*/
