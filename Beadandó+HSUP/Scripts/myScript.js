@@ -248,3 +248,21 @@ $(document).ready(function(){
   });
 });
 
+//images galery
+
+$(document).ready(function() {
+  $('#images').galleria({
+     width:500,
+     height:500
+  });
+});
+
+//Open image galery
+function opengalery() {
+  document.getElementById('teamMemberFloat1').style.display = 'block';
+}
+
+function closegalery() {
+  document.getElementById('teamMemberFloat1').style.display = 'none';
+}
+

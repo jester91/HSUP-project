@@ -10,13 +10,13 @@
     />
     <link rel="stylesheet" href="Style/style.css" />
 
+    <link type="text/css" rel="stylesheet" href="Jquery/galleria-1.6.1/dist/themes/classic/galleria.classic.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./Jquery/jquery-3.6.0.js"></script>
     <script src="./Jquery/jquery-validation-1.19.3/dist/jquery.validate.min.js"></script>
-    <script src="./Scripts/myScript.js"></script>
     <script src="./Jquery/galleria-1.6.1/dist/galleria.min.js"></script>
     <script src="./Jquery/galleria-1.6.1/dist/themes/classic/galleria.classic.min.js"></script>
-  
+    <script src="./Scripts/myScript.js"></script>
     <link
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
@@ -239,36 +239,22 @@
           </p>
         </div>
       </article>
-      <article id="HomeArticle5">
-        <!-- Egyik megoldás (nem jq) -->
+      <article id="HomeArticle5">       
         <div class="floatTeam" id="teamMemberFloat1">
-          <div class="floatTeamimg">
-            <i
-              id="floatTeamX"
-              class="fa fa-times-circle-o"
-              aria-hidden="true"
-            ></i>
-            <img
-              class="TeamMemberImg"
-              src="./Images/Csapattag1.png"
-              alt="Csapattag1.png"
-            />
-          </div>
-          <article class="teamMemberFloatDetails">
-            <p>ez vagyok</p>
-            <p>ez vagyok</p>
-            <p>ez vagyok</p>
-            <p>ez vagyok</p>
+          <i id="floatTeamX" class="fa-solid fa-xmark" onclick="closegalery()"></i>
+          <article id="images">
+            <img class=floatimage src="./Images/Csapattag1.png" alt="Csapattag1.png"/>
+  
           </article>
         </div>
-        <!-- ------------- -->
         <h2>Csapatunk</h2>
-        <div id="TeamMembers">
+        <div id="TeamMembers" onclick="opengalery()">
           <div class="TeamMember">
             <img
               class="TeamMemberImg"
               src="./Images/Csapattag1.png"
               alt="Csapattag1.png"
+              
             />
             <p>Vezetéknév Keresztnév</p>
           </div>

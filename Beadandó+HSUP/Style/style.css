@@ -48,6 +48,7 @@ body#contactBody {
 }
 #myLinks {
   display: none;
+  z-index: 5;
 }
 
 nav {
@@ -92,6 +93,7 @@ nav ul li.active {
   background-color: #00e091;
 }
 #ProjectNameMobile {
+  z-index: 5;
   background-color: #182722;
   width: 100%;
   display: block;
@@ -347,19 +349,27 @@ justify-content: center;
 }
 
 /*Team Member float*/
+
+
 .floatTeam{
   display: none;
-  flex-direction: column;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
   height: 100%;
   width: 76%;
-  background-color: #00000071;
+  background-color: #000000a8;
   padding: 12%;
 
+}
+
+
+.galleria-container{
+  position: fixed !important;
+  top: 15%;
+  width: 76% !important;
+  height: 70% !important;
 }
 
 .floatTeamimg{
@@ -370,9 +380,9 @@ justify-content: center;
 }
 
 #floatTeamX{
-  margin-top: 5%;
+  margin-top: 50px;
   margin-right: 5%;
-  font-size: 30px;
+  font-size: 50px;
   color: #ffffff;
   position: fixed;
   right: 0;
@@ -688,6 +698,11 @@ label {
     display: block;
     font-size: 25px;
   }
+
+  #floatTeamX{
+    top: 100px;
+  }
+
 
   button {
     font-size: 27px;
