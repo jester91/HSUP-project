@@ -36,7 +36,7 @@ function FunctionTeam() {
   document.getElementById('NavContact').style.backgroundColor ='#182722';
 }
 function FunctionContact() {
-  var TargetArticle = document.getElementById("HomeArticle6");
+  var TargetArticle = document.getElementById("HomeForm");
   TargetArticle.scrollIntoView({ behavior: "smooth" });
   document.getElementById('NavAbout').style.backgroundColor ='#182722';
   document.getElementById('NavProduct').style.backgroundColor ='#182722';
