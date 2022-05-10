@@ -266,3 +266,49 @@ function closegalery() {
   document.getElementById('teamMemberFloat1').style.display = 'none';
 }
 
+//Change navbar backround on scroll
+window.addEventListener('scroll', function() {
+  var element = document.querySelector('#HomeArticle1');
+  var position = element.getBoundingClientRect();
+  if(position.top < window.innerHeight && position.bottom >= 0) {
+    document.getElementById('NavAbout').style.backgroundColor ='#00e091';
+    document.getElementById('NavProduct').style.backgroundColor ='#182722';
+    document.getElementById('NavTeam').style.backgroundColor ='#182722';
+    document.getElementById('NavContact').style.backgroundColor ='#182722';
+	}
+});
+
+window.addEventListener('scroll', function() {
+  var element = document.querySelector('#HomeArticle2');
+  var position = element.getBoundingClientRect();
+  if(position.top < window.innerHeight && position.bottom >= 0) {
+    document.getElementById('NavAbout').style.backgroundColor ='#182722';
+  document.getElementById('NavProduct').style.backgroundColor ='#00e091';
+  document.getElementById('NavTeam').style.backgroundColor ='#182722';
+  document.getElementById('NavContact').style.backgroundColor ='#182722';
+	}
+});
+
+window.addEventListener('scroll', function() {
+  var element = document.querySelector('#HomeArticle5');
+  var position = element.getBoundingClientRect();
+  if(position.top < window.innerHeight && position.bottom >= 0) {
+    document.getElementById('NavAbout').style.backgroundColor ='#182722';
+    document.getElementById('NavProduct').style.backgroundColor ='#182722';
+    document.getElementById('NavTeam').style.backgroundColor ='#00e091';
+    document.getElementById('NavContact').style.backgroundColor ='#182722';
+	}
+});
+
+window.addEventListener('scroll', function() {
+  var element = document.querySelector('#HomeForm');
+  var position = element.getBoundingClientRect();
+  if(position.top < window.innerHeight && position.bottom >= 0) {
+    document.getElementById('NavAbout').style.backgroundColor ='#182722';
+    document.getElementById('NavProduct').style.backgroundColor ='#182722';
+    document.getElementById('NavTeam').style.backgroundColor ='#182722';
+    document.getElementById('NavContact').style.backgroundColor ='#00e091';
+  }
+});
+
+

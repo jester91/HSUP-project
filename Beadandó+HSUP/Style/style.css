@@ -39,6 +39,7 @@ body#contactBody {
 }
 
 #MenuIcon {
+  z-index: 10;
   display: block;
   color: #ffffff;
   text-decoration: none;
@@ -186,6 +187,7 @@ article {
   border: 2px solid #00e091;
   border-radius: 10px;
   height: 35px;
+  width: 30%;
 }
 
 #ButtonContactUs {
@@ -730,7 +732,7 @@ label {
   #CicrLogoArt1 {
     display: flex;
     justify-content: center;
-    width: 95%;
+    width: 50%;
     margin-right: 5%;
   }
 
