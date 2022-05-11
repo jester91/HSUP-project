@@ -536,7 +536,7 @@ footer .fa {
 .progressbarpart{
   height: 5px;
   border: solid 1px #00e091;
-  width: 10%;
+  width: 16%;
 }
 
 .question{
@@ -853,6 +853,55 @@ label {
   #FooterLent p {
     width: 100%;
   }
+
+
+  /*------------------Question page---------------*/
+
+  #progress{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .progressnumber{
+    margin: 0;
+    margin-right: 50px;
+  }
+
+  .progressbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+  }
+  .progressbarpart{
+    height: 20%;
+  }
+  #questionsWallets{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .question{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    width: 40%;
+    margin-left: 5%;
+    margin-bottom: 100px;
+  }
+
+  #Wallets {
+    width: 30%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+  }
+
 }
 
 @media only screen and (min-width: 1920px) {

@@ -46,35 +46,6 @@ function FunctionContact() {
 
 //Question page "next" and "back" button event
 
-
-// document.getElementById("inCountry").addEventListener('input', f => {
-//   if(f.value !=="Country") {
-//     document.getElementById("inCity").addEventListener('input', e => {
-//       if(e.value !=="") {
-//         document.getElementById('ButtonQuestion1Next').disabled = false;
-//       } 
-//     });
-//   } 
-// })
-
-// document.getElementById("inCity").addEventListener('input', f => {
-//   if(f.value !=="") {
-//     document.getElementById("inCountry").addEventListener('input', e => {
-//       if(e.value !=="Country") {
-//         document.getElementById('ButtonQuestion1Next').disabled = false;
-//       } 
-//     });
-//   } 
-// })
-// ,
-
-// var question2radio1 = document.getElementById("question2radio1")
-// var question2radio2 = document.getElementById("question2radio2")
-// var question2radio3 = document.getElementById("question2radio3")
-// var question2radio4 = document.getElementById("question2radio4")
-// if(question2radio1.checked || question2radio2.checked || question2radio3.checked || question2radio4.checked) {
-//   document.getElementById('ButtonQuestion2Next').disabled = false;
-// }
 $(document).ready(function(){
   $("#question1").validate({
     rules:{
