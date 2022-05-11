@@ -7,43 +7,6 @@ function menu() {
   }
 }
 
-//Smooth scroll for the dedicated section of the site, and activ nav bar back color
-
-function FunctionProduct() {
-  var TargetArticle = document.getElementById("HomeArticle2");
-  TargetArticle.scrollIntoView({ behavior: "smooth" });
-  document.getElementById('NavAbout').style.backgroundColor ='#182722';
-  document.getElementById('NavProduct').style.backgroundColor ='#00e091';
-  document.getElementById('NavTeam').style.backgroundColor ='#182722';
-  document.getElementById('NavContact').style.backgroundColor ='#182722';
-}
-
-function FunctionAbout() {
-  var TargetArticle = document.getElementById("HomeArticle1");
-  TargetArticle.scrollIntoView({ behavior: "smooth" });
-  document.getElementById('NavAbout').style.backgroundColor ='#00e091';
-  document.getElementById('NavProduct').style.backgroundColor ='#182722';
-  document.getElementById('NavTeam').style.backgroundColor ='#182722';
-  document.getElementById('NavContact').style.backgroundColor ='#182722';
-}
-
-function FunctionTeam() {
-  var TargetArticle = document.getElementById("HomeArticle5");
-  TargetArticle.scrollIntoView({ behavior: "smooth" });
-  document.getElementById('NavAbout').style.backgroundColor ='#182722';
-  document.getElementById('NavProduct').style.backgroundColor ='#182722';
-  document.getElementById('NavTeam').style.backgroundColor ='#00e091';
-  document.getElementById('NavContact').style.backgroundColor ='#182722';
-}
-function FunctionContact() {
-  var TargetArticle = document.getElementById("HomeForm");
-  TargetArticle.scrollIntoView({ behavior: "smooth" });
-  document.getElementById('NavAbout').style.backgroundColor ='#182722';
-  document.getElementById('NavProduct').style.backgroundColor ='#182722';
-  document.getElementById('NavTeam').style.backgroundColor ='#182722';
-  document.getElementById('NavContact').style.backgroundColor ='#00e091';
-}
-
 //Question page "next" and "back" button event
 
 $(document).ready(function(){
@@ -199,87 +162,66 @@ function question6back(){
   document.getElementById('progressnumber5').style.display = 'block';
 }
 
-//Home page Contact Us jquery validate
-$(document).ready(function(){
-  $("#HomeForm").validate({
-    rules:{
-      inName: "required",
-      inMail: {
-        required: true,
-        email: true,
-      },
-      inMessage: "required"
-    },
-
-    messages: {
-      inName: "Írd be a neved!",
-      inMail: "Írd be az email címed!",
-      inMessage: "Írd le az üzeneted!"
-    }
-  });
-});
-
-//images galery
-
-$(document).ready(function() {
-  $('#images').galleria({
-     width:500,
-     height:500
-  });
-});
-
-//Open image galery
-function opengalery() {
-  document.getElementById('teamMemberFloat1').style.display = 'block';
-}
-
-function closegalery() {
-  document.getElementById('teamMemberFloat1').style.display = 'none';
-}
-
-//Change navbar backround on scroll
-window.addEventListener('scroll', function() {
-  var element = document.querySelector('#HomeArticle3');
-  var position = element.getBoundingClientRect();
-  if(position.top < window.innerHeight && position.bottom >= 0) {
-    document.getElementById('NavAbout').style.backgroundColor ='#00e091';
-    document.getElementById('NavProduct').style.backgroundColor ='#182722';
-    document.getElementById('NavTeam').style.backgroundColor ='#182722';
-    document.getElementById('NavContact').style.backgroundColor ='#182722';
-	}
-});
-
-window.addEventListener('scroll', function() {
-  var element = document.querySelector('#HomeArticle2');
-  var position = element.getBoundingClientRect();
-  if(position.top < window.innerHeight && position.bottom >= 0) {
-    document.getElementById('NavAbout').style.backgroundColor ='#182722';
-  document.getElementById('NavProduct').style.backgroundColor ='#00e091';
-  document.getElementById('NavTeam').style.backgroundColor ='#182722';
-  document.getElementById('NavContact').style.backgroundColor ='#182722';
-	}
-});
-
-window.addEventListener('scroll', function() {
-  var element = document.querySelector('#HomeArticle5');
-  var position = element.getBoundingClientRect();
-  if(position.top < window.innerHeight && position.bottom >= 0) {
-    document.getElementById('NavAbout').style.backgroundColor ='#182722';
-    document.getElementById('NavProduct').style.backgroundColor ='#182722';
-    document.getElementById('NavTeam').style.backgroundColor ='#00e091';
-    document.getElementById('NavContact').style.backgroundColor ='#182722';
-	}
-});
-
-window.addEventListener('scroll', function() {
-  var element = document.querySelector('#HomeForm');
-  var position = element.getBoundingClientRect();
-  if(position.top < window.innerHeight && position.bottom >= 0) {
-    document.getElementById('NavAbout').style.backgroundColor ='#182722';
-    document.getElementById('NavProduct').style.backgroundColor ='#182722';
-    document.getElementById('NavTeam').style.backgroundColor ='#182722';
-    document.getElementById('NavContact').style.backgroundColor ='#00e091';
-  }
-});
 
 
+//Binance
+//If the user prefer CEX it should be recommendend
+//If the user has some experience greater than 2 point it should be recommendend
+//US citizen recommend BinanceUS
+//dont want to spend money on hardware wallet
+//dont want to own his/her private key
+//If the user would like to use daily/weekly basis wallet
+//if the user would like to trade,hold,stake with lower APY
+//If the user prefer credit/debit card for invest
+//native token (feature)
+
+//Coinbase
+//If the user prefer CEX it should be recommendend
+//If the user has less experience than 2 point it should be recommendend
+//dont want to spend money on hardware wallet
+//dont want to own his/her private key
+//If the user would like to use daily/weekly/monthly basis wallet
+//if the user would like to trade,hold
+//If the user prefer credit/debit card for invest
+
+//Crypto.com
+//If the user prefer CEX it should be recommendend
+//If the user has less experience than 2 point it should be recommendend
+//dont want to spend money on hardware wallet
+//dont want to own his/her private key
+//If the user would like to use daily/weekly/monthly basis wallet
+//if the user would like to trade,hold,stake with lower APY
+//If the user prefer credit/debit card for invest
+//native token (feature)
+
+//Cex.IO
+//If the user prefer CEX it should be recommendend
+//If the user has some experience greater than 2 point it should be recommendend
+//dont want to spend money on hardware wallet
+//dont want to own his/her private key
+//If the user would like to use daily/weekly basis wallet
+//if the user would like to trade,hold,stake with lower APY
+//If the user prefer credit/debit card for invest
+
+//BitMEX placeholder info/ old one cex
+//If the user prefer CEX it should be recommendend
+//If the user has some experience greater than 2 point it should be recommendend
+//dont want to spend money on hardware wallet
+//dont want to own his/her private key
+//If the user would like to use daily/weekly basis wallet
+//if the user would like to trade,hold,stake with lower APY
+//If the user prefer credit/debit card for invest
+
+//Ledger
+//If the user prefer Private keys it should be recommendend
+//If the user has some experience greater than 2 point it should be recommendend
+//If the user would like to use Weekly/Monthly/HODL basis wallet
+//if the user would like to hold,stake with lower APY
+//If the user prefer credit/debit card for invest
+
+//Trezor
+//If the user prefer Private keys it should be recommendend
+//If the user has some experience greater than 2 point it should be recommendend
+//If the user would like to use Weekly/Monthly/HODL basis wallet
+//if the user would like to hold,stake with lower APY
+//If the user prefer credit/debit card for invest

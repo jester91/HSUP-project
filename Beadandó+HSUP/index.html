@@ -10,7 +10,11 @@
     />
     <link rel="stylesheet" href="Style/style.css" />
 
-    <link type="text/css" rel="stylesheet" href="Jquery/galleria-1.6.1/dist/themes/classic/galleria.classic.css">
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="Jquery/galleria-1.6.1/dist/themes/classic/galleria.classic.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./Jquery/jquery-3.6.0.js"></script>
     <script src="./Jquery/jquery-validation-1.19.3/dist/jquery.validate.min.js"></script>
@@ -32,8 +36,9 @@
         <nav>
           <p id="ProjectName">HSUP PROJECT</p>
           <ul>
-            <li id="NavProduct" onclick="FunctionProduct()"><a>Product</a></li>
+            <li id="Our Solution" onclick="FunctionSolution()"><a>Our Solution</a></li>
             <li id="NavAbout" onclick="FunctionAbout()"><a>About</a></li>
+            <li id="NavProduct" onclick="FunctionProduct()"><a>Product</a></li>
             <li id="NavTeam" onclick="FunctionTeam()"><a>Team</a></li>
             <li id="NavContact" onclick="FunctionContact()"><a> Contact</a></li>
           </ul>
@@ -54,10 +59,18 @@
           <button id="ButtonUser" type="button">Sima user Nagy cég</button>
           <h2 id="Art1Txt1">Tudd meg számodra melyik a legideálisabb tárca.</h2>
           <div id="Art1Buttons">
-            
-            <button onclick="window.location.href='./questions.html';" id="ButtonFillOut" type="button">Kitöltöm</button>
             <button
-              onclick="FunctionContact()" id="ButtonContactUs" type="button">
+              onclick="window.location.href='./questions.html';"
+              id="ButtonFillOut"
+              type="button"
+            >
+              Kitöltöm
+            </button>
+            <button
+              onclick="FunctionContact()"
+              id="ButtonContactUs"
+              type="button"
+            >
               Contact Us
             </button>
           </div>
@@ -239,12 +252,19 @@
           </p>
         </div>
       </article>
-      <article id="HomeArticle5">       
+      <article id="HomeArticle5">
         <div class="floatTeam" id="teamMemberFloat1">
-          <i id="floatTeamX" class="fa-solid fa-xmark" onclick="closegalery()"></i>
+          <i
+            id="floatTeamX"
+            class="fa-solid fa-xmark"
+            onclick="closegalery()"
+          ></i>
           <article id="images">
-            <img class=floatimage src="./Images/Csapattag1.png" alt="Csapattag1.png"/>
-  
+            <img
+              class="floatimage"
+              src="./Images/Csapattag1.png"
+              alt="Csapattag1.png"
+            />
           </article>
         </div>
         <h2>Csapatunk</h2>
@@ -254,7 +274,6 @@
               class="TeamMemberImg"
               src="./Images/Csapattag1.png"
               alt="Csapattag1.png"
-              
             />
             <p>Vezetéknév Keresztnév</p>
           </div>
@@ -296,12 +315,21 @@
         </div>
       </article>
 
-      <form id="HomeForm" action="http://szamtud.uni-corvinus.hu/~blang/receive.php" method="post" novalidate>
+      <form
+        id="HomeForm"
+        action="http://szamtud.uni-corvinus.hu/~blang/receive.php"
+        method="post"
+        novalidate
+      >
         <h2 id="Contact">Contact Us</h2>
         <input id="inName" name="inName" type="text" placeholder="Name" />
         <input id="inMail" name="inMail" type="email" placeholder="Email" />
-        <textarea id="inMessage" name="inMessage" placeholder="Message"></textarea>
-        <input id="ButtonSendMessage" type="submit" value="Send Message">
+        <textarea
+          id="inMessage"
+          name="inMessage"
+          placeholder="Message"
+        ></textarea>
+        <input id="ButtonSendMessage" type="submit" value="Send Message" />
       </form>
     </div>
     <footer>
@@ -337,14 +365,14 @@
       <div id="FooterLent">
         <p>© 2022 HSUP projekt, Inc. All Rights reserved</p>
         <div id="FooterSocial">
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-github"></a>
-          <a href="#" class="fa fa-dribbble"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-github"></a>
+          <a href="#" class="fab fa-dribbble"></a>
         </div>
       </div>
     </footer>
-    <script src="./Scripts/myScript.js"></script>
+    <script src="./Scripts/landingpage.js"></script>
     <script src="./Scripts/apiCall.js"></script>
   </body>
 </html>
