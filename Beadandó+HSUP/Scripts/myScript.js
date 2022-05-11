@@ -268,7 +268,7 @@ function closegalery() {
 
 //Change navbar backround on scroll
 window.addEventListener('scroll', function() {
-  var element = document.querySelector('#HomeArticle1');
+  var element = document.querySelector('#HomeArticle3');
   var position = element.getBoundingClientRect();
   if(position.top < window.innerHeight && position.bottom >= 0) {
     document.getElementById('NavAbout').style.backgroundColor ='#00e091';
