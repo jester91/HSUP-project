@@ -645,6 +645,9 @@ label {
   display: none;
 }
 
+#coin-listQuestion{
+  display: none;
+}
 @media only screen and (min-width: 600px) {
   /*Footer*/
   footer p {
@@ -900,6 +903,9 @@ label {
     margin-top: 100px;
     margin-bottom: 100px;
     align-items: center;
+  }
+  #coin-listQuestion{
+    display: block;
   }
 
 }
