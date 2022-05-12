@@ -151,14 +151,33 @@ function question5back() {
 //next button need to be changed
 function question6submit() {
   document.getElementById("progressbarpart6").style.backgroundColor = "#00e091";
+  document.getElementById("question6").style.display = "none";
+  document.getElementById("Wallets").style.flexDirection = "row";
+  document.getElementById("Wallets").style.width = "100%";
+  var x = window.matchMedia("(min-width: 768px)")
+  if (x.matches) {
+    document.getElementById("walletplace1").style.height = "100%";
+    document.getElementById("walletplace2").style.height = "100%";
+    document.getElementById("walletplace3").style.height = "100%";
+    document.getElementById("walletplace4").style.height = "100%";
+    document.getElementById("walletplace5").style.height = "100%";
+  }
+  document.getElementById("Wallets").style.justifyContent = "stretch";
+  document.getElementById("Refresh").style.display = "Block";
+
 }
 
 function question6back() {
   document.getElementById("question6").style.display = "none";
   document.getElementById("question5").style.display = "flex";
   document.getElementById("progressbarpart5").style.backgroundColor = "#182722";
+  document.getElementById("progressbarpart6").style.backgroundColor = "#182722";
   document.getElementById("progressnumber6").style.display = "none";
   document.getElementById("progressnumber5").style.display = "block";
+}
+
+function TestRestart() {
+  location.reload();
 }
 
 //Binance
@@ -361,7 +380,7 @@ function WalletsOrder(
     { name: "trezor", value: TrezorPOINTS },
   ];
   Points.sort(function (x, y) {
-    return y.point - x.point;
+    return y.value - x.value;
   });
   var First = Points[0].name + "1";
   var Second = Points[1].name + "2";
@@ -380,38 +399,10 @@ function WalletsOrder(
   document.getElementById(Third).style.display = "block";
   document.getElementById(Fourth).style.display = "block";
   document.getElementById(Fifth).style.display = "block";
-
-  alert(
-    First +
-      vFirst +
-      Second +
-      vSecond +
-      Third +
-      vThird +
-      Fourth +
-      vFourth +
-      Fifth +
-      vFifth
-  );
-  alert(
-    "Binance" +
-      BinancePOINTS +
-      "bitmex" +
-      BitmexPOINTS +
-      "cexio" +
-      CexioPOINTS +
-      "coinbase" +
-      CoinbasePOINTS +
-      "cryptocom" +
-      CryptocomPOINTS +
-      "ledger" +
-      LedgerPOINTS +
-      "trezor" +
-      TrezorPOINTS
-  );
 }
 
 function question1getanswer() {
+  
   var Country = inCountry.value;
   var City = inCity.value;
   //Binance us href
@@ -431,15 +422,9 @@ function question1getanswer() {
   );
 }
 
-function question2getanswer(
-  BinancePOINTS,
-  BitmexPOINTS,
-  CexioPOINTS,
-  CoinbasePOINTS,
-  CryptocomPOINTS,
-  LedgerPOINTS,
-  TrezorPOINTS
-) {
+function question2getanswer()
+{
+  
   radio1 = document.getElementById("question2radio1");
   radio2 = document.getElementById("question2radio2");
   radio3 = document.getElementById("question2radio3");
@@ -457,7 +442,7 @@ function question2getanswer(
     var Experiance = 4;
   }
 
-  alert(Experiance);
+  
 
   if (Experiance <= 2) {
     BitmexPOINTS++;
@@ -469,7 +454,7 @@ function question2getanswer(
     LedgerPOINTS++;
     CexioPOINTS++;
   }
-
+  
   WalletsOrder(
     BinancePOINTS,
     BitmexPOINTS,
