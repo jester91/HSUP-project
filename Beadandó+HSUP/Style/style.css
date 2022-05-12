@@ -179,7 +179,7 @@ article {
   width: 100%;
 }
 
-#ButtonFillOut {
+.ButtonFillOut {
   background-color: #00e091;
   color: #182722;
   text-align: center;
@@ -265,7 +265,7 @@ article {
   margin: 0;
 }
 
-#HomeArticle2 {
+#OurSolution {
   width: 96%;
   padding: 2%;
   background-color: #00e091;
@@ -293,11 +293,20 @@ article {
   font-size: bold;
 }
 
-#HomeArticle3 h2 {
-  text-align: center;
+#Product{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-#HomeArticle4 {
+#Product h2{
+  color:#00e091;
+}
+
+#CaseStudies {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -305,11 +314,11 @@ article {
   padding: 5%;
 }
 
-#HomeArticle4 h2 {
+#CaseStudies h2 {
   text-align: center;
 }
 
-#HomeArticle4 p {
+#CaseStudies p {
   margin: 3%;
 }
 #CS1 {
@@ -325,7 +334,7 @@ article {
   flex-direction: column;
 }
 
-#HomeArticle5 {
+#Team {
   display: flex;
   flex-direction: column;
 }
@@ -339,12 +348,12 @@ article {
   flex-direction: column;
 }
 
-#HomeArticle5 h2 {
+#Team h2 {
   color: #ffffff;
   text-align: center;
 }
 
-#HomeArticle5 p {
+#Team p {
   color: #ffffff;
   text-align: center;
 }
@@ -642,6 +651,21 @@ label {
 #coin-listQuestion {
   display: none;
 }
+
+#Wallets{
+  display: flex;
+  flex-direction: row;
+}
+
+.walletplace{
+  width: 16%;
+}
+
+.walletlogoimg{
+  
+  width: 100%;
+}
+
 @media only screen and (min-width: 600px) {
   /*Footer*/
   footer p {
@@ -681,19 +705,27 @@ label {
     display: none;
   }
   nav {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     top: 0;
     padding-top: 0;
     padding-right: 0;
   }
   nav li {
-    width: 16%;
-    padding: 20px;
+    width: 17%;
+    padding: 1%;
+    padding-top: 1,5%;
+    padding-bottom: 1,5%;
   }
   nav ul {
-    width: 60%;
-    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 65%;
+    margin-right: 1%;
   }
 
   nav li a {
@@ -749,7 +781,7 @@ label {
     display: inline-block;
   }
 
-  #ButtonFillOut:hover {
+  .ButtonFillOut:hover {
     background-color: #182722;
     color: #ffffff;
   }

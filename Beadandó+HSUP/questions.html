@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
     <link rel="stylesheet" href="Style/style.css" />
 
@@ -27,10 +27,11 @@
         <nav>
           <p id="ProjectName">HSUP PROJECT</p>
           <ul>
-            <li id="NavProduct" onclick="FunctionProduct()"><a href="./index.html">Product</a></li>
-            <li id="NavAbout" onclick="FunctionAbout()" ><a href="./index.html">About</a></li>
-            <li id="NavTeam" onclick="FunctionTeam()"><a href="./index.html">Team</a></li>
-            <li id="NavContact" onclick="FunctionContact()"><a href="./index.html"> Contact</a></li>
+            <li id="NavSolution" onclick="FunctionSolution()"><a>Our Solution</a></li>
+            <li id="NavProduct" onclick="FunctionProduct()"><a>Product</a></li>
+            <li id="NavTeam" onclick="FunctionTeam()"><a>Team</a></li>
+            <li id="NavCaseStudies" onclick="FunctionCaseStudies()"><a>Case Studies</a></li>
+            <li id="NavContact" onclick="FunctionContact()"><a> Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -59,7 +60,7 @@
       
 
       <div id="questionsWallets">
-        <form class="question" id="question1" action="javascript:question1next();" method="post" novalidate>
+        <form class="question" id="question1" action="javascript:question1next();question1getanswer();" method="post" novalidate>
           <h2>Lakcím</h2>
           <select class="indropdown" id="inCountry" name="inCountry">
             <option disabled selected value> Country </option>
@@ -266,7 +267,7 @@
           
         </form>
   
-        <form class="question" id="question2" action="javascript:question2next();">
+        <form class="question" id="question2" action="javascript:question2next();question2getanswer();">
           <h2>Mennyi tapasztalattal rendelkezik a user?</h2>
           <label><input name="Exprerience" class="inratio" type="radio" id="question2radio1">Ismeri az alap dolgokat/technológiát</label>
           <label><input name="Exprerience" class="inratio" type="radio" id="question2radio2">Németbe dolgozó asztalos haverjától hallott most először a cryptoról</label>
@@ -278,46 +279,46 @@
           </div>
         </form>
   
-        <form class="question" id="question3" action="javascript:question3next();">
+        <form class="question" id="question3" action="javascript:question3next();question3getanswer();">
           <h2>Mennyire szeretnéd biztonságban tartani a pénzedet?</h2>
-          <label><input name="safety" class="inratio" type="radio">Igen - szeretnék privát kulcsot</label>
-          <label><input name="safety" class="inratio" type="radio">Egyáltalán nem -> CEX</label>
+          <label><input name="safety" class="inratio" type="radio" id="question3radio1">Igen - szeretnék privát kulcsot</label>
+          <label><input name="safety" class="inratio" type="radio" id="question3radio2">Egyáltalán nem -> CEX</label>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
             <input class="ButtonQuestionButton" type="button" value="Back" onclick="question3back()">
           </div>
         </form>
   
-        <form class="question" id="question4" action="javascript:question4next();">
+        <form class="question" id="question4" action="javascript:question4next();question4getanswer();">
           <h2>Centralizált oldalon szeretnél kereskedni?</h2>
-          <label><input name="Centralised" class="inratio" type="radio">Igen</label>
-          <label><input name="Centralised" class="inratio" type="radio">Nem</label>
+          <label><input name="Centralised" class="inratio" type="radio" id="question4radio1">Igen</label>
+          <label><input name="Centralised" class="inratio" type="radio" id="question4radio2">Nem</label>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
             <input class="ButtonQuestionButton" type="button" value="Back" onclick="question4back()">
           </div>
         </form>
   
-        <form class="question" id="question5" action="javascript:question5next();">
+        <form class="question" id="question5" action="javascript:question5next();question5getanswer();">
           <h2>Milyen gyakran használnád a walletet</h2>
-          <label><input name="frequency" class="inratio" type="radio">Napi szinten</label>
-          <label><input name="frequency" class="inratio" type="radio">Heti szinten</label>
-          <label><input name="frequency" class="inratio" type="radio">Havi szinten</label>
-          <label><input name="frequency" class="inratio" type="radio">Ritkábban</label>
+          <label><input name="frequency" class="inratio" type="radio" id="question5radio1">Napi szinten</label>
+          <label><input name="frequency" class="inratio" type="radio" id="question5radio2">Heti szinten</label>
+          <label><input name="frequency" class="inratio" type="radio" id="question5radio3">Havi szinten</label>
+          <label><input name="frequency" class="inratio" type="radio" id="question5radio4">Ritkábban</label>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
             <input class="ButtonQuestionButton" type="button" value="Back" onclick="question5back()">
           </div>
         </form>
   
-        <form class="question" id="question6" action="javascript:question6next();">
+        <form class="question" id="question6" action="javascript:question6submit();question6getanswer();">
           <h2>Mire használnád leginkább a walletet</h2>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox">HODL (ritkább használat)</label>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox">Earning Stakelés</label>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox">NFT nézegetés</label>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox">Több protokoll használata egy időben</label>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox">Swapolás/DeFi</label>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox">Egy Layer-1 token tárolása/stakelése</label>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox1">HOLD (ritkább használat)</label>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox2">Earning Stakelés</label>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox3">NFT nézegetés</label>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox4">Több protokoll használata egy időben</label>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox5">Swapolás/DeFi</label>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox6">Egy Layer-1 token tárolása/stakelése</label>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Submit">
             <input class="ButtonQuestionButton" type="button" value="Back" onclick="question6back()">
@@ -325,12 +326,51 @@
         </form>
         
         <article id="Wallets">
-          <p>Wallet1</p>
-          <p>Wallet2</p>
-          <p>Wallet3</p>
-          <p>Wallet4</p>
-          <p>Wallet5</p>
-  
+          <div class="walletplace" id="walleplace1">
+            <img id="binance1" class="walletlogoimg" src="./Images/Wallets_logo/binance-logo.png" alt="binance-logo">
+            <img id="bitmex1" class="walletlogoimg" src="./Images/Wallets_logo/bitmex_logo.png" alt="binance-logo">
+            <img id="cexio1" class="walletlogoimg" src="./Images/Wallets_logo/cex_io_logo.png" alt="binance-logo">
+            <img id="coinbase1" class="walletlogoimg" src="./Images/Wallets_logo/coinbase-logo.png" alt="binance-logo">
+            <img id="cryptocom1" class="walletlogoimg" src="./Images/Wallets_logo/crypto_com_logo.png" alt="binance-logo">
+            <img id="ledger1" class="walletlogoimg" src="./Images/Wallets_logo/ledger_logo.png" alt="binance-logo">
+            <img id="trezor1" class="walletlogoimg" src="./Images/Wallets_logo/trezor_logo.png" alt="binance-logo">
+          </div>
+          <div class="walletplace" id="walleplace2">
+            <img id="binance2" class="walletlogoimg" src="./Images/Wallets_logo/binance-logo.png" alt="binance-logo">
+            <img id="bitmex2" class="walletlogoimg" src="./Images/Wallets_logo/bitmex_logo.png" alt="binance-logo">
+            <img id="cexio2" class="walletlogoimg" src="./Images/Wallets_logo/cex_io_logo.png" alt="binance-logo">
+            <img id="coinbase2" class="walletlogoimg" src="./Images/Wallets_logo/coinbase-logo.png" alt="binance-logo">
+            <img id="cryptocom2" class="walletlogoimg" src="./Images/Wallets_logo/crypto_com_logo.png" alt="binance-logo">
+            <img id="ledger2" class="walletlogoimg" src="./Images/Wallets_logo/ledger_logo.png" alt="binance-logo">
+            <img id="trezor2" class="walletlogoimg" src="./Images/Wallets_logo/trezor_logo.png" alt="binance-logo">
+          </div>  
+          <div class="walletplace" id="walleplace3">
+            <img id="binance3" class="walletlogoimg" src="./Images/Wallets_logo/binance-logo.png" alt="binance-logo">
+            <img id="bitmex3" class="walletlogoimg" src="./Images/Wallets_logo/bitmex_logo.png" alt="binance-logo">
+            <img id="cexio3" class="walletlogoimg" src="./Images/Wallets_logo/cex_io_logo.png" alt="binance-logo">
+            <img id="coinbase3" class="walletlogoimg" src="./Images/Wallets_logo/coinbase-logo.png" alt="binance-logo">
+            <img id="cryptocom3" class="walletlogoimg" src="./Images/Wallets_logo/crypto_com_logo.png" alt="binance-logo">
+            <img id="ledger3" class="walletlogoimg" src="./Images/Wallets_logo/ledger_logo.png" alt="binance-logo">
+            <img id="trezor3" class="walletlogoimg" src="./Images/Wallets_logo/trezor_logo.png" alt="binance-logo">
+          </div>  
+          <div class="walletplace" id="walleplace4">
+            <img id="binance4" class="walletlogoimg" src="./Images/Wallets_logo/binance-logo.png" alt="binance-logo">
+            <img id="bitmex4" class="walletlogoimg" src="./Images/Wallets_logo/bitmex_logo.png" alt="binance-logo">
+            <img id="cexio4" class="walletlogoimg" src="./Images/Wallets_logo/cex_io_logo.png" alt="binance-logo">
+            <img id="coinbase4" class="walletlogoimg" src="./Images/Wallets_logo/coinbase-logo.png" alt="binance-logo">
+            <img id="cryptocom4" class="walletlogoimg" src="./Images/Wallets_logo/crypto_com_logo.png" alt="binance-logo">
+            <img id="ledger4" class="walletlogoimg" src="./Images/Wallets_logo/ledger_logo.png" alt="binance-logo">
+            <img id="trezor4" class="walletlogoimg" src="./Images/Wallets_logo/trezor_logo.png" alt="binance-logo">
+          </div>  
+          <div class="walletplace" id="walleplace5">
+            <img id="binance5" class="walletlogoimg" src="./Images/Wallets_logo/binance-logo.png" alt="binance-logo">
+            <img id="bitmex5" class="walletlogoimg" src="./Images/Wallets_logo/bitmex_logo.png" alt="binance-logo">
+            <img id="cexio5" class="walletlogoimg" src="./Images/Wallets_logo/cex_io_logo.png" alt="binance-logo">
+            <img id="coinbase5" class="walletlogoimg" src="./Images/Wallets_logo/coinbase-logo.png" alt="binance-logo">
+            <img id="cryptocom5" class="walletlogoimg" src="./Images/Wallets_logo/crypto_com_logo.png" alt="binance-logo">
+            <img id="ledger5" class="walletlogoimg" src="./Images/Wallets_logo/ledger_logo.png" alt="binance-logo">
+            <img id="trezor5" class="walletlogoimg" src="./Images/Wallets_logo/trezor_logo.png" alt="binance-logo">
+          </div>  
         </article>
 
       </div>
@@ -410,10 +450,10 @@
       <div id="FooterLent">
         <p>© 2022 HSUP projekt, Inc. All Rights reserved</p>
         <div id="FooterSocial">
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-github"></a>
-          <a href="#" class="fa fa-dribbble"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-github"></a>
+          <a href="#" class="fab fa-dribbble"></a>
         </div>
       </div>
     </footer>

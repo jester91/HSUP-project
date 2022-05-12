@@ -36,10 +36,10 @@
         <nav>
           <p id="ProjectName">HSUP PROJECT</p>
           <ul>
-            <li id="Our Solution" onclick="FunctionSolution()"><a>Our Solution</a></li>
-            <li id="NavAbout" onclick="FunctionAbout()"><a>About</a></li>
+            <li id="NavSolution" onclick="FunctionSolution()"><a>Our Solution</a></li>
             <li id="NavProduct" onclick="FunctionProduct()"><a>Product</a></li>
             <li id="NavTeam" onclick="FunctionTeam()"><a>Team</a></li>
+            <li id="NavCaseStudies" onclick="FunctionCaseStudies()"><a>Case Studies</a></li>
             <li id="NavContact" onclick="FunctionContact()"><a> Contact</a></li>
           </ul>
         </nav>
@@ -61,7 +61,7 @@
           <div id="Art1Buttons">
             <button
               onclick="window.location.href='./questions.html';"
-              id="ButtonFillOut"
+              class="ButtonFillOut"
               type="button"
             >
               Kitöltöm
@@ -129,7 +129,7 @@
         </div>
       </div>
 
-      <article id="HomeArticle2">
+      <article id="OurSolution">
         <h2>Megoldásunk</h2>
         <p>
           Csapatunkkal egy olyan megoldáson dolgozunk amivel a felhasználóink
@@ -141,8 +141,20 @@
           ><button id="ButtonInterest" type="button">Érdekel</button></a
         >
       </article>
+        
+      <article id="Product">
+        <h2>Product</h2>
+        <p>Egy GIF a kérdőívről</p>
+        <button
+              onclick="window.location.href='./questions.html';"
+              class="ButtonFillOut"
+              type="button"
+            >
+              Kitöltöm
+            </button>
 
-      <section id="HomeArticle3">
+      </article>
+      <section id="SaidAboutUs">
         <div class="heading"><b>Rólunk</b> mondták</div>
         <div class="wrapper">
           <!-- Testimonials  -->
@@ -207,52 +219,9 @@
           </div>
         </div>
       </section>
-      <article id="HomeArticle4">
-        <h2>Case Studies</h2>
-        <div id="CS1">
-          <img
-            class="Art4image"
-            src="./Images/Article4.png"
-            alt="Article4.png"
-          />
-          <p>
-            Ez egy case study amit amiatt csináltunk, hogy még több leadet
-            érjünk el és még több pénzt keressünk, hidd el minden igaz benne,
-            bizz bennünk.Ez egy case study amit amiatt csináltunk, hogy még több
-            leadet érjünk el és még több pénzt keressünk, hidd el minden igaz
-            benne, bizz bennünk.
-          </p>
-        </div>
-        <div id="CS2">
-          <img
-            class="Art4image"
-            src="./Images/Article4.png"
-            alt="Article4.png"
-          />
-          <p>
-            Ez egy case study amit amiatt csináltunk, hogy még több leadet
-            érjünk el és még több pénzt keressünk, hidd el minden igaz benne,
-            bizz bennünk.Ez egy case study amit amiatt csináltunk, hogy még több
-            leadet érjünk el és még több pénzt keressünk, hidd el minden igaz
-            benne, bizz bennünk.
-          </p>
-        </div>
-        <div id="CS3">
-          <img
-            class="Art4image"
-            src="./Images/Article4.png"
-            alt="Article4.png"
-          />
-          <p>
-            Ez egy case study amit amiatt csináltunk, hogy még több leadet
-            érjünk el és még több pénzt keressünk, hidd el minden igaz benne,
-            bizz bennünk.Ez egy case study amit amiatt csináltunk, hogy még több
-            leadet érjünk el és még több pénzt keressünk, hidd el minden igaz
-            benne, bizz bennünk.
-          </p>
-        </div>
-      </article>
-      <article id="HomeArticle5">
+
+      
+      <article id="Team">
         <div class="floatTeam" id="teamMemberFloat1">
           <i
             id="floatTeamX"
@@ -315,8 +284,54 @@
         </div>
       </article>
 
-      <form
-        id="HomeForm"
+      <article id="CaseStudies">
+        <h2>Case Studies</h2>
+        <div id="CS1">
+          <img
+            class="Art4image"
+            src="./Images/Article4.png"
+            alt="Article4.png"
+          />
+          <p>
+            Ez egy case study amit amiatt csináltunk, hogy még több leadet
+            érjünk el és még több pénzt keressünk, hidd el minden igaz benne,
+            bizz bennünk.Ez egy case study amit amiatt csináltunk, hogy még több
+            leadet érjünk el és még több pénzt keressünk, hidd el minden igaz
+            benne, bizz bennünk.
+          </p>
+        </div>
+        <div id="CS2">
+          <img
+            class="Art4image"
+            src="./Images/Article4.png"
+            alt="Article4.png"
+          />
+          <p>
+            Ez egy case study amit amiatt csináltunk, hogy még több leadet
+            érjünk el és még több pénzt keressünk, hidd el minden igaz benne,
+            bizz bennünk.Ez egy case study amit amiatt csináltunk, hogy még több
+            leadet érjünk el és még több pénzt keressünk, hidd el minden igaz
+            benne, bizz bennünk.
+          </p>
+        </div>
+        <div id="CS3">
+          <img
+            class="Art4image"
+            src="./Images/Article4.png"
+            alt="Article4.png"
+          />
+          <p>
+            Ez egy case study amit amiatt csináltunk, hogy még több leadet
+            érjünk el és még több pénzt keressünk, hidd el minden igaz benne,
+            bizz bennünk.Ez egy case study amit amiatt csináltunk, hogy még több
+            leadet érjünk el és még több pénzt keressünk, hidd el minden igaz
+            benne, bizz bennünk.
+          </p>
+        </div>
+      </article>
+
+
+      <form id="HomeForm"
         action="http://szamtud.uni-corvinus.hu/~blang/receive.php"
         method="post"
         novalidate
