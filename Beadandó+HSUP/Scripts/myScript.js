@@ -527,7 +527,7 @@ function question4getanswer() {
   if (radio2.checked) {
     var Centralised = 2;
   }
-  if (Centralised) {
+  if (Centralised==1) {
     BinancePOINTS++;
     BitmexPOINTS++;
     CexioPOINTS++;
