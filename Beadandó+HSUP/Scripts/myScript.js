@@ -233,115 +233,145 @@ Coinbase
 Cryptocom
 Ledger
 Trezor
+
 //Binance profile
-let BinancePOINTS = 0;
-let BinanceExperiance = 2;
-let BinanceSecurity = 2;
-let BinanceCentralised = 1;
-let BinanceDaily = 1;
-let BinanceWeekly = 1;
-let BinanceMonthly = 0;
-let BinanceLessoften = 0;
-let BinanceHOLD = 1;
-let BinanceEarning = 1;
-let BinanceNFT = 0;
-let BinanceMultiprotocoll = 0;
-let BinanceSwaping = 0;
-let BinanceLayer1token = 0;
-
+BinancePOINTS = 0;
+BinanceExperiance = 2;
+BinanceSecurity = 2;
+BinanceCentralised = 1;
+BinanceDaily = 1;
+BinanceWeekly = 1;
+BinanceMonthly = 0;
+BinanceLessoften = 0;
+BinanceHOLD = 1;
+BinanceEarning = 1;
+BinanceNFT = 0;
+BinanceMultiprotocoll = 0;
+BinanceSwaping = 0;
+BinanceLayer1token = 0;
 //Bitmex profile
-let BitmexPOINTS = 0;
-let BitmexExperiance = 2;
-let BitmexSecurity = 2;
-let BitmexCentralised = 1;
-let BitmexDaily = 1;
-let BitmexWeekly = 1;
-let BitmexMonthly = 0;
-let BitmexLessoften = 0;
-let BitmexHOLD = 1;
-let BitmexEarning = 1;
-let BitmexNFT = 0;
-let BitmexMultiprotocoll = 0;
-let BitmexSwaping = 0;
-let BitmexLayer1token = 0;
+BitmexPOINTS = 0;
+BitmexExperiance = 2;
+BitmexSecurity = 2;
+BitmexCentralised = 1;
+BitmexDaily = 1;
+BitmexWeekly = 1;
+BitmexMonthly = 0;
+BitmexLessoften = 0;
+BitmexHOLD = 1;
+BitmexEarning = 1;
+BitmexNFT = 0;
+BitmexMultiprotocoll = 0;
+BitmexSwaping = 0;
+BitmexLayer1token = 0;
 //Cexio profile
-let CexioPOINTS = 0;
-let CexioExperiance = 2;
-let CexioSecurity = 2;
-let CexioCentralised = 1;
-let CexioDaily = 1;
-let CexioWeekly = 1;
-let CexioMonthly = 0;
-let CexioLessoften = 0;
-let CexioHOLD = 1;
-let CexioEarning = 1;
-let CexioNFT = 0;
-let CexioMultiprotocoll = 0;
-let CexioSwaping = 0;
-let CexioLayer1token = 0;
-
+CexioPOINTS = 0;
+CexioExperiance = 2;
+CexioSecurity = 2;
+CexioCentralised = 1;
+CexioDaily = 1;
+CexioWeekly = 1;
+CexioMonthly = 0;
+CexioLessoften = 0;
+CexioHOLD = 1;
+CexioEarning = 1;
+CexioNFT = 0;
+CexioMultiprotocoll = 0;
+CexioSwaping = 0;
+CexioLayer1token = 0;
 //Coinbase profile
-let CoinbasePOINTS = 0;
-let CoinbaseExperiance = 2;
-let CoinbaseSecurity = 2;
-let CoinbaseCentralised = 1;
-let CoinbaseDaily = 1;
-let CoinbaseWeekly = 1;
-let CoinbaseMonthly = 0;
-let CoinbaseLessoften = 0;
-let CoinbaseHOLD = 1;
-let CoinbaseEarning = 1;
-let CoinbaseNFT = 0;
-let CoinbaseMultiprotocoll = 0;
-let CoinbaseSwaping = 0;
-let CoinbaseLayer1token = 0;
+CoinbasePOINTS = 0;
+CoinbaseExperiance = 2;
+CoinbaseSecurity = 2;
+CoinbaseCentralised = 1;
+CoinbaseDaily = 1;
+CoinbaseWeekly = 1;
+CoinbaseMonthly = 0;
+CoinbaseLessoften = 0;
+CoinbaseHOLD = 1;
+CoinbaseEarning = 1;
+CoinbaseNFT = 0;
+CoinbaseMultiprotocoll = 0;
+CoinbaseSwaping = 0;
+CoinbaseLayer1token = 0;
 //Cryptocom profile
-let CryptocomPOINTS = 0;
-let CryptocomExperiance = 2;
-let CryptocomSecurity = 2;
-let CryptocomCentralised = 1;
-let CryptocomDaily = 1;
-let CryptocomWeekly = 1;
-let CryptocomMonthly = 1;
-let CryptocomLessoften = 0;
-let CryptocomHOLD = 1;
-let CryptocomEarning = 1;
-let CryptocomNFT = 1;
-let CryptocomMultiprotocoll = 0;
-let CryptocomSwaping = 0;
-let CryptocomLayer1token = 0;
+CryptocomPOINTS = 0;
+CryptocomExperiance = 2;
+CryptocomSecurity = 2;
+CryptocomCentralised = 1;
+CryptocomDaily = 1;
+CryptocomWeekly = 1;
+CryptocomMonthly = 1;
+CryptocomLessoften = 0;
+CryptocomHOLD = 1;
+CryptocomEarning = 1;
+CryptocomNFT = 1;
+CryptocomMultiprotocoll = 0;
+CryptocomSwaping = 0;
+CryptocomLayer1token = 0;
 //Ledger profile
-let LedgerPOINTS = 0;
-let LedgerExperiance = 3;
-let LedgerSecurity = 1;
-let LedgerCentralised = 2;
-let LedgerDaily = 0;
-let LedgerWeekly = 1;
-let LedgerMonthly = 1;
-let LedgerLessoften = 1;
-let LedgerHOLD = 1;
-let LedgerEarning = 1;
-let LedgerNFT = 0;
-let LedgerMultiprotocoll = 0;
-let LedgerSwaping = 0;
-let LedgerLayer1token = 0;
+LedgerPOINTS = 0;
+LedgerExperiance = 3;
+LedgerSecurity = 1;
+LedgerCentralised = 2;
+LedgerDaily = 0;
+LedgerWeekly = 1;
+LedgerMonthly = 1;
+LedgerLessoften = 1;
+LedgerHOLD = 1;
+LedgerEarning = 1;
+LedgerNFT = 0;
+LedgerMultiprotocoll = 0;
+LedgerSwaping = 0;
+LedgerLayer1token = 0;
 //Trezor profile
-let TrezorPOINTS = 0;
-let TrezorExperiance = 3;
-let TrezorSecurity = 1;
-let TrezorCentralised = 2;
-let TrezorDaily = 0;
-let TrezorWeekly = 1;
-let TrezorMonthly = 1;
-let TrezorLessoften = 1;
-let TrezorHOLD = 1;
-let TrezorEarning = 1;
-let TrezorNFT = 0;
-let TrezorMultiprotocoll = 0;
-let TrezorSwaping = 0;
-let TrezorLayer1token = 0;
+TrezorPOINTS = 0;
+TrezorExperiance = 3;
+TrezorSecurity = 1;
+TrezorCentralised = 2;
+TrezorDaily = 0;
+TrezorWeekly = 1;
+TrezorMonthly = 1;
+TrezorLessoften = 1;
+TrezorHOLD = 1;
+TrezorEarning = 1;
+TrezorNFT = 0;
+TrezorMultiprotocoll = 0;
+TrezorSwaping = 0;
+TrezorLayer1token = 0;
 
 
+
+function WalletsOrder(BinancePOINTS, BitmexPOINTS, CexioPOINTS, CoinbasePOINTS, CryptocomPOINTS, LedgerPOINTS, TrezorPOINTS) {
+  var tohide = document.getElementsByClassName("walletlogoimg");
+  for (var i = 0; i < tohide.length; i++) {
+    tohide[i].style.display = "none";
+  }
+
+  Points = [{ name: "binance", value: BinancePOINTS }, { name: "bitmex", value: BitmexPOINTS }, { name: "cexio", value: CexioPOINTS }, { name: "coinbase", value: CoinbasePOINTS }, { name: "cryptocom", value: CryptocomPOINTS }, { name: "ledger", value: LedgerPOINTS }, { name: "trezor", value: TrezorPOINTS },];
+  Points.sort(function (x, y) { return y.point - x.point; });
+  var First = Points[0].name + "1";
+  var Second = Points[1].name + "2";
+  var Third = Points[2].name + "3";
+  var Fourth = Points[3].name + "4";
+  var Fifth = Points[4].name + "5";
+
+  var vFirst = Points[0].value;
+  var vSecond = Points[1].value;
+  var vThird = Points[2].value;
+  var vFourth = Points[3].value;
+  var vFifth = Points[4].value;
+
+
+  document.getElementById(First).style.display = "block";
+  document.getElementById(Second).style.display = "block";
+  document.getElementById(Third).style.display = "block";
+  document.getElementById(Fourth).style.display = "block";
+  document.getElementById(Fifth).style.display = "block";
+
+  alert(First+vFirst+Second+vSecond+Third+vThird+Fourth+vFourth+Fifth+vFifth)
+  alert("Binance"+BinancePOINTS+"bitmex"+BitmexPOINTS+"cexio"+CexioPOINTS+"coinbase"+CoinbasePOINTS+"cryptocom"+CryptocomPOINTS+"ledger"+LedgerPOINTS+"trezor"+TrezorPOINTS)
+}
 
 function question1getanswer() {
   var Country= inCountry.value
@@ -351,13 +381,17 @@ function question1getanswer() {
 
 }
 
-function question2getanswer() {
+function question2getanswer(BinancePOINTS, BitmexPOINTS, CexioPOINTS, CoinbasePOINTS, CryptocomPOINTS, LedgerPOINTS, TrezorPOINTS, BinanceExperiance, BitmexExperiance, CexioExperiance, CoinbaseExperiance, CryptocomExperiance, LedgerExperiance, TrezorExperiance) {
   
-
-  if (question2radio1.checked){var Experiance = 1}
-  if (question2radio2.checked){var Experiance = 2}
-  if (question2radio3.checked){var Experiance = 3}
-  if (question2radio4.checked){var Experiance = 4}
+  
+  radio1 = document.getElementById("question2radio1")
+  radio2 = document.getElementById("question2radio2")
+  radio3 = document.getElementById("question2radio3")
+  radio4 = document.getElementById("question2radio4")
+  if (radio1.checked){var Experiance = 1}
+  if (radio2.checked){var Experiance = 2}
+  if (radio3.checked){var Experiance = 3}
+  if (radio4.checked){var Experiance = 4}
   
   if (BinanceExperiance <= Experiance) {BinancePOINTS += 1}
   if (BitmexExperiance <= Experiance) {BitmexPOINTS += 1}
@@ -367,17 +401,19 @@ function question2getanswer() {
   if (LedgerExperiance <= Experiance) {LedgerPOINTS += 1}
   if (TrezorExperiance <= Experiance) {TrezorPOINTS += 1}
 
-  Points=[BinancePOINTS,BitmexPOINTS,CexioPOINTS,CoinbasePOINTS,CryptocomPOINTS,LedgerPOINTS,TrezorPOINTS]
-
-  Fist = Math.max(Points)
-
+  WalletsOrder(BinancePOINTS, BitmexPOINTS, CexioPOINTS, CoinbasePOINTS, CryptocomPOINTS, LedgerPOINTS, TrezorPOINTS);
+  
 }
+
+
 
 function question3getanswer() {
   //1=I want private key
   //2=CEX
-  if (question3radio1.checked){var Security = 1}
-  if (question3radio2.checked){var Security = 2}
+  radio1 = document.getElementById("question3radio1")
+  radio2 = document.getElementById("question3radio2")
+  if (radio1.checked){var Security = 1}
+  if (radio2.checked){var Security = 2}
 
   if (BinanceSecurity == Security) {BinancePOINTS +=1}
   if (BitmexSecurity == Security) {BitmexPOINTS +=1}
@@ -387,14 +423,17 @@ function question3getanswer() {
   if (LedgerSecurity == Security) {LedgerPOINTS +=1}
   if (TrezorSecurity == Security) {TrezorPOINTS +=1}
 
- 
+  WalletsOrder();
+  
 }
 
 function question4getanswer() {
   //1=yes
   //2=no
-  if (question4radio1.checked){var Centralised = 1}
-  if (question4radio2.checked){var Centralised = 2}
+  radio1 = document.getElementById("question4radio1")
+  radio2 = document.getElementById("question4radio2")
+  if (radio1.checked){var Centralised = 1}
+  if (radio2.checked){var Centralised = 2}
   
   if (BinanceCentralised == Centralised) {BinancePOINTS +=1}
   if (BitmexCentralised == Centralised) {BitmexPOINTS +=1}
@@ -404,6 +443,8 @@ function question4getanswer() {
   if (LedgerCentralised == Centralised) {LedgerPOINTS +=1}
   if (TrezorCentralised == Centralised) {TrezorPOINTS +=1}
 
+  WalletsOrder();
+  
 }
 
 function question5getanswer() {
@@ -411,10 +452,16 @@ function question5getanswer() {
   var Weekly = 3
   var Monthly = 3
   var Lessoften = 3
-  if (question5radio1.checked){Daily = 1}
-  if (question5radio2.checked){Weekly = 1}
-  if (question5radio3.checked){Monthly = 1}
-  if (question5radio4.checked){Lessoften = 1}
+
+  radio1 = document.getElementById("question5radio1")
+  radio2 = document.getElementById("question5radio2")
+  radio3 = document.getElementById("question5radio3")
+  radio4 = document.getElementById("question5radio4")
+
+  if (radio1.checked){Daily = 1}
+  if (radio2.checked){Weekly = 1}
+  if (radio3.checked){Monthly = 1}
+  if (radio4.checked){Lessoften = 1}
   
   if (BinanceDaily==Daily) {BinancePOINTS +=1}
   if (BitmexDaily==Daily) {BitmexPOINTS +=1}
@@ -448,6 +495,9 @@ function question5getanswer() {
   if (LedgerLessoften==Lessoften) {LedgerPOINTS +=1}
   if (TrezorLessoften==Lessoften) {TrezorPOINTS +=1}
 
+  WalletsOrder();
+
+  
 }
 
 function question6getanswer() {
@@ -458,12 +508,19 @@ function question6getanswer() {
   var Swaping = 0
   var Layer1token = 0
 
-  if (question6checkbox1.checked){HOLD = 1}
-  if (question6checkbox2.checked){Earning = 1}
-  if (question6checkbox3.checked){NFT = 1}
-  if (question6checkbox4.checked){Multiprotocoll = 1}
-  if (question6checkbox5.checked){Swaping = 1}
-  if (question6checkbox6.checked){Layer1token = 1}
+  checkbox1 = document.getElementById("question6checkbox1")
+  checkbox2 = document.getElementById("question6checkbox2")
+  checkbox3 = document.getElementById("question6checkbox3")
+  checkbox4 = document.getElementById("question6checkbox4")
+  checkbox5 = document.getElementById("question6checkbox5")
+  checkbox6 = document.getElementById("question6checkbox6")
+ 
+  if (checkbox1.checked){HOLD = 1}
+  if (checkbox2.checked){Earning = 1}
+  if (checkbox3.checked){NFT = 1}
+  if (checkbox4.checked){Multiprotocoll = 1}
+  if (checkbox5.checked){Swaping = 1}
+  if (checkbox6.checked){Layer1token = 1}
   
   if (BinanceHOLD == HOLD) {BinancePOINTS +=1}
   if (BitmexHOLD == HOLD) {BitmexPOINTS +=1}
@@ -512,5 +569,8 @@ function question6getanswer() {
   if (CryptocomLayer1token == Layer1token) {CryptocomPOINTS +=1}
   if (LedgerLayer1token == Layer1token) {LedgerPOINTS +=1}
   if (TrezorLayer1token == Layer1token) {TrezorPOINTS +=1}
+
+  WalletsOrder();
+  
 
 }
