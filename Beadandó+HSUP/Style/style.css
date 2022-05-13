@@ -25,6 +25,12 @@ a {
 
 button {
   font-family: "DM_Sans";
+  font-weight: 1000;
+}
+
+#ButtonSendMessage {
+  font-family: "DM_Sans";
+  font-weight: 1000;
 }
 
 input {
@@ -138,7 +144,9 @@ article {
 }
 
 #ButtonUser {
-  background-color: #182722;
+  background-color: #ffffffa4;
+  color: #3c6757;
+  /* background-color: #182722; */
   text-align: center;
   width: 70%;
   margin-left: 15%;
@@ -149,7 +157,7 @@ article {
   border: 1px solid #00e091;
   border-radius: 5px;
   font-size: 25px;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 #Art1Txt1 {
@@ -184,8 +192,9 @@ article {
 }
 
 .ButtonFillOut {
-  background-color: #00e091;
-  color: #182722;
+  background-color: #ffffffa4;
+  color: #3c6757;
+  /* color: #182722; */
   text-align: center;
   text-decoration: none;
   border: 2px solid #00e091;
@@ -195,8 +204,10 @@ article {
 }
 
 #ButtonContactUs {
-  background-color: #182722;
-  color: #ffffff;
+  background-color: #ffffffa4;
+  color: #3c6757;
+  /* background-color: #182722; */
+  /* color: #ffffff; */
   text-align: center;
   text-decoration: none;
   width: 30%;
@@ -247,6 +258,7 @@ article {
   border: 1px solid #00e091;
   padding: 20px 20px;
   border-radius: 8px;
+  background-color: #00e091;
 }
 .coin img {
   margin-right: 10px;
@@ -870,8 +882,11 @@ label {
   }
 
   #ButtonUser:hover {
-    background-color: #00e091;
-    color: #182722;
+    /* background-color: #00e091;
+    color: #182722; */
+    background-color: #182722;
+    color: #ffffff;
+    
   }
 
   #Art1Txt1 {
@@ -884,18 +899,26 @@ label {
   }
 
   #ButtonContactUs:hover {
-    background-color: #00e091;
-    color: #182722;
+    background-color: #182722;
+    color: #ffffff;
+    /* background-color: #00e091;
+    color: #182722; */
   }
 
   #ButtonInterest:hover {
     background-color: #182722;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
+  }
+
+  #ButtonSendMessage{
+    width: 20%;
   }
 
   #ButtonSendMessage:hover {
-    background-color: #00e091;
-    color: #182722;
+    background-color: #182722;
+    color: #ffffff;
+    /* background-color: #00e091;
+    color: #182722; */
   }
   /*Coins*/
 
@@ -903,6 +926,7 @@ label {
   .coin {
     margin: 15px;
     height: 100px;
+    
   }
   .coin img {
     height: 75%;
@@ -910,6 +934,10 @@ label {
 
   .coin h3 {
     font-size: 25px;
+  }
+
+  #ProductGif{
+    width: 40%;
   }
 
   .Art4image {
