@@ -307,7 +307,7 @@ article {
 #ButtonInterest a {
   color: #ffffff;
   text-decoration: none;
-  font-size: bold;
+  font-weight: bold;
 }
 
 #Product{
@@ -826,8 +826,8 @@ label {
   nav li {
     width: 17%;
     padding: 1%;
-    padding-top: 1,5%;
-    padding-bottom: 1,5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
   }
   nav ul {
     display: flex;
@@ -1107,7 +1107,6 @@ section .heading {
   padding: 20px;
   width: 100%;
   text-align: center;
-  font-size: 800;
 }
 
 section .heading::before {
