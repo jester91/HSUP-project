@@ -110,11 +110,12 @@ window.addEventListener("scroll", function () {
 });
 
 function changeOurSolution(){
-var text="Csapatunkkal egy olyan megoldáson dolgozunk amivel a felhasználóink részére a legtökéletesebb tárcát tudjuk ajánlani, ezzel is elősegítvea felhasználói élményt és a biztonságot"
+  var text1="Csapatunkkal egy olyan megoldáson dolgozunk amivel a felhasználóink részére a legtökéletesebb tárcát tudjuk ajánlani, ezzel is elősegítvea felhasználói élményt és a biztonságot"
+  var text2="B2B szöveg"
   var x = document.getElementById("oursolution");
-  if (x.innerHTML === text) {
-    x.innerHTML = "B2B szöveg";
+  if (x.innerHTML === text2) {
+    x.innerHTML = text1;
   } else {
-    x.innerHTML = text;
+    x.innerHTML = text2;
   }
 }
