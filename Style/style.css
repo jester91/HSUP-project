@@ -1,7 +1,7 @@
 body#indexBody {
   background: rgb(9, 7, 51);
   background: linear-gradient(
-    90deg,
+    85deg,
     rgba(9, 7, 51, 1) 17%,
     rgba(0, 255, 163, 1) 54%,
     rgba(220, 31, 255, 1) 100%
@@ -17,7 +17,7 @@ body#indexBody {
 
 button {
   font-family: "Montserrat", sans-serif;
-  font-weight: 1000;
+  font-weight: 900;
 }
 
 #ButtonSendMessage {
