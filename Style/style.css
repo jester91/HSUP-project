@@ -94,9 +94,11 @@ nav li a {
   width: 100px;
   height: 50px;
 }
+
 nav ul li.active {
   background-color: #2de1af;
 }
+
 #ProjectNameMobile {
   z-index: 5;
   background-color: #0d093b;
@@ -159,7 +161,6 @@ article {
   padding: 0;
 }
 #HomeArticle1 {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,7 +230,6 @@ article {
   padding: 0;
 }
 
-
 /* Toggle switch */
 
 .toggle {
@@ -265,8 +265,8 @@ article {
   position: absolute;
   top: 2.5px;
   left: 2px;
-  width: calc(var(--height)*0.6);
-  height: calc(var(--height)*0.6);
+  width: calc(var(--height) * 0.6);
+  height: calc(var(--height) * 0.6);
   border-radius: calc(var(--height) / 2);
   border: 3px solid #969696;
   background-color: #dbdbdb;
@@ -274,12 +274,12 @@ article {
   transition: all 0.4s ease-in-out;
 }
 
-.toggle input:checked+.slider {
-  border-color: #2de1af ;
+.toggle input:checked + .slider {
+  border-color: #2de1af;
 }
 
-.toggle input:checked+.slider::before {
-  border-color: #2de1af ;
+.toggle input:checked + .slider::before {
+  border-color: #2de1af;
   background-color: #c6e5ff;
   transform: translateX(calc(var(--width) - var(--height)));
 }
@@ -314,11 +314,11 @@ article {
   transition: all 0.4s ease-in-out;
 }
 
-.toggle input:checked~.labels::after {
+.toggle input:checked ~ .labels::after {
   opacity: 0;
 }
 
-.toggle input:checked~.labels::before {
+.toggle input:checked ~ .labels::before {
   opacity: 1;
 }
 
@@ -412,7 +412,7 @@ article {
   margin-bottom: 100px;
   width: 100%;
 }
-#SaidAboutUs{
+#SaidAboutUs {
   padding-top: 100px;
 }
 #CaseStudies {
@@ -458,7 +458,7 @@ article {
   flex-direction: column;
 }
 
-.TeamMember p{
+.TeamMember p {
   font-weight: 900;
 }
 #Team h2 {
@@ -470,7 +470,6 @@ article {
   color: #ffffff;
   text-align: center;
 }
-
 
 /*Team Member float*/
 
@@ -534,9 +533,8 @@ article {
   background-color: transparent;
   font-size: 25px;
   border-radius: 10px;
-  border-color: #0d093b ;
-  color: #fff  ;
-
+  border-color: #0d093b;
+  color: #fff;
 }
 
 #inMail {
@@ -547,34 +545,32 @@ article {
   border-radius: 10px;
   margin-top: 15px;
   margin-bottom: 5px;
-  border-color:#0d093b  ;
-  color: #fff  ;
+  border-color: #0d093b;
+  color: #fff;
 }
 
 #inMessage {
   height: 250px;
   width: 100%;
-  color: #fff  ;
+  color: #fff;
   background-color: transparent;
   font-size: 25px;
   border-radius: 10px;
   margin-top: 20px;
-  border-color: #0d093b ;
+  border-color: #0d093b;
 }
 
 #ButtonSendMessage {
   margin-top: 20px;
   font-size: 20px;
   background-color: transparent;
-  color: #fff  ;
+  color: #fff;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
   width: 60%;
   height: 35px;
 }
-
-
 
 /*Footer*/
 footer {
@@ -682,11 +678,10 @@ footer .fab {
   width: 100%;
 }
 
-.questiondiv{
+.questiondiv {
   display: flex;
   flex-direction: column-reverse;
 }
-
 
 div.error {
   color: #fb3a3a;
@@ -694,7 +689,6 @@ div.error {
   font-weight: 800;
   padding: 0;
   width: 100%;
-
 }
 
 .intext {
@@ -702,7 +696,7 @@ div.error {
   height: 35px;
   border: none;
   margin: 2%;
-  background-color: #99999931;
+  color: #2de1af;
   font-size: 25px;
   border-radius: 10px;
 }
@@ -757,7 +751,6 @@ label {
   font-size: 25px;
   border-radius: 10px;
   color: #666666;
-  
 }
 
 #question2 {
@@ -804,7 +797,7 @@ label {
   margin-bottom: 100px;
 }
 
-#Recommendtxt{
+#Recommendtxt {
   margin-top: 50px;
   display: none;
   color: #ffffff;
@@ -1069,43 +1062,35 @@ label {
     justify-content: space-around;
     width: 90%;
     height: 100%;
-
   }
 
   .TeamMemberImg {
     width: 15vw;
-    
   }
   .TeamMember {
     display: flex;
     align-items: center;
-    
   }
 
-  #TeamMember1{
+  #TeamMember1 {
     margin-top: 600px;
-    
-    }
-    
-    #TeamMember2{
-      margin-top: 300px;
-      
-    }
-    
-    #TeamMember3{
-      margin-top: 0px;
-      
-    }
-    
-    #TeamMember4{
-      margin-top: 300px;
-      
-    }
-    
-    #TeamMember5{
-      margin-top: 600px;
-      
-    }
+  }
+
+  #TeamMember2 {
+    margin-top: 300px;
+  }
+
+  #TeamMember3 {
+    margin-top: 0px;
+  }
+
+  #TeamMember4 {
+    margin-top: 300px;
+  }
+
+  #TeamMember5 {
+    margin-top: 600px;
+  }
 
   /*Contact Us*/
   #inName {
@@ -1134,7 +1119,7 @@ label {
   }
 
   /*------------------Question page---------------*/
-  
+
   #progress {
     display: flex;
     flex-direction: row;
@@ -1164,7 +1149,6 @@ label {
     justify-content: space-around;
   }
   .question {
-    
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -1191,7 +1175,7 @@ label {
     width: 20%;
   }
 
-  #Recommendtxt{
+  #Recommendtxt {
     font-size: 45px;
   }
 
@@ -1257,6 +1241,7 @@ section .heading::before {
 
 section .heading b {
   color: #ffffff;
+  margin-left: -35px;
 }
 
 .wrapper {
@@ -1410,8 +1395,8 @@ section .heading b {
   position: absolute;
   top: 2.5px;
   left: 2px;
-  width: calc(var(--height)*0.6);
-  height: calc(var(--height)*0.6);
+  width: calc(var(--height) * 0.6);
+  height: calc(var(--height) * 0.6);
   border-radius: calc(var(--height) / 2);
   border: 3px solid #969696;
   background-color: #dbdbdb;
@@ -1419,12 +1404,12 @@ section .heading b {
   transition: all 0.4s ease-in-out;
 }
 
-.toggle input:checked+.slider {
-  border-color: #0d093b  ;
+.toggle input:checked + .slider {
+  border-color: #0d093b;
 }
 
-.toggle input:checked+.slider::before {
-  border-color: #0d093b  ;
+.toggle input:checked + .slider::before {
+  border-color: #0d093b;
   background-color: #c6e5ff;
   transform: translateX(calc(var(--width) - var(--height)));
 }
@@ -1459,10 +1444,14 @@ section .heading b {
   transition: all 0.4s ease-in-out;
 }
 
-.toggle input:checked~.labels::after {
+.toggle input:checked ~ .labels::after {
   opacity: 0;
 }
 
-.toggle input:checked~.labels::before {
+.toggle input:checked ~ .labels::before {
   opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
 }
