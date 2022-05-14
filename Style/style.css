@@ -1065,6 +1065,7 @@ label {
   }
 
   .TeamMemberImg {
+    border-radius: 50px;
     width: 15vw;
   }
   .TeamMember {
