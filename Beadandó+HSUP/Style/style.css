@@ -1,40 +1,32 @@
 body#indexBody {
-  background: linear-gradient(-80deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: rgb(9, 7, 51);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 7, 51, 1) 17%,
+    rgba(0, 255, 163, 1) 54%,
+    rgba(220, 31, 255, 1) 100%
+  );
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
-  /* background-color: #182722; */
-}
-@font-face {
-  font-family: "DM_Sans";
-  src: url(./Betutipus/DM_Sans/DMSans-Regular.ttf);
-}
-@font-face {
-  font-family: "Inter";
-  src: url(./Betutipus/Inter/static/Inter-Medium.ttf);
-}
-h2 {
-  font-family: "inter";
-}
-p {
-  font-family: "DM_Sans";
+  /* background-color: #0d093b; */
 }
 
-a {
-  font-family: "inter";
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
 button {
-  font-family: "DM_Sans";
+  font-family: "Montserrat", sans-serif;
   font-weight: 1000;
 }
 
 #ButtonSendMessage {
-  font-family: "DM_Sans";
+  font-family: "Montserrat", sans-serif;
   font-weight: 1000;
 }
 
 input {
-  font-family: "DM_Sans";
+  font-family: "Montserrat", sans-serif;
 }
 body#contactBody {
   background-color: #ffffff;
@@ -59,6 +51,8 @@ body#contactBody {
 #myLinks {
   display: none;
   z-index: 5;
+  text-transform: uppercase;
+  font-size: 0.8vw;
 }
 
 nav {
@@ -67,7 +61,7 @@ nav {
   padding-top: 30px;
   width: 100%;
   left: 0;
-  background-color: #182722;
+  background-color: #0d093b;
   position: fixed;
 }
 nav ul {
@@ -93,6 +87,7 @@ nav li a {
   color: #fff;
   text-decoration: none;
   text-align: center;
+  font-size: 22px;
 }
 
 .logo {
@@ -100,11 +95,11 @@ nav li a {
   height: 50px;
 }
 nav ul li.active {
-  background-color: #00e091;
+  background-color: #2de1af;
 }
 #ProjectNameMobile {
   z-index: 5;
-  background-color: #182722;
+  background-color: #0d093b;
   width: 100%;
   display: block;
   position: fixed;
@@ -137,16 +132,16 @@ nav ul li.active {
 
 h2 {
   font-size: 40px;
-  color: #182722;
+  color: #0d093b;
 }
 article {
   width: 100%;
 }
 
 #ButtonUser {
-  background-color: #ffffffa4;
-  color: #3c6757;
-  /* background-color: #182722; */
+  background-color: transparent;
+  color: #2de1af;
+  /* background-color: #0d093b; */
   text-align: center;
   width: 70%;
   margin-left: 15%;
@@ -154,16 +149,17 @@ article {
   margin-top: 20px;
   margin-bottom: 30px;
   padding: 0.5%;
-  border: 1px solid #00e091;
+  border: 1px solid #2de1af;
   border-radius: 5px;
   font-size: 25px;
+  font-family: "Montserrat", sans-serif;
   /* color: #ffffff; */
 }
 
 #Art1Txt1 {
   width: 100%;
   color: #ffffff;
-  /* color: #00e091; */
+  /* color: #2de1af ; */
   text-align: center;
 }
 article {
@@ -192,28 +188,30 @@ article {
 }
 
 .ButtonFillOut {
-  background-color: #ffffffa4;
-  color: #3c6757;
-  /* color: #182722; */
+  background-color: transparent;
+  color: #2de1af;
+  /* color: #0d093b; */
   text-align: center;
   text-decoration: none;
-  border: 2px solid #00e091;
+  border: 2px solid #2de1af;
   border-radius: 10px;
   height: 35px;
   width: 30%;
+  font-family: "Montserrat", sans-serif;
 }
 
 #ButtonContactUs {
-  background-color: #ffffffa4;
-  color: #3c6757;
-  /* background-color: #182722; */
+  background-color: transparent;
+  color: #2de1af;
+  /* background-color: #0d093b; */
   /* color: #ffffff; */
   text-align: center;
   text-decoration: none;
   width: 30%;
   height: 35px;
-  border: 2px solid #00e091;
+  border: 2px solid #2de1af;
   border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .InfoArt1 {
@@ -224,7 +222,7 @@ article {
   justify-content: center;
   margin-top: 35px;
   color: #ffffff;
-  /* color: #00e091; */
+  /* color: #2de1af ; */
 }
 
 .InfoTxtArt1 {
@@ -255,10 +253,10 @@ article {
   margin-top: 15px;
   font-size: 14px;
   color: #fff;
-  border: 1px solid #00e091;
+  border: 1px solid #2de1af;
   padding: 20px 20px;
   border-radius: 8px;
-  background-color: #00e091;
+  background-color: #2de1af;
 }
 .coin img {
   margin-right: 10px;
@@ -285,15 +283,15 @@ article {
 #OurSolution {
   width: 96%;
   padding: 2%;
-  background-color: #00e091;
+  background-color: #2de1af;
   margin-top: 30px;
-  color: #182722;
+  color: #0d093b;
   text-align: center;
 }
 
 #ButtonInterest {
-  background-color: #00e091;
-  color: #182722;
+  background-color: #2de1af;
+  color: #0d093b;
   text-align: center;
   text-decoration: none;
   width: 30%;
@@ -301,7 +299,7 @@ article {
   margin-right: 35%;
   margin-bottom: 20px;
   height: 35px;
-  border: 4px solid #182722;
+  border: 4px solid #0d093b;
   border-radius: 10px;
 }
 #ButtonInterest a {
@@ -310,8 +308,7 @@ article {
   font-weight: bold;
 }
 
-#Product{
-  
+#Product {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -319,21 +316,21 @@ article {
   margin-bottom: 50px;
 }
 
-#Product h2{
+#Product h2 {
   color: #ffffff;
-  /* color:#00e091; */
+  /* color:#2de1af ; */
 }
 
-#ProductGif{
-margin-bottom: 100px;
-width: 100%;
+#ProductGif {
+  margin-bottom: 100px;
+  width: 100%;
 }
 
 #CaseStudies {
   width: 90%;
   display: flex;
   flex-direction: column;
-  background-color: #00e091;
+  background-color: #2de1af;
   padding: 5%;
 }
 
@@ -440,38 +437,42 @@ width: 100%;
 #inName {
   width: 100%;
   height: 35px;
-  border: none;
-  background-color: #ffffffa4;
+  background-color: transparent;
   font-size: 25px;
   border-radius: 10px;
+  border-color: #0d093b ;
+  color: #fff  ;
+
 }
 
 #inMail {
   width: 100%;
   height: 35px;
-  border: none;
-  background-color: #ffffffa4;
+  background-color: transparent;
   font-size: 25px;
   border-radius: 10px;
   margin-top: 15px;
   margin-bottom: 5px;
+  border-color:#0d093b  ;
+  color: #fff  ;
 }
 
 #inMessage {
   height: 250px;
   width: 100%;
-  border: none;
-  background-color: #ffffffa4;
+  color: #fff  ;
+  background-color: transparent;
   font-size: 25px;
   border-radius: 10px;
   margin-top: 20px;
+  border-color: #0d093b ;
 }
 
 #ButtonSendMessage {
   margin-top: 20px;
   font-size: 20px;
-  background-color: #ffffffa4;
-  color: #3c6757;
+  background-color: transparent;
+  color: #fff  ;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
@@ -485,8 +486,7 @@ label.error {
 
 /*Footer*/
 footer {
-  background-color: black;
-
+  background-color: #0d093b;
   width: 100%;
   left: 0;
 }
@@ -564,7 +564,7 @@ footer .fab {
 
 .progressbarpart {
   height: 5px;
-  border: solid 1px #00e091;
+  border: solid 1px #2de1af;
   width: 16%;
 }
 
@@ -578,12 +578,12 @@ footer .fab {
   justify-content: left;
   align-items: center;
   color: #ffffff;
-  background-color: #00e091;
-  color: #182722;
+  background-color: #2de1af;
+  color: #0d093b;
 }
 
 .question h2 {
-  color: #182722;
+  color: #0d093b;
   font-size: 30px;
   width: 100%;
 }
@@ -619,7 +619,7 @@ footer .fab {
 }
 .ButtonQuestionButton {
   margin-top: 20px;
-  background-color: #182722;
+  background-color: #0d093b;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -674,18 +674,18 @@ label {
 #coin-listQuestion {
   display: none;
 }
-#refreshdiv{
+#refreshdiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#Refresh{
+#Refresh {
   display: none;
   margin-top: 20px;
-  background-color:#00e091;
-  color:#182722;
+  background-color: #2de1af;
+  color: #0d093b;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
@@ -695,7 +695,7 @@ label {
 }
 /*Wallets list css*/
 
-#Wallets{
+#Wallets {
   margin: 3%;
   width: 94%;
   display: flex;
@@ -703,8 +703,8 @@ label {
   justify-content: space-around;
 }
 
-.walletplace{
-  background-color: #00e091;
+.walletplace {
+  background-color: #2de1af;
   margin: 1%;
   padding: 1%;
   width: 13%;
@@ -714,50 +714,47 @@ label {
   align-items: center;
 }
 
-.walletlogoimg{
+.walletlogoimg {
   display: none;
   margin: 1%;
   width: 90%;
 }
 
-
-#binance1{
+#binance1 {
   display: block;
 }
 
-#bitmex2{
+#bitmex2 {
   display: block;
 }
-#cexio3{
+#cexio3 {
   display: block;
 }
-#coinbase4{
+#coinbase4 {
   display: block;
 }
-#cryptocom5{
+#cryptocom5 {
   display: block;
 }
 
-
-
-#walletplace1{
-  border: 8px solid #FFD700;
+#walletplace1 {
+  border: 8px solid #ffd700;
 }
 
-#walletplace2{
-  border: 8px solid #C0C0C0;
+#walletplace2 {
+  border: 8px solid #c0c0c0;
 }
 
-#walletplace3{
-  border: 8px solid #CD7F32;
+#walletplace3 {
+  border: 8px solid #cd7f32;
 }
 
-#walletplace4{
-  border: 8px solid #00e091;
+#walletplace4 {
+  border: 8px solid #2de1af;
 }
 
-#walletplace5{
-  border: 8px solid #00e091;
+#walletplace5 {
+  border: 8px solid #2de1af;
 }
 
 @media only screen and (min-width: 600px) {
@@ -791,7 +788,7 @@ label {
     justify-content: space-around;
   }
 
-  .coin{
+  .coin {
     width: 20%;
     margin-bottom: 50px;
   }
@@ -839,7 +836,7 @@ label {
 
   nav li a {
     display: block;
-    font-size: 25px;
+    font-size: 18px;
   }
 
   #floatTeamX {
@@ -882,11 +879,10 @@ label {
   }
 
   #ButtonUser:hover {
-    /* background-color: #00e091;
-    color: #182722; */
-    background-color: #182722;
+    /* background-color: #2de1af ;
+    color: #0d093b; */
+    background-color: #0d093b;
     color: #ffffff;
-    
   }
 
   #Art1Txt1 {
@@ -894,39 +890,37 @@ label {
   }
 
   .ButtonFillOut:hover {
-    background-color: #182722;
+    background-color: #0d093b;
     color: #ffffff;
   }
 
   #ButtonContactUs:hover {
-    background-color: #182722;
+    background-color: #0d093b;
     color: #ffffff;
-    /* background-color: #00e091;
-    color: #182722; */
+    /* background-color: #2de1af ;
+    color: #0d093b; */
   }
 
   #ButtonInterest:hover {
-    background-color: #182722;
+    background-color: #0d093b;
     color: #ffffff;
   }
 
-  #ButtonSendMessage{
+  #ButtonSendMessage {
     width: 20%;
   }
 
   #ButtonSendMessage:hover {
-    background-color: #182722;
+    background-color: #0d093b;
     color: #ffffff;
-    /* background-color: #00e091;
-    color: #182722; */
+    /* background-color: #2de1af ;
+    color: #0d093b; */
   }
   /*Coins*/
 
-  
   .coin {
     margin: 15px;
     height: 100px;
-    
   }
   .coin img {
     height: 75%;
@@ -936,7 +930,7 @@ label {
     font-size: 25px;
   }
 
-  #ProductGif{
+  #ProductGif {
     width: 40%;
   }
 
@@ -1047,7 +1041,7 @@ label {
     margin-bottom: 100px;
   }
   /*Wallets*/
-  
+
   #Wallets {
     flex-direction: column;
     justify-content: space-around;
@@ -1058,11 +1052,10 @@ label {
     align-items: center;
   }
 
-  .walletplace{
+  .walletplace {
     height: 20%;
     width: 20%;
   }
-  
 }
 
 @media only screen and (min-width: 1920px) {
@@ -1072,7 +1065,7 @@ section {
   position: relative;
   min-height: 10vh;
   width: 100%;
-  background-color:#00e091;
+  background-color: #2de1af;
   /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite; */
@@ -1102,7 +1095,7 @@ section h3 {
 section .heading {
   display: inline-block;
   position: relative;
-  color: #57ffc1;
+  color: #0d093b;
   font-size: 40px;
   padding: 20px;
   width: 100%;
@@ -1117,7 +1110,7 @@ section .heading::before {
   left: 50%;
   transform: translateX(-50%);
   bottom: 15%;
-  background-color: #57ffc1;
+  background-color: #0d093b;
 }
 
 section .heading b {
@@ -1198,14 +1191,14 @@ section .heading b {
   font: 30px;
   display: block;
   text-align: left;
-  color: #57ffc1;
+  color: #2de1af;
 }
 
 .wrapper .container .right {
   font: 30px;
   display: block;
   text-align: right;
-  color: #57ffc1;
+  color: #2de1af;
 }
 
 .wrapper .container .social {
@@ -1222,21 +1215,21 @@ section .heading b {
 }
 
 .wrapper .container .social i:hover {
-  color: #57ffc1;
+  color: #2de1af;
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #3c6757;
+  color: #2de1af;
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #3c6757;
+  color: #2de1af;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #3c6757;
+  color: #2de1af;
 }
