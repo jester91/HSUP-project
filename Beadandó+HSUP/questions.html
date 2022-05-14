@@ -65,12 +65,12 @@
   
       </div>
       
-
+      <h2 id="Recommendtxt">A válaszaid alapján a következő Walleteket javasoljuk:</h2>
       <div id="questionsWallets">
         <form class="question" id="question1" action="javascript:question1next();question1getanswer();" method="post" novalidate>
           <h2>Melyik országban illetve városban laksz?</h2>
           <select class="indropdown" id="inCountry" name="inCountry">
-            <option disabled selected value> Country </option>
+            <option disabled selected value> Ország </option>
             <option>Afghanistan</option>
             <option>Albania</option>
             <option>Algeria</option>
@@ -266,9 +266,12 @@
             <option>Yemen</option>
             <option>Zambia</option>
             <option>Zimbabwe</option>
-            </select>
-            <input class="intext" id="inCity" name="inCity" type="text" placeholder="Város">
-            <div class="questionbuttons">
+          </select>
+
+          
+          <input class="intext" id="inCity" name="inCity" type="text" placeholder="Város">
+          <div class="errorTxt"></div>
+          <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
           </div>
           
@@ -280,9 +283,10 @@
           <label><input name="Exprerience" class="inratio" type="radio" id="question2radio2">Németbe dolgozó asztalos haverjától hallott most először a cryptoról</label>
           <label><input name="Exprerience" class="inratio" type="radio" id="question2radio3">Alaposabb tapasztalattal rendelkezik, használt már walletet</label>
           <label><input name="Exprerience" class="inratio" type="radio" id="question2radio4">Profi szinten vágja a témát</label>
+          <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
-            <input class="ButtonQuestionButton" type="button" value="Back" onclick="question2back()">
+            <input class="ButtonQuestionButton" type="button" value="Back" onclick="question2back();question1getanswerBack()">
           </div>
         </form>
   
@@ -290,9 +294,10 @@
           <h2>Mennyire szeretnéd biztonságban tartani a pénzedet?</h2>
           <label><input name="safety" class="inratio" type="radio" id="question3radio1">Igen - szeretnék privát kulcsot</label>
           <label><input name="safety" class="inratio" type="radio" id="question3radio2">Egyáltalán nem -> CEX</label>
+          <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
-            <input class="ButtonQuestionButton" type="button" value="Back" onclick="question3back()">
+            <input class="ButtonQuestionButton" type="button" value="Back" onclick="question3back();question2getanswerBack()">
           </div>
         </form>
   
@@ -300,9 +305,10 @@
           <h2>Centralizált oldalon szeretnél kereskedni?</h2>
           <label><input name="Centralised" class="inratio" type="radio" id="question4radio1">Igen</label>
           <label><input name="Centralised" class="inratio" type="radio" id="question4radio2">Nem</label>
+          <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
-            <input class="ButtonQuestionButton" type="button" value="Back" onclick="question4back()">
+            <input class="ButtonQuestionButton" type="button" value="Back" onclick="question4back();question3getanswerBack()">
           </div>
         </form>
   
@@ -312,9 +318,10 @@
           <label><input name="frequency" class="inratio" type="radio" id="question5radio2">Heti szinten</label>
           <label><input name="frequency" class="inratio" type="radio" id="question5radio3">Havi szinten</label>
           <label><input name="frequency" class="inratio" type="radio" id="question5radio4">Ritkábban</label>
+          <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
-            <input class="ButtonQuestionButton" type="button" value="Back" onclick="question5back()">
+            <input class="ButtonQuestionButton" type="button" value="Back" onclick="question5back();question4getanswerBack()">
           </div>
         </form>
   
@@ -326,11 +333,14 @@
           <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox4">Több protokoll használata egy időben</label>
           <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox5">Swapolás/DeFi</label>
           <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox6">Egy Layer-1 token tárolása/stakelése</label>
+          <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Submit">
-            <input class="ButtonQuestionButton" type="button" value="Back" onclick="question6back()">
+            <input class="ButtonQuestionButton" type="button" value="Back" onclick="question6back();question5getanswerBack()">
           </div>
         </form>
+        
+        
         
         <article id="Wallets">
           <div class="walletplace" id="walletplace1">

@@ -14,11 +14,14 @@ $(document).ready(function () {
     rules: {
       inCountry: "required",
       inCity: "required",
+      
     },
     messages: {
       inCountry: "Add meg az országot ahol laksz!",
       inCity: "Add meg a várost ahol laksz!",
     },
+    errorElement : 'div',
+    errorLabelContainer: '.errorTxt'
   });
 });
 
@@ -30,6 +33,8 @@ $(document).ready(function () {
     messages: {
       Exprerience: "Add meg mennyire vagy jártas a témában!",
     },
+    errorElement : 'div',
+    errorLabelContainer: '.errorTxt'
   });
 });
 
@@ -41,6 +46,8 @@ $(document).ready(function () {
     messages: {
       safety: "Adja meg milyen szinű biztonságot akar!",
     },
+    errorElement : 'div',
+    errorLabelContainer: '.errorTxt'
   });
 });
 
@@ -52,6 +59,8 @@ $(document).ready(function () {
     messages: {
       Centralised: "Add meg, hogy centralizált legyen-e!",
     },
+    errorElement : 'div',
+    errorLabelContainer: '.errorTxt'
   });
 });
 
@@ -63,6 +72,8 @@ $(document).ready(function () {
     messages: {
       frequency: "Add meg, hogy milye gyakran használnád a tárcádat!",
     },
+    errorElement : 'div',
+    errorLabelContainer: '.errorTxt'
   });
 });
 
@@ -74,6 +85,8 @@ $(document).ready(function () {
     messages: {
       UsedFor: "Add meg, hogy Mire használnád a tárcád!",
     },
+    errorElement : 'div',
+    errorLabelContainer: '.errorTxt'
   });
 });
 
@@ -164,7 +177,8 @@ function question6submit() {
   }
   document.getElementById("Wallets").style.justifyContent = "stretch";
   document.getElementById("Refresh").style.display = "Block";
-
+  document.getElementById("Recommendtxt").style.display = "Block";
+  
 }
 
 function question6back() {
@@ -422,9 +436,29 @@ function question1getanswer() {
   );
 }
 
+function question1getanswerBack() {
+  
+  var Country = inCountry.value;
+  var City = inCity.value;
+  //Binance us href
+  console.log(BinancePOINTS);
+  if (Country == "United States") {
+    BinancePOINTS++;
+  }
+  console.log(BinancePOINTS);
+  WalletsOrder(
+    BinancePOINTS,
+    BitmexPOINTS,
+    CexioPOINTS,
+    CoinbasePOINTS,
+    CryptocomPOINTS,
+    LedgerPOINTS,
+    TrezorPOINTS
+  );
+}
+
 function question2getanswer()
 {
-  
   radio1 = document.getElementById("question2radio1");
   radio2 = document.getElementById("question2radio2");
   radio3 = document.getElementById("question2radio3");
@@ -442,8 +476,6 @@ function question2getanswer()
     var Experiance = 4;
   }
 
-  
-
   if (Experiance <= 2) {
     BitmexPOINTS++;
     CoinbasePOINTS++;
@@ -453,6 +485,47 @@ function question2getanswer()
     BinancePOINTS++;
     LedgerPOINTS++;
     CexioPOINTS++;
+  }
+  
+  WalletsOrder(
+    BinancePOINTS,
+    BitmexPOINTS,
+    CexioPOINTS,
+    CoinbasePOINTS,
+    CryptocomPOINTS,
+    LedgerPOINTS,
+    TrezorPOINTS
+  );
+}
+
+function question2getanswerBack()
+{
+  radio1 = document.getElementById("question2radio1");
+  radio2 = document.getElementById("question2radio2");
+  radio3 = document.getElementById("question2radio3");
+  radio4 = document.getElementById("question2radio4");
+  if (radio1.checked) {
+    var Experiance = 1;
+  }
+  if (radio2.checked) {
+    var Experiance = 2;
+  }
+  if (radio3.checked) {
+    var Experiance = 3;
+  }
+  if (radio4.checked) {
+    var Experiance = 4;
+  }
+
+  if (Experiance <= 2) {
+    BitmexPOINTS--;
+    CoinbasePOINTS--;
+    CryptocomPOINTS--;
+    TrezorPOINTS--;
+  } else {
+    BinancePOINTS--;
+    LedgerPOINTS--;
+    CexioPOINTS--;
   }
   
   WalletsOrder(
@@ -501,6 +574,41 @@ function question3getanswer() {
   return Security;
 }
 
+function question3getanswerBack() {
+  //1=I want private key
+  //2=CEX
+  radio1 = document.getElementById("question3radio1");
+  radio2 = document.getElementById("question3radio2");
+  if (radio1.checked) {
+    var Security = 1;
+  }
+  if (radio2.checked) {
+    var Security = 2;
+  }
+
+  if (Security == 1) {
+    LedgerPOINTS--;
+    TrezorPOINTS--;
+  } else {
+    BinancePOINTS--;
+    BitmexPOINTS--;
+    CexioPOINTS--;
+    CoinbasePOINTS--;
+    CryptocomPOINTS--;
+  }
+
+  WalletsOrder(
+    BinancePOINTS,
+    BitmexPOINTS,
+    CexioPOINTS,
+    CoinbasePOINTS,
+    CryptocomPOINTS,
+    LedgerPOINTS,
+    TrezorPOINTS
+  );
+  return Security;
+}
+
 function question4getanswer() {
   //1=yes
   //2=no
@@ -521,6 +629,39 @@ function question4getanswer() {
   } else {
     TrezorPOINTS++
     LedgerPOINTS++
+  }
+
+  WalletsOrder(
+    BinancePOINTS,
+    BitmexPOINTS,
+    CexioPOINTS,
+    CoinbasePOINTS,
+    CryptocomPOINTS,
+    LedgerPOINTS,
+    TrezorPOINTS
+  );
+}
+
+function question4getanswerBack() {
+  //1=yes
+  //2=no
+  radio1 = document.getElementById("question4radio1");
+  radio2 = document.getElementById("question4radio2");
+  if (radio1.checked) {
+    var Centralised = 1;
+  }
+  if (radio2.checked) {
+    var Centralised = 2;
+  }
+  if (Centralised==1) {
+    BinancePOINTS--;
+    BitmexPOINTS--;
+    CexioPOINTS--;
+    CoinbasePOINTS--;
+    CryptocomPOINTS--;
+  } else {
+    TrezorPOINTS--
+    LedgerPOINTS--
   }
 
   WalletsOrder(
@@ -644,6 +785,129 @@ function question5getanswer() {
   }
   if (TrezorLessoften == Lessoften) {
     TrezorPOINTS += 1;
+  }
+
+  WalletsOrder(
+    BinancePOINTS,
+    BitmexPOINTS,
+    CexioPOINTS,
+    CoinbasePOINTS,
+    CryptocomPOINTS,
+    LedgerPOINTS,
+    TrezorPOINTS
+  );
+}
+
+function question5getanswerBack() {
+  var Daily = 3;
+  var Weekly = 3;
+  var Monthly = 3;
+  var Lessoften = 3;
+
+  radio1 = document.getElementById("question5radio1");
+  radio2 = document.getElementById("question5radio2");
+  radio3 = document.getElementById("question5radio3");
+  radio4 = document.getElementById("question5radio4");
+
+  if (radio1.checked) {
+    Daily = 1;
+  }
+  if (radio2.checked) {
+    Weekly = 1;
+  }
+  if (radio3.checked) {
+    Monthly = 1;
+  }
+  if (radio4.checked) {
+    Lessoften = 1;
+  }
+
+  if (BinanceDaily == Daily) {
+    BinancePOINTS -= 1;
+  }
+  if (BitmexDaily == Daily) {
+    BitmexPOINTS -= 1;
+  }
+  if (CexioDaily == Daily) {
+    CexioPOINTS -= 1;
+  }
+  if (CoinbaseDaily == Daily) {
+    CoinbasePOINTS -= 1;
+  }
+  if (CryptocomDaily == Daily) {
+    CryptocomPOINTS -= 1;
+  }
+  if (LedgerDaily == Daily) {
+    LedgerPOINTS -= 1;
+  }
+  if (TrezorDaily == Daily) {
+    TrezorPOINTS -= 1;
+  }
+
+  if (BinanceWeekly == Weekly) {
+    BinancePOINTS -= 1;
+  }
+  if (BitmexWeekly == Weekly) {
+    BitmexPOINTS -= 1;
+  }
+  if (CexioWeekly == Weekly) {
+    CexioPOINTS -= 1;
+  }
+  if (CoinbaseWeekly == Weekly) {
+    CoinbasePOINTS -= 1;
+  }
+  if (CryptocomWeekly == Weekly) {
+    CryptocomPOINTS -= 1;
+  }
+  if (LedgerWeekly == Weekly) {
+    LedgerPOINTS -= 1;
+  }
+  if (TrezorWeekly == Weekly) {
+    TrezorPOINTS -= 1;
+  }
+
+  if (BinanceMonthly == Monthly) {
+    BinancePOINTS -= 1;
+  }
+  if (BitmexMonthly == Monthly) {
+    BitmexPOINTS -= 1;
+  }
+  if (CexioMonthly == Monthly) {
+    CexioPOINTS -= 1;
+  }
+  if (CoinbaseMonthly == Monthly) {
+    CoinbasePOINTS -= 1;
+  }
+  if (CryptocomMonthly == Monthly) {
+    CryptocomPOINTS -= 1;
+  }
+  if (LedgerMonthly == Monthly) {
+    LedgerPOINTS -= 1;
+  }
+  if (TrezorMonthly == Monthly) {
+    TrezorPOINTS -= 1;
+  }
+
+  if (BinanceLessoften == Lessoften) {
+    BinancePOINTS -= 1;
+  }
+  if (BitmexLessoften == Lessoften) {
+    BitmexPOINTS -= 1;
+  }
+  if (CexioLessoften == Lessoften) {
+    CexioPOINTS -= 1;
+  }
+  if (CoinbaseLessoften == Lessoften) {
+    CoinbasePOINTS -= 1;
+  }
+  if (CryptocomLessoften == Lessoften) {
+    CryptocomPOINTS -= 1;
+  }
+  if (LedgerLessoften == Lessoften) {
+    LedgerPOINTS -= 1;
+  }
+  if (TrezorLessoften == Lessoften) {
+    TrezorPOINTS -= 1;
   }
 
   WalletsOrder(
