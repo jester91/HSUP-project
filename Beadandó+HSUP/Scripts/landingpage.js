@@ -108,3 +108,13 @@ window.addEventListener("scroll", function () {
     document.getElementById("NavContact").style.backgroundColor = "#00e091";
   }
 });
+
+function changeOurSolution(){
+var text="Csapatunkkal egy olyan megoldáson dolgozunk amivel a felhasználóink részére a legtökéletesebb tárcát tudjuk ajánlani, ezzel is elősegítvea felhasználói élményt és a biztonságot"
+  var x = document.getElementById("oursolution");
+  if (x.innerHTML === text) {
+    x.innerHTML = "B2B szöveg";
+  } else {
+    x.innerHTML = text;
+  }
+}

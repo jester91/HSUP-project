@@ -126,7 +126,7 @@ nav ul li.active {
 #MenuIcon {
   position: fixed;
   right: 0;
-  top: 0;
+  top: 5px;
   display: block;
 }
 
@@ -142,14 +142,6 @@ article {
   background-color: transparent;
   color: #2de1af;
   /* background-color: #0d093b; */
-  text-align: center;
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding: 0.5%;
-  border: 1px solid #2de1af;
   border-radius: 5px;
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
@@ -159,6 +151,7 @@ article {
 #Art1Txt1 {
   width: 100%;
   color: #ffffff;
+  padding-top: 15%;
   /* color: #2de1af ; */
   text-align: center;
 }
@@ -875,18 +868,6 @@ label {
     margin-right: 5%;
   }
 
-  #ButtonUser {
-    margin-top: 200px;
-    width: auto !important;
-  }
-
-  #ButtonUser:hover {
-    /* background-color: #2de1af ;
-    color: #0d093b; */
-    background-color: #0d093b;
-    color: #ffffff;
-  }
-
   #Art1Txt1 {
     display: inline-block;
   }
@@ -1280,11 +1261,11 @@ section .heading b {
 }
 
 .toggle input:checked+.slider {
-  border-color: #2de1af ;
+  border-color: #0d093b  ;
 }
 
 .toggle input:checked+.slider::before {
-  border-color: #2de1af ;
+  border-color: #0d093b  ;
   background-color: #c6e5ff;
   transform: translateX(calc(var(--width) - var(--height)));
 }

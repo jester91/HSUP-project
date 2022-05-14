@@ -69,7 +69,6 @@
           />
         </div>
 
-        
         <div id="Art1Conent">
           <h2 id="Art1Txt1">Tudd meg számodra melyik a legideálisabb tárca.</h2>
           <div id="Art1Buttons">
@@ -104,11 +103,6 @@
             </div>
           </div>
         </div>
-        <label class="toggle">
-          <input type="checkbox">
-          <span class="slider"></span>
-          <span class="labels" data-on="B2C" data-off="B2B"></span>
-        </label>
       </article>
 
       <div class="coin-list">
@@ -153,11 +147,16 @@
       </div>
 
       <article id="OurSolution">
+        <label class="toggle" id="ButtonUser" >
+          <input type="checkbox" onclick="changeOurSolution()">
+          <span class="slider" ></span>
+          <span class="labels" data-on="B2C" data-off="B2B">
+          </span>
+        </label>
+      </button>
         <h2>Megoldásunk</h2>
-        <p>
-          Csapatunkkal egy olyan megoldáson dolgozunk amivel a felhasználóink
-          részére a legtökéletesebb tárcát tudjuk ajánlani, ezzel is elősegítve
-          a felhasználói élményt és a biztonságot
+        <p id="oursolution">
+          Csapatunkkal egy olyan megoldáson dolgozunk amivel a felhasználóink részére a legtökéletesebb tárcát tudjuk ajánlani, ezzel is elősegítvea felhasználói élményt és a biztonságot
         </p>
 
         <button
