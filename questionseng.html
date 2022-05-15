@@ -34,12 +34,12 @@
         <nav>
           <p id="ProjectName">HSUP PROJECT</p>
           <ul>
-            <li id="ENGHUPage"><a href="./questionseng.html">ENG</a></li>
-            <li id="NavSolution" onclick="FunctionSolution()"><a href="./index.html">Megoldásunk</a></li>
-            <li id="NavProduct" onclick="FunctionProduct()"><a href="./index.html">Termék</a></li>
-            <li id="NavTeam" onclick="FunctionTeam()"><a href="./index.html">Csapatunk</a></li>
-            <li id="NavCaseStudies" onclick="FunctionCaseStudies()"><a href="./index.html">Esettanulmány</a></li>
-            <li id="NavContact" onclick="FunctionContact()"><a href="./index.html">Kapcsolat</a></li>
+            <li id="ENGHUPage"><a href="./questions.html">HU</a></li>
+            <li id="NavSolution" onclick="FunctionSolution()"><a href="./index.html">Our solution</a></li>
+            <li id="NavProduct" onclick="FunctionProduct()"><a href="./index.html">Product</a></li>
+            <li id="NavTeam" onclick="FunctionTeam()"><a href="./index.html">Team</a></li>
+            <li id="NavCaseStudies" onclick="FunctionCaseStudies()"><a href="./index.html">Case study</a></li>
+            <li id="NavContact" onclick="FunctionContact()"><a href="./index.html">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -67,11 +67,11 @@
   
       </div>
       
-      <h2 id="Recommendtxt">A válaszaid alapján a következő Walleteket javasoljuk:</h2>
+      <h2 id="Recommendtxt">Based on your answers, we recommend the following Wallets:</h2>
       <div id="questionsWallets">
         <form class="question" id="question0" action="javascript:question0next()" method="post" novalidate>
-          <label><h2>Születési dátum:</h2><br><input type="date" name="question0date" id="question0date"></label>
-          <label><h2>Kedvenc szín:</h2><br><input type="color" name="question0color" id="question0color"></label>
+          <label><h2>Date of birth:</h2><br><input type="date" name="question0date" id="question0date"></label>
+          <label><h2>Favorite color:</h2><br><input type="color" name="question0color" id="question0color"></label>
           <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
@@ -81,9 +81,9 @@
         
         
         <form class="question" id="question1" action="javascript:question1next();question1getanswer();" method="post" novalidate>
-          <h2>Melyik országban élsz?</h2>
+          <h2>Witch country do you live in?</h2>
           <select class="indropdown" id="inCountry" name="inCountry">
-            <option disabled selected value> Ország </option>
+            <option disabled selected value> Country </option>
             <option>Afghanistan</option>
             <option>Albania</option>
             <option>Algeria</option>
@@ -291,11 +291,11 @@
         </form>
   
         <form class="question" id="question2" action="javascript:question2next();question2getanswer();">
-          <h2>Mennyi tapasztalattal rendelkezel a kriptovaluták terén?</h2>
-          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio1">Nem rendelkezem korábbi tapasztalattal, vagy csak korlátozott tudással rendelkezem befektetés terén</label>
-          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio2">Ismerem az alapokat, és érdekel ez a technológia</label>
-          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio3">Volt már több sikeres/sikertelen tranzakcióm, de átlátom a piacot</label>
-          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio4">Teljes magabiztonsággal állíthatom, hogy profi vagyok</label>
+          <h2>How much experience do you have in cryptocurrencies?</h2>
+          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio1">I have no previous experience or limited investment knowledge</label>
+          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio2">I know the basics and am interested in this technology</label>
+          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio3">I have had several successful / unsuccessful transactions, but I see the market</label>
+          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio4">I can say with complete confidence that I am a professional </label>
           <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
@@ -304,9 +304,9 @@
         </form>
   
         <form class="question" id="question3" action="javascript:question3next();question3getanswer();">
-          <h2>Hol szeretnéd tárolni a kriptovalutáidat?</h2>
-          <label><input name="safety" class="inratio" type="radio" id="question3radio1">Olyan helyen, ahol rendelkezem a <abbr class="tooltip" title="Ha csak te ismered a privát kulcsod akkor senki más nem férhet hozzá a token-jeidhez">saját privát kulcsommal</abbr></label>
-          <label><input name="safety" class="inratio" type="radio" id="question3radio2">Centralizált oldalon</label>
+          <h2>Where do you want to store your cryptocurrencies?</h2>
+          <label><input name="safety" class="inratio" type="radio" id="question3radio1">In a place where I have <abbr class="tooltip" title="If only you know your private key, no one else can access your tokens">my own private key</abbr></label>
+          <label><input name="safety" class="inratio" type="radio" id="question3radio2">Centralized side</label>
           <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
@@ -315,10 +315,10 @@
         </form>
   
         <form class="question" id="question4" action="javascript:question4next();question4getanswer();">
-          <h2>Hol szeretnél kereskedni?</h2>
-          <label><input name="Centralised" class="inratio" type="radio" id="question4radio1">Centralizált oldalon</label>
-          <label><input name="Centralised" class="inratio" type="radio" id="question4radio2">Decentralizált oldalon</label>
-          <label><input name="Centralised" class="inratio" type="radio" id="question4radio3">Nem szeretnék kereskedni, csak tárolni</label>
+          <h2>Where do you want to trade?</h2>
+          <label><input name="Centralised" class="inratio" type="radio" id="question4radio1">Centralized side</label>
+          <label><input name="Centralised" class="inratio" type="radio" id="question4radio2">On a decentralized page</label>
+          <label><input name="Centralised" class="inratio" type="radio" id="question4radio3">I do not want to trade, just store</label>
 
           <div class="errorTxt"></div>
           <div class="questionbuttons">
@@ -328,11 +328,11 @@
         </form>
   
         <form class="question" id="question5" action="javascript:question5next();question5getanswer();">
-          <h2>Milyen gyakran hajtanál végre tranzakciókat?</h2>
-          <label><input name="frequency" class="inratio" type="radio" id="question5radio1">Napi szinten</label>
-          <label><input name="frequency" class="inratio" type="radio" id="question5radio2">Heti szinten</label>
-          <label><input name="frequency" class="inratio" type="radio" id="question5radio3">Havi szinten</label>
-          <label><input name="frequency" class="inratio" type="radio" id="question5radio4">Ritkábban</label>
+          <h2>How often would you execute transactions?</h2>
+          <label><input name="frequency" class="inratio" type="radio" id="question5radio1">Daily</label>
+          <label><input name="frequency" class="inratio" type="radio" id="question5radio2">Weekly</label>
+          <label><input name="frequency" class="inratio" type="radio" id="question5radio3">Monthly</label>
+          <label><input name="frequency" class="inratio" type="radio" id="question5radio4">Less often</label>
           <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
@@ -341,13 +341,13 @@
         </form>
   
         <form class="question" id="question6" action="javascript:question6submit();question6getanswer();">
-          <h2>Mire használnád leginkább a walletet</h2>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox1">HODL (ritkább használat)</label>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox2">Earning Stakelés</label>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox3">NFT birtoklás és tárolás </label>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox4">Több különböző blokkláncon lévő token tárolására</label>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox5"> <abbr class="tooltip" title="Decentralizált oldalon szeretnék likviditást adni az cégnek">Swapolás / DeFi</abbr></label>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox6">Egy Layer-1 token tárolása/stakelése</label>
+          <h2>What would you use the wallet the most for?</h2>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox1">HODL</label>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox2">Earning, Staking</label>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox3">NFT possession and storage</label>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox4">To store tokens on several different blockchains</label>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox5"> <abbr class="tooltip" title="I want to give liquidity to companies on a decentralized side">Swapping/ DeFi</abbr></label>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox6">Storing / stacking a Layer-1 token</label>
           <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Submit">
@@ -453,46 +453,46 @@
 
       </div>
       
-      <footer>
-        <div id="FooterList">
-          <div id="FooterList1">
-            <h2>MEGOLDÁSOK</h2>
-            <p>Marketing</p>
-            <p>Analitika</p>
-            <p>Kereskedelem</p>
-            <p>Betekintés</p>
-          </div>
-          <div id="FooterList2">
-            <h2>TÁMOGATÁS</h2>
-            <p>Árazás</p>
-            <p>Dokumentáció</p>
-            <p>Útmutatók</p>
-            <p>API állapota</p>
-          </div>
-          <div id="FooterList3">
-            <h2>VÁLLALAT</h2>
-            <p>Rólunk</p>
-            <p>Blog</p>
-            <p>Sajtó</p>
-            <p>Partnerek</p>
-          </div>
-          <div id="FooterList4">
-            <h2>JOGI</h2>
-            <p>Követelés</p>
-            <p>Biztonság</p>
-            <p>Feltételek</p>
-          </div>
+    <footer>
+      <div id="FooterList">
+        <div id="FooterList1">
+          <h2>SOLUTIONS</h2>
+          <p>Marketing</p>
+          <p>Analitics</p>
+          <p>Commerce</p>
+          <p>Insights</p>
         </div>
-        <div id="FooterLent">
-          <p>© 2022 HSUP projekt, Inc. All Rights reserved</p>
-          <div id="FooterSocial">
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-github"></a>
-            <a href="#" class="fab fa-dribbble"></a>
-          </div>
+        <div id="FooterList2">
+          <h2>SUPPORT</h2>
+          <p>Pricing</p>
+          <p>Documentation</p>
+          <p>Guides</p>
+          <p>API Status</p>
         </div>
-      </footer>
+        <div id="FooterList3">
+          <h2>COMPANY</h2>
+          <p>About</p>
+          <p>Blog</p>
+          <p>Press</p>
+          <p>Partners</p>
+        </div>
+        <div id="FooterList4">
+          <h2>LEGAL</h2>
+          <p>Claim</p>
+          <p>Privacy</p>
+          <p>Terms</p>
+        </div>
+      </div>
+      <div id="FooterLent">
+        <p>© 2022 HSUP projekt, Inc. All Rights reserved</p>
+        <div id="FooterSocial">
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-github"></a>
+          <a href="#" class="fab fa-dribbble"></a>
+        </div>
+      </div>
+    </footer>
     <script src="./Scripts/myScript.js"></script>
     <script src="./Scripts/apiCall.js"></script>
   </body>
