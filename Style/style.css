@@ -727,7 +727,10 @@ div.error {
   font-size: 25px;
   border-radius: 10px;
 }
-
+.labeltooltip{
+  display: flex;
+  flex-direction: column;
+}
 .inratio {
   border-radius: 50%;
   width: 40px;
@@ -1215,6 +1218,14 @@ label {
   #Refresh {
     width: 30%;
   }
+
+  abbr:hover::after {
+    bottom: 100%;
+    left: 100%;
+    padding: 1em; 
+    width: 280px;
+
+  }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -1500,7 +1511,7 @@ abbr:hover::after {
   bottom: 100%;
   content: attr(title);
   display: block;
-  left: 100%;
+  
   padding: 1em;
   position: absolute;    
   width: 280px;
