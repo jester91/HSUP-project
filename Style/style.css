@@ -829,6 +829,7 @@ label {
 }
 
 #Recommendtxt {
+  text-align: center;
   margin-top: 50px;
   display: none;
   color: #ffffff;
