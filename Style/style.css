@@ -685,6 +685,10 @@ footer .fab {
   color: #0d093b;
 }
 
+.question label {
+  width: 100%;
+}
+
 .question h2 {
   color: #0d093b;
   font-size: 30px;
