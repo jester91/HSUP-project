@@ -13,12 +13,10 @@ $(document).ready(function () {
   $("#question1").validate({
     rules: {
       inCountry: "required",
-      inCity: "required",
       
     },
     messages: {
       inCountry: "Add meg az országot ahol laksz!",
-      inCity: "Add meg a várost ahol laksz!",
     },
     errorElement : 'div',
     errorLabelContainer: '.errorTxt'
@@ -418,7 +416,6 @@ function WalletsOrder(
 function question1getanswer() {
   
   var Country = inCountry.value;
-  var City = inCity.value;
   //Binance us href
   console.log(BinancePOINTS);
   if (Country == "United States") {
@@ -439,7 +436,6 @@ function question1getanswer() {
 function question1getanswerBack() {
   
   var Country = inCountry.value;
-  var City = inCity.value;
   //Binance us href
   console.log(BinancePOINTS);
   if (Country == "United States") {
@@ -614,6 +610,7 @@ function question4getanswer() {
   //2=no
   radio1 = document.getElementById("question4radio1");
   radio2 = document.getElementById("question4radio2");
+  radio2 = document.getElementById("question4radio3");
   if (radio1.checked) {
     var Centralised = 1;
   }
@@ -626,7 +623,11 @@ function question4getanswer() {
     CexioPOINTS++;
     CoinbasePOINTS++;
     CryptocomPOINTS++;
-  } else {
+  } 
+  if(Centralised==2) {
+    //ide kellenek majd a dapps-os walletok, mint a exodus, terra station, metamask
+  }
+  else {
     TrezorPOINTS++
     LedgerPOINTS++
   }

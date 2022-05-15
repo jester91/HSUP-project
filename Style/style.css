@@ -13,6 +13,7 @@ body#indexBody {
 
 * {
   font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
 }
 
 button {
@@ -1455,4 +1456,22 @@ section .heading b {
 
 html {
   scroll-behavior: smooth;
+}
+
+abbr {
+  font-style: italic;
+  position: relative
+}
+
+abbr:hover::after {
+  background: #add8e6;
+  border-radius: 4px;
+  bottom: 100%;
+  content: attr(title);
+  display: block;
+  left: 100%;
+  padding: 1em;
+  position: absolute;    
+  width: 280px;
+  z-index: 1;
 }

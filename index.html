@@ -36,28 +36,46 @@
     <script src="./Scripts/Header.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXE6TNRFT8"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FXE6TNRFT8"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-FXE6TNRFT8');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-FXE6TNRFT8");
     </script>
 
-        <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PRK3SG3');</script>
-  <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PRK3SG3");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
 
   <body id="indexBody">
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRK3SG3"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PRK3SG3"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="container1">
       <p id="ProjectNameMobile">HSUP PROJECT</p>
 
@@ -71,7 +89,7 @@
             <li id="NavProduct" onclick="FunctionProduct()"><a>Termék</a></li>
             <li id="NavTeam" onclick="FunctionTeam()"><a>Csapatunk</a></li>
             <li id="NavCaseStudies" onclick="FunctionCaseStudies()">
-              <a>Esettanulmány</a>
+              <a>Esettanulmányok</a>
             </li>
             <li id="NavContact" onclick="FunctionContact()">
               <a>Kapcsolat</a>
@@ -168,16 +186,27 @@
       </div>
 
       <article id="OurSolution">
-        <label class="toggle" id="ButtonUser" >
-          <input type="checkbox" onclick="changeOurSolution()">
-          <span class="slider" ></span>
-          <span class="labels" data-on="B2B" data-off="B2C">
-          </span>
+        <label class="toggle" id="ButtonUser">
+          <input type="checkbox" onclick="changeOurSolution()" />
+          <span class="slider"></span>
+          <span class="labels" data-on="B2B" data-off="B2C"> </span>
         </label>
-      
+
         <h2>Megoldásunk</h2>
         <p id="oursolution">
-          Csapatunkkal egy olyan megoldáson dolgozunk amivel a felhasználóink részére a legtökéletesebb tárcát tudjuk ajánlani, ezzel is elősegítvea felhasználói élményt és a biztonságot
+          <b>
+            Célunk egy olyan felület megalkotása volt, amely kezdőknek és
+            haladóknak egyaránt segít megtalálni a legmegfelelőbb tárcát. Ehhez
+            néhány kérdésre kell válaszolni, hogy felmérjük a szükséges
+            igényeket, amelyek alapján ajánlunk tárcákat. Törekedtünk arra, hogy
+            ajánlatunkban az ingyenes, egyszerű kezelhetőségű tárcák is helyet
+            kapjanak a kezdő cryptosok segítésére és arra is, hogy a haladóbb
+            ismeretekkel rendelkezők is megtalálják a maguk kedvencét. Tesztünk
+            kitöltésével és az ajánlatok elfogadásával, felhasználóinkról több
+            órányi terhet igyekszünk levenni, hiszen a tárcák kínálata ma már
+            széles spektrumban mozog, és nem is biztos, hogy tudjuk merre
+            induljunk el a nagy kínálatban.</b
+          >
         </p>
 
         <button
@@ -211,13 +240,21 @@
           <div class="container">
             <div class="profile">
               <div class="imgBox">
-                <img src="./Images/Said_about_us/Said_about_us1.jpg" alt="Picture about a people" />
+                <img
+                  src="./Images/Said_about_us/Said_about_us1.jpg"
+                  alt="Picture about a people"
+                />
               </div>
               <h2>Szandra</h2>
               <h3>CEO of a Fancy Company</h3>
             </div>
             <p>
-              <span class="fa fa-quote-left left"></span> Kezdő használóként még csak ismerkedem a crypto tárcákkal, így szuper, hogy nem kell minden tárca után néznem, ami rengeteg idő lenne. A teszt kitöltése után, az igényeimhez alakítva kaptam konkrét ajánlásokat, majd néhány kattintás után elkezdtem használni a számomra legmegfelelőbbet. 
+              <span class="fa fa-quote-left left"></span> Kezdő használóként még
+              csak ismerkedem a crypto tárcákkal, így szuper, hogy nem kell
+              minden tárca után néznem, ami rengeteg idő lenne. A teszt
+              kitöltése után, az igényeimhez alakítva kaptam konkrét
+              ajánlásokat, majd néhány kattintás után elkezdtem használni a
+              számomra legmegfelelőbbet.
             </p>
             <span class="fa fa-quote-right right"></span>
             <div class="social">
@@ -229,13 +266,19 @@
           <div class="container">
             <div class="profile">
               <div class="imgBox">
-                <img src="./Images/Said_about_us/Said_about_us2.jpg" alt="Picture about a people" />
+                <img
+                  src="./Images/Said_about_us/Said_about_us2.jpg"
+                  alt="Picture about a people"
+                />
               </div>
               <h2>Tamás</h2>
               <h3>CFO of a Fancy Company</h3>
             </div>
             <p>
-              <span class="fa fa-quote-left left"></span> Szuper,hogy rátaláltam az oldalra. Minimális időráfordítással megtaláltam a nekem megfelelő tárcát. Plusz pont, hogy egy kattintás után már ismerkedhettem a tárcával.
+              <span class="fa fa-quote-left left"></span> Szuper,hogy rátaláltam
+              az oldalra. Minimális időráfordítással megtaláltam a nekem
+              megfelelő tárcát. Plusz pont, hogy egy kattintás után már
+              ismerkedhettem a tárcával.
             </p>
             <span class="fa fa-quote-right right"></span>
             <div class="social">
@@ -247,13 +290,19 @@
           <div class="container">
             <div class="profile">
               <div class="imgBox">
-                <img src="./Images/Said_about_us/Said_about_us3.jpg" alt="Picture about a people" />
+                <img
+                  src="./Images/Said_about_us/Said_about_us3.jpg"
+                  alt="Picture about a people"
+                />
               </div>
               <h2>Zsolt</h2>
               <h3>COO of a Fancy Company</h3>
             </div>
             <p>
-              <span class="fa fa-quote-left left"></span> Elég régóta használok hard walletet, de ezidáig a hot walletek világába nem mélyedtem bele. Nagyon hasznosnak tartom, hogy az oldal a válaszaim alapján ajánlott nekem olyan tárcát ami minden igényemet kielégíti.
+              <span class="fa fa-quote-left left"></span> Elég régóta használok
+              hard walletet, de ezidáig a hot walletek világába nem mélyedtem
+              bele. Nagyon hasznosnak tartom, hogy az oldal a válaszaim alapján
+              ajánlott nekem olyan tárcát ami minden igényemet kielégíti.
             </p>
             <span class="fa fa-quote-right right"></span>
             <div class="social">
@@ -301,7 +350,7 @@
           <div class="TeamMember" id="TeamMember3">
             <img
               class="TeamMemberImg"
-              src="./Images/Team_member/Kovács_Konrád.jpg"
+              src="./Images/konrad1.png"
               alt="Kovács_Konrád profilkép"
             />
             <p>Kovács Konrád</p>
@@ -328,47 +377,64 @@
       </article>
 
       <article id="CaseStudies">
-        <h2>Esettanulmány</h2>
+        <h2>Esettanulmányok</h2>
         <div id="CS1">
           <img
             class="Art4image"
-            src="./Images/Article4.png"
-            alt="Article4.png"
+            src="./Images/crypto_wallet.png"
+            alt="Crypto Wallet"
           />
           <p>
-            Ez egy case study amit amiatt csináltunk, hogy még több leadet
-            érjünk el és még több pénzt keressünk, hidd el minden igaz benne,
-            bizz bennünk.Ez egy case study amit amiatt csináltunk, hogy még több
-            leadet érjünk el és még több pénzt keressünk, hidd el minden igaz
-            benne, bizz bennünk.
+            Miért biztonságosabb egy egyszerű hardvare tárca, mintha egy tőzsdén
+            hagynád? Ebben a esettanulmányban annak járunk utána, hogy egy
+            egyszeri beruházással akár több tíz/száz/ezer/millió forintot is
+            megtudsz magadnak spórolni, mivel te rendelkezel a saját
+            privátkulcsoddal a tárcádhoz. Legtöbben a tokenjüket egy CEX-en azaz
+            Centralized Exchange oldalon tárolják vagy DeFi-on (Decentralized
+            Finance), ahol nem ők rendelkeznek a saját tárcájukkal, ez amiatt is
+            jelenthet gondot, mert a évente több alkalommal sikerül hackereknek
+            betörni ilyen oldalakra ahol képesek lenullázni a felhasználók
+            egyenlegét.
+            <a
+              href="https://www.cryptovantage.com/news/ask-cryptovantage-do-i-really-need-a-hardware-wallet-to-store-bitcoin/#:~:text=Hardware%20Wallet%20Pros&text=Security%3A%20To%20date%2C%20hardware%20wallets,comes%20to%20protecting%20your%20bitcoin. "
+              >Bővebben</a
+            >
           </p>
         </div>
         <div id="CS2">
           <img
             class="Art4image"
-            src="./Images/Article4.png"
-            alt="Article4.png"
+            src="./Images/bestoptions.png"
+            alt="Best Crypto wallet for you based on your preferences"
           />
           <p>
-            Ez egy case study amit amiatt csináltunk, hogy még több leadet
-            érjünk el és még több pénzt keressünk, hidd el minden igaz benne,
-            bizz bennünk.Ez egy case study amit amiatt csináltunk, hogy még több
-            leadet érjünk el és még több pénzt keressünk, hidd el minden igaz
-            benne, bizz bennünk.
+            Megtalálni az ember számára a legideálisabb crypto tárcát nagyon sok
+            időbe kerül, nagyon sok alternatíva van jelenleg a piacon,ezenfelül
+            rengeteg olyan tényező van mint például, hogy az ember milyen
+            crypto-t szeretne vásárolni, tárolni, szeretne-e stakelni, milyen
+            blokkláncon elérhetőek ezek a kriptovaluták, milyen módon lehet őket
+            átvinni más platformokra, milyen plusz tulajdonságokkal rendelkeznek
+            az eltérő tárcák. Ha érdekel, hogy neked melyik lenne a
+            legideálisabb tárca,
+            <a href="./questions.html">Itt megtalálod</a>
           </p>
         </div>
         <div id="CS3">
           <img
             class="Art4image"
-            src="./Images/Article4.png"
-            alt="Article4.png"
+            src="./Images/hot_wallet_vs_cold_wallet.jpg"
+            alt="Hot wallet versus Cold Wallet"
           />
           <p>
-            Ez egy case study amit amiatt csináltunk, hogy még több leadet
-            érjünk el és még több pénzt keressünk, hidd el minden igaz benne,
-            bizz bennünk.Ez egy case study amit amiatt csináltunk, hogy még több
-            leadet érjünk el és még több pénzt keressünk, hidd el minden igaz
-            benne, bizz bennünk.
+            Biztonság a felhasználói élmény javára? 2016-ban jellemző volt ez a
+            trend, de mára rengeteg olyan hardvare tárca és asztali szoftver áll
+            rendelkezésre, ami nem csak nagy biztonságot ad, hanem emellett
+            nagyon könnyen és gyorsan elsajátítható az alkalmazása. Ha valaki
+            dApp-okat szeretne használni, vagy stake-elni és lending-elni
+            számukra ideálisak lehetnek a Hot Wallet-et a gyors csatlakozás
+            végett, de ezekkel vigyázzanak, hogy milyen oldalnak adnak
+            jogosultságot a tárca használatához.
+            <a href="https://www.youtube.com/watch?v=4BFaxWAYzWU">Bővebben</a>
           </p>
         </div>
       </article>
@@ -430,7 +496,6 @@
         </div>
       </div>
     </footer>
-    
   </body>
   <script src="./Scripts/landingpage.js"></script>
   <script src="./Scripts/apiCall.js"></script>

@@ -68,7 +68,7 @@
       <h2 id="Recommendtxt">A válaszaid alapján a következő Walleteket javasoljuk:</h2>
       <div id="questionsWallets">
         <form class="question" id="question1" action="javascript:question1next();question1getanswer();" method="post" novalidate>
-          <h2>Melyik országban illetve városban laksz?</h2>
+          <h2>Melyik országban élsz?</h2>
           <select class="indropdown" id="inCountry" name="inCountry">
             <option disabled selected value> Ország </option>
             <option>Afghanistan</option>
@@ -269,7 +269,6 @@
           </select>
 
           
-          <input class="intext" id="inCity" name="inCity" type="text" placeholder="Város">
           <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
@@ -278,11 +277,11 @@
         </form>
   
         <form class="question" id="question2" action="javascript:question2next();question2getanswer();">
-          <h2>Mennyi tapasztalattal rendelkezel a cryptovaluták terén?</h2>
-          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio1">Ismeri az alap dolgokat/technológiát</label>
-          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio2">Németbe dolgozó asztalos haverjától hallott most először a cryptoról</label>
-          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio3">Alaposabb tapasztalattal rendelkezik, használt már walletet</label>
-          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio4">Profi szinten vágja a témát</label>
+          <h2>Mennyi tapasztalattal rendelkezel a kriptovaluták terén?</h2>
+          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio1">Nem rendelkezem korábbi tapasztalattal, vagy csak korlátozott tudással rendelkezem befektetés terén</label>
+          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio2">Ismerem az alapokat, és érdekel ez a technológia</label>
+          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio3">Volt már több sikeres/sikertelen tranzakcióm, de átlátom a piacot</label>
+          <label><input name="Exprerience" class="inratio" type="radio" id="question2radio4">Teljes magabiztonsággal állíthatom, hogy profi vagyok</label>
           <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
@@ -291,9 +290,9 @@
         </form>
   
         <form class="question" id="question3" action="javascript:question3next();question3getanswer();">
-          <h2>Mennyire szeretnéd biztonságban tartani a pénzedet?</h2>
-          <label><input name="safety" class="inratio" type="radio" id="question3radio1">Igen - szeretnék privát kulcsot</label>
-          <label><input name="safety" class="inratio" type="radio" id="question3radio2">Egyáltalán nem -> CEX</label>
+          <h2>Hol szeretnéd tárolni a kriptovalutáidat?</h2>
+          <label><input name="safety" class="inratio" type="radio" id="question3radio1">Olyan helyen, ahol rendelkezem a <abbr class="tooltip" title="Ha csak te ismered a privát kulcsod akkor senki más nem férhet hozzá a token-jeidhez">saját privát kulcsommal</abbr></label>
+          <label><input name="safety" class="inratio" type="radio" id="question3radio2">Centralizált oldalon</label>
           <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
@@ -302,9 +301,11 @@
         </form>
   
         <form class="question" id="question4" action="javascript:question4next();question4getanswer();">
-          <h2>Centralizált oldalon szeretnél kereskedni?</h2>
-          <label><input name="Centralised" class="inratio" type="radio" id="question4radio1">Igen</label>
-          <label><input name="Centralised" class="inratio" type="radio" id="question4radio2">Nem</label>
+          <h2>Hol szeretnél kereskedni?</h2>
+          <label><input name="Centralised" class="inratio" type="radio" id="question4radio1">Centralizált oldalon</label>
+          <label><input name="Centralised" class="inratio" type="radio" id="question4radio2">Decentralizált oldalon</label>
+          <label><input name="Centralised" class="inratio" type="radio" id="question4radio3">Nem szeretnék kereskedni, csak tárolni</label>
+
           <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
@@ -313,7 +314,7 @@
         </form>
   
         <form class="question" id="question5" action="javascript:question5next();question5getanswer();">
-          <h2>Milyen gyakran használnád a walletet</h2>
+          <h2>Milyen gyakran hajtanál végre tranzakciókat?</h2>
           <label><input name="frequency" class="inratio" type="radio" id="question5radio1">Napi szinten</label>
           <label><input name="frequency" class="inratio" type="radio" id="question5radio2">Heti szinten</label>
           <label><input name="frequency" class="inratio" type="radio" id="question5radio3">Havi szinten</label>
@@ -327,11 +328,11 @@
   
         <form class="question" id="question6" action="javascript:question6submit();question6getanswer();">
           <h2>Mire használnád leginkább a walletet</h2>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox1">HOLD (ritkább használat)</label>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox1">HODL (ritkább használat)</label>
           <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox2">Earning Stakelés</label>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox3">NFT nézegetés</label>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox4">Több protokoll használata egy időben</label>
-          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox5">Swapolás/DeFi</label>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox3">NFT birtoklás és tárolás </label>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox4">Több különböző blokkláncon lévő token tárolására</label>
+          <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox5"> <abbr class="tooltip" title="Decentralizált oldalon szeretnék likviditást adni az cégnek">Swapolás / DeFi</abbr></label>
           <label><input name="UsedFor" class="incheckbox" type="checkbox" id="question6checkbox6">Egy Layer-1 token tárolása/stakelése</label>
           <div class="errorTxt"></div>
           <div class="questionbuttons">

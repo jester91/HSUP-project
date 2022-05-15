@@ -110,7 +110,7 @@ window.addEventListener("scroll", function () {
 });
 
 function changeOurSolution(){
-  var text1="Csapatunkkal egy olyan megoldáson dolgozunk amivel a felhasználóink részére a legtökéletesebb tárcát tudjuk ajánlani, ezzel is elősegítvea felhasználói élményt és a biztonságot"
+  var text1="<b>Célunk egy olyan felület megalkotása volt, amely kezdőknek és haladóknak egyaránt segít megtalálni a  legmegfelelőbb tárcát. Ehhez néhány kérdésre kell válaszolni, hogy felmérjük a szükséges igényeket, amelyek alapján ajánlunk tárcákat. Törekedtünk arra, hogy ajánlatunkban az ingyenes, egyszerű kezelhetőségű tárcák is helyet kapjanak a kezdő cryptosok segítésére és arra is, hogy a haladóbb ismeretekkel rendelkezők is megtalálják a maguk kedvencét. Tesztünk kitöltésével és az ajánlatok elfogadásával, felhasználóinkról több órányi terhet igyekszünk levenni, hiszen a tárcák kínálata ma már széles spektrumban mozog, és nem is biztos, hogy tudjuk merre induljunk el a nagy kínálatban.<b/>"
   var text2="B2B szöveg"
   var x = document.getElementById("oursolution");
   if (x.innerHTML === text2) {
