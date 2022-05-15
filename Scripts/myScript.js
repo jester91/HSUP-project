@@ -8,6 +8,20 @@ function menu() {
 }
 
 //Question page "next" and "back" button event
+$(document).ready(function () {
+  $("#question0").validate({
+    rules: {
+      question0date: "required",
+      
+    },
+    messages: {
+      question0date: "Add meg a születési éved",
+    },
+    errorElement : 'div',
+    errorLabelContainer: '.errorTxt'
+  });
+});
+
 
 $(document).ready(function () {
   $("#question1").validate({
@@ -88,12 +102,28 @@ $(document).ready(function () {
   });
 });
 
+function question0next() {
+  document.getElementById("question0").style.display = "none";
+  document.getElementById("question1").style.display = "flex";
+  document.getElementById("progressbarpart1").style.backgroundColor = "#00e091";
+  document.getElementById("progressnumber0").style.display = "none";
+  document.getElementById("progressnumber1").style.display = "block";
+}
+
 function question1next() {
   document.getElementById("question1").style.display = "none";
   document.getElementById("question2").style.display = "flex";
   document.getElementById("progressbarpart1").style.backgroundColor = "#00e091";
   document.getElementById("progressnumber1").style.display = "none";
   document.getElementById("progressnumber2").style.display = "block";
+}
+
+function question1back() {
+  document.getElementById("question1").style.display = "none";
+  document.getElementById("question0").style.display = "flex";
+  document.getElementById("progressbarpart1").style.backgroundColor = "#ffffff00";
+  document.getElementById("progressnumber1").style.display = "none";
+  document.getElementById("progressnumber0").style.display = "block";
 }
 
 function question2next() {
@@ -107,7 +137,7 @@ function question2next() {
 function question2back() {
   document.getElementById("question2").style.display = "none";
   document.getElementById("question1").style.display = "flex";
-  document.getElementById("progressbarpart1").style.backgroundColor = "#182722";
+  document.getElementById("progressbarpart1").style.backgroundColor = "#ffffff00";
   document.getElementById("progressnumber2").style.display = "none";
   document.getElementById("progressnumber1").style.display = "block";
 }
@@ -123,7 +153,7 @@ function question3next() {
 function question3back() {
   document.getElementById("question3").style.display = "none";
   document.getElementById("question2").style.display = "flex";
-  document.getElementById("progressbarpart2").style.backgroundColor = "#182722";
+  document.getElementById("progressbarpart2").style.backgroundColor = "#ffffff00";
   document.getElementById("progressnumber3").style.display = "none";
   document.getElementById("progressnumber2").style.display = "block";
 }
@@ -139,7 +169,7 @@ function question4next() {
 function question4back() {
   document.getElementById("question4").style.display = "none";
   document.getElementById("question3").style.display = "flex";
-  document.getElementById("progressbarpart3").style.backgroundColor = "#182722";
+  document.getElementById("progressbarpart3").style.backgroundColor = "#ffffff00";
   document.getElementById("progressnumber4").style.display = "none";
   document.getElementById("progressnumber3").style.display = "block";
 }
@@ -155,7 +185,7 @@ function question5next() {
 function question5back() {
   document.getElementById("question5").style.display = "none";
   document.getElementById("question4").style.display = "flex";
-  document.getElementById("progressbarpart4").style.backgroundColor = "#182722";
+  document.getElementById("progressbarpart4").style.backgroundColor = "#ffffff00";
   document.getElementById("progressnumber5").style.display = "none";
   document.getElementById("progressnumber4").style.display = "block";
 }
@@ -182,8 +212,8 @@ function question6submit() {
 function question6back() {
   document.getElementById("question6").style.display = "none";
   document.getElementById("question5").style.display = "flex";
-  document.getElementById("progressbarpart5").style.backgroundColor = "#182722";
-  document.getElementById("progressbarpart6").style.backgroundColor = "#182722";
+  document.getElementById("progressbarpart5").style.backgroundColor = "#ffffff00";
+  document.getElementById("progressbarpart6").style.backgroundColor = "#ffffff00";
   document.getElementById("progressnumber6").style.display = "none";
   document.getElementById("progressnumber5").style.display = "block";
 }

@@ -46,6 +46,7 @@
 
       <div id="progress">
         <div>
+          <h2 class="progressnumber" id="progressnumber0">0/6</h2>
           <h2 class="progressnumber" id="progressnumber1">1/6</h2>
           <h2 class="progressnumber" id="progressnumber2">2/6</h2>
           <h2 class="progressnumber" id="progressnumber3">3/6</h2>
@@ -67,6 +68,17 @@
       
       <h2 id="Recommendtxt">A válaszaid alapján a következő Walleteket javasoljuk:</h2>
       <div id="questionsWallets">
+        <form class="question" id="question0" action="javascript:question0next()" method="post" novalidate>
+          <label><h2>Születési dátum:</h2><br><input type="date" name="question0date" id="question0date"></label>
+          <label><h2>Kedvenc szín:</h2><br><input type="color" name="question0color" id="question0color"></label>
+          <div class="errorTxt"></div>
+          <div class="questionbuttons">
+            <input class="ButtonQuestionButton" type="submit" value="Next">
+            
+          </div>
+        </form>
+        
+        
         <form class="question" id="question1" action="javascript:question1next();question1getanswer();" method="post" novalidate>
           <h2>Melyik országban élsz?</h2>
           <select class="indropdown" id="inCountry" name="inCountry">
@@ -272,6 +284,7 @@
           <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
+            <input class="ButtonQuestionButton" type="button" value="Back" onclick="question1back()">
           </div>
           
         </form>

@@ -27,6 +27,8 @@ $(document).ready(function () {
       inMail: "Írd be az email címed!",
       inMessage: "Írd le az üzeneted!",
     },
+    errorElement : 'div',
+    errorLabelContainer: '.errorTxt'
   });
 });
 
@@ -52,7 +54,7 @@ function closegalery() {
 window.addEventListener("scroll", function () {
   var element = document.querySelector("#OurSolution");
   var position = element.getBoundingClientRect();
-  if (position.top+1000 < window.innerHeight && position.bottom >= 0) {
+  if (position.top+800 < window.innerHeight && position.bottom >= 0) {
     document.getElementById("NavSolution").style.backgroundColor = "#00e091";
     document.getElementById("NavProduct").style.backgroundColor = "#0D093B";
     document.getElementById("NavTeam").style.backgroundColor = "#0D093B";
@@ -64,7 +66,7 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   var element = document.querySelector("#Product");
   var position = element.getBoundingClientRect();
-  if (position.top+1000 < window.innerHeight && position.bottom >= 0) {
+  if (position.top+800 < window.innerHeight && position.bottom >= 0) {
     document.getElementById("NavSolution").style.backgroundColor = "#0D093B";
     document.getElementById("NavProduct").style.backgroundColor = "#00e091";
     document.getElementById("NavTeam").style.backgroundColor = "#0D093B";
@@ -76,7 +78,7 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   var element = document.querySelector("#SaidAboutUs");
   var position = element.getBoundingClientRect();
-  if (position.top+1000 < window.innerHeight && position.bottom >= 0) {
+  if (position.top+800 < window.innerHeight && position.bottom >= 0) {
     document.getElementById("NavSolution").style.backgroundColor = "#0D093B";
     document.getElementById("NavProduct").style.backgroundColor = "#0D093B";
     document.getElementById("NavTeam").style.backgroundColor = "#00e091";
@@ -88,7 +90,7 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   var element = document.querySelector("#CaseStudies");
   var position = element.getBoundingClientRect();
-  if (position.top+1000 < window.innerHeight && position.bottom >= 0) {
+  if (position.top+800 < window.innerHeight && position.bottom >= 0) {
     document.getElementById("NavSolution").style.backgroundColor = "#0D093B";
     document.getElementById("NavProduct").style.backgroundColor = "#0D093B";
     document.getElementById("NavTeam").style.backgroundColor = "#0D093B";
@@ -100,7 +102,7 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   var element = document.querySelector("#HomeForm");
   var position = element.getBoundingClientRect();
-  if (position.top+1000 < window.innerHeight && position.bottom >= 0) {
+  if (position.top+800 < window.innerHeight && position.bottom >= 0) {
     document.getElementById("NavSolution").style.backgroundColor = "#0D093B";
     document.getElementById("NavProduct").style.backgroundColor = "#0D093B";
     document.getElementById("NavTeam").style.backgroundColor = "#0D093B";

@@ -509,6 +509,10 @@ article {
   top: 0;
 }
 /*Contact Form*/
+#HomeForm .errorTxt {
+  margin-top: 20px;
+  font-weight: 900;
+}
 #HomeForm {
   padding: 3%;
   width: 94%;
@@ -623,8 +627,11 @@ footer .fab {
   margin-top: 100px;
   text-align: center;
 }
-#progressnumber1 {
+#progressnumber0 {
   display: block;
+}
+#progressnumber1 {
+  display: none;
 }
 #progressnumber2 {
   display: none;
@@ -661,7 +668,7 @@ footer .fab {
   border-radius: 50px;
   margin-top: 100px;
   padding: 3%;
-  padding-top: 8%;
+  
   width: 94%;
   left: 0;
   display: flex;
@@ -690,6 +697,20 @@ div.error {
   font-weight: 800;
   padding: 0;
   width: 100%;
+}
+
+#question0date{
+  margin-left: 5%;
+  width: 50%;
+}
+
+#question0color{
+  margin-left: 5%;
+  width: 50%;
+}
+
+#question0 h2 {
+  width: 50%;
 }
 
 .intext {
@@ -752,6 +773,10 @@ label {
   font-size: 25px;
   border-radius: 10px;
   color: #666666;
+}
+
+#question1 {
+  display: none;
 }
 
 #question2 {
@@ -947,7 +972,7 @@ label {
 
   nav li a {
     display: block;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
   }
 
   #floatTeamX {
