@@ -1,0 +1,20 @@
+Váradi-Szabó András
+
+http://www.uni-corvinus.hu/~t1qxxq
+
+A HSUP tantárgy keretében csatlakoztam egy Startup-hpt ahol Fornt End webfejlesztő a szerepköröm.
+A Startup célja, hogy az érdeklődők könnyebben tudjanak elkezdeni cryptoval kereskedni, és ehhez biztosítunk információkat, és egy kérdéssor segítségével az egyén számára ideális Walletet.
+
+A JS kódom a kérdéssor oldalon található. Ennek a segjtségével javosoljuk a tárcát a felhasználóknak. Minden kérdésre adott válasz pontot jelnt egy katgóriában.
+Ezek alapján a pontok alapján kerülnek előrébb, vagy hátrébb a walletek a listában. Egyenlőr MVP szinten van a rendszer, így a JS kódban vannak nem használt változók, amikre a jövőben lesz szükségünk. Egyenlőre 7 wallet és 6 db kérdés van benne.
+Ezt az oldalt az főoldalon elhelyezett gombok sgítségével lehet elérni (Kitöltöm, Érdekel)
+
+A képgalériát a "Csapat" article-ön kattintással lehet elérni. (Az 5 csapattagból még csak 3 szerepel benne.)
+
+"Montserrat" font típust használtam a teljes oldalon.
+
+Az oldalon található szöveges tartalmat nem írtam, hanem a csapat többi tagja. 
+
+A weboldalt 99%-ban én készítettem.
+Kivétel: <!-- Google Tag Manager --> és <!-- End Google Tag Manager (noscript) --> közötti HTML kód az index oldalakon, a /* Toggle switch */ után szereplő CSS kód és az apiCall.js fájl.
+	
