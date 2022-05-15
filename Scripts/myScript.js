@@ -15,7 +15,7 @@ $(document).ready(function () {
       
     },
     messages: {
-      question0date: "Add meg a születési éved",
+      question0date: "Enter your year of birth!",
     },
     errorElement : 'div',
     errorLabelContainer: '.errorTxt'
@@ -30,7 +30,7 @@ $(document).ready(function () {
       
     },
     messages: {
-      inCountry: "Add meg az országot ahol laksz!",
+      inCountry: "Enter the country where you live!",
     },
     errorElement : 'div',
     errorLabelContainer: '.errorTxt'
@@ -43,7 +43,7 @@ $(document).ready(function () {
       Exprerience: "required",
     },
     messages: {
-      Exprerience: "Add meg mennyire vagy jártas a témában!",
+      Exprerience: "Indicate how proficient you are in the subject!",
     },
     errorElement : 'div',
     errorLabelContainer: '.errorTxt'
@@ -56,7 +56,7 @@ $(document).ready(function () {
       safety: "required",
     },
     messages: {
-      safety: "Adja meg milyen szinű biztonságot akar!",
+      safety: "Specify the level of security you want!",
     },
     errorElement : 'div',
     errorLabelContainer: '.errorTxt'
@@ -69,7 +69,7 @@ $(document).ready(function () {
       Centralised: "required",
     },
     messages: {
-      Centralised: "Add meg, hogy centralizált legyen-e!",
+      Centralised: "Specify whether it should be centralized.",
     },
     errorElement : 'div',
     errorLabelContainer: '.errorTxt'
@@ -82,7 +82,7 @@ $(document).ready(function () {
       frequency: "required",
     },
     messages: {
-      frequency: "Add meg, hogy milye gyakran használnád a tárcádat!",
+      frequency: "Specify how often you would use your wallet!",
     },
     errorElement : 'div',
     errorLabelContainer: '.errorTxt'
@@ -95,7 +95,7 @@ $(document).ready(function () {
       UsedFor: "required",
     },
     messages: {
-      UsedFor: "Add meg, hogy Mire használnád a tárcád!",
+      UsedFor: "Specify what you would use your wallet for!",
     },
     errorElement : 'div',
     errorLabelContainer: '.errorTxt'
