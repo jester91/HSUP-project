@@ -195,7 +195,7 @@ function question6submit() {
   document.getElementById("question6").style.display = "none";
   document.getElementById("Wallets").style.flexDirection = "row";
   document.getElementById("Wallets").style.width = "100%";
-  var x = window.matchMedia("(min-width: 768px)")
+  var x = window.matchMedia("(min-width: 1000px)")
   if (x.matches) {
     document.getElementById("walletplace1").style.height = "100%";
     document.getElementById("walletplace2").style.height = "100%";
