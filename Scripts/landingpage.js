@@ -55,7 +55,7 @@ window.addEventListener("scroll", function () {
   var element = document.querySelector("#OurSolution");
   var position = element.getBoundingClientRect();
   if (position.top+800 < window.innerHeight && position.bottom >= 0) {
-    document.getElementById("NavSolution").style.backgroundColor = "#00e091";
+    document.getElementById("NavSolution").style.backgroundColor = "#2de1af";
     document.getElementById("NavProduct").style.backgroundColor = "#0D093B";
     document.getElementById("NavTeam").style.backgroundColor = "#0D093B";
     document.getElementById("NavCaseStudies").style.backgroundColor = "#0D093B";
@@ -68,7 +68,7 @@ window.addEventListener("scroll", function () {
   var position = element.getBoundingClientRect();
   if (position.top+800 < window.innerHeight && position.bottom >= 0) {
     document.getElementById("NavSolution").style.backgroundColor = "#0D093B";
-    document.getElementById("NavProduct").style.backgroundColor = "#00e091";
+    document.getElementById("NavProduct").style.backgroundColor = "#2de1af";
     document.getElementById("NavTeam").style.backgroundColor = "#0D093B";
     document.getElementById("NavCaseStudies").style.backgroundColor = "#0D093B";
     document.getElementById("NavContact").style.backgroundColor = "#0D093B";
@@ -81,7 +81,7 @@ window.addEventListener("scroll", function () {
   if (position.top+800 < window.innerHeight && position.bottom >= 0) {
     document.getElementById("NavSolution").style.backgroundColor = "#0D093B";
     document.getElementById("NavProduct").style.backgroundColor = "#0D093B";
-    document.getElementById("NavTeam").style.backgroundColor = "#00e091";
+    document.getElementById("NavTeam").style.backgroundColor = "#2de1af";
     document.getElementById("NavCaseStudies").style.backgroundColor = "#0D093B";
     document.getElementById("NavContact").style.backgroundColor = "#0D093B";
   }
@@ -94,7 +94,7 @@ window.addEventListener("scroll", function () {
     document.getElementById("NavSolution").style.backgroundColor = "#0D093B";
     document.getElementById("NavProduct").style.backgroundColor = "#0D093B";
     document.getElementById("NavTeam").style.backgroundColor = "#0D093B";
-    document.getElementById("NavCaseStudies").style.backgroundColor = "#00e091";
+    document.getElementById("NavCaseStudies").style.backgroundColor = "#2de1af";
     document.getElementById("NavContact").style.backgroundColor = "#0D093B";
   }
 });
@@ -107,7 +107,7 @@ window.addEventListener("scroll", function () {
     document.getElementById("NavProduct").style.backgroundColor = "#0D093B";
     document.getElementById("NavTeam").style.backgroundColor = "#0D093B";
     document.getElementById("NavCaseStudies").style.backgroundColor = "#0D093B";
-    document.getElementById("NavContact").style.backgroundColor = "#00e091";
+    document.getElementById("NavContact").style.backgroundColor = "#2de1af";
   }
 });
 
