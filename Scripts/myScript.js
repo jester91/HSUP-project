@@ -447,11 +447,9 @@ function question1getanswer() {
   
   var Country = inCountry.value;
   //Binance us href
-  console.log(BinancePOINTS);
   if (Country == "United States") {
     BinancePOINTS--;
   }
-  console.log(BinancePOINTS);
   WalletsOrder(
     BinancePOINTS,
     BitmexPOINTS,
@@ -467,11 +465,9 @@ function question1getanswerBack() {
   
   var Country = inCountry.value;
   //Binance us href
-  console.log(BinancePOINTS);
   if (Country == "United States") {
     BinancePOINTS++;
   }
-  console.log(BinancePOINTS);
   WalletsOrder(
     BinancePOINTS,
     BitmexPOINTS,
