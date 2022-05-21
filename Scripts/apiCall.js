@@ -14,7 +14,6 @@ var settings = {
 };
 
 $.ajax(settings).done(function (response) {
-  console.log(response);
   btc.innerHTML = response.bitcoin.usd;
   eth.innerHTML = response.ethereum.usd;
   bnb.innerHTML = response.binancecoin.usd;

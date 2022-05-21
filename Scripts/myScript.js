@@ -105,7 +105,7 @@ $(document).ready(function () {
 function question0next() {
   document.getElementById("question0").style.display = "none";
   document.getElementById("question1").style.display = "flex";
-  document.getElementById("progressbarpart1").style.backgroundColor = "#00e091";
+  document.getElementById("progressbarpart1").style.backgroundColor = "#2de1af";
   document.getElementById("progressnumber0").style.display = "none";
   document.getElementById("progressnumber1").style.display = "block";
 }
@@ -113,7 +113,7 @@ function question0next() {
 function question1next() {
   document.getElementById("question1").style.display = "none";
   document.getElementById("question2").style.display = "flex";
-  document.getElementById("progressbarpart1").style.backgroundColor = "#00e091";
+  document.getElementById("progressbarpart1").style.backgroundColor = "#2de1af";
   document.getElementById("progressnumber1").style.display = "none";
   document.getElementById("progressnumber2").style.display = "block";
 }
@@ -129,7 +129,7 @@ function question1back() {
 function question2next() {
   document.getElementById("question2").style.display = "none";
   document.getElementById("question3").style.display = "flex";
-  document.getElementById("progressbarpart2").style.backgroundColor = "#00e091";
+  document.getElementById("progressbarpart2").style.backgroundColor = "#2de1af";
   document.getElementById("progressnumber2").style.display = "none";
   document.getElementById("progressnumber3").style.display = "block";
 }
@@ -145,7 +145,7 @@ function question2back() {
 function question3next() {
   document.getElementById("question3").style.display = "none";
   document.getElementById("question4").style.display = "flex";
-  document.getElementById("progressbarpart3").style.backgroundColor = "#00e091";
+  document.getElementById("progressbarpart3").style.backgroundColor = "#2de1af";
   document.getElementById("progressnumber3").style.display = "none";
   document.getElementById("progressnumber4").style.display = "block";
 }
@@ -161,7 +161,7 @@ function question3back() {
 function question4next() {
   document.getElementById("question4").style.display = "none";
   document.getElementById("question5").style.display = "flex";
-  document.getElementById("progressbarpart4").style.backgroundColor = "#00e091";
+  document.getElementById("progressbarpart4").style.backgroundColor = "#2de1af";
   document.getElementById("progressnumber4").style.display = "none";
   document.getElementById("progressnumber5").style.display = "block";
 }
@@ -177,7 +177,7 @@ function question4back() {
 function question5next() {
   document.getElementById("question5").style.display = "none";
   document.getElementById("question6").style.display = "flex";
-  document.getElementById("progressbarpart5").style.backgroundColor = "#00e091";
+  document.getElementById("progressbarpart5").style.backgroundColor = "#2de1af";
   document.getElementById("progressnumber5").style.display = "none";
   document.getElementById("progressnumber6").style.display = "block";
 }
@@ -191,7 +191,7 @@ function question5back() {
 }
 //next button need to be changed
 function question6submit() {
-  document.getElementById("progressbarpart6").style.backgroundColor = "#00e091";
+  document.getElementById("progressbarpart6").style.backgroundColor = "#2de1af";
   document.getElementById("question6").style.display = "none";
   document.getElementById("Wallets").style.flexDirection = "row";
   document.getElementById("Wallets").style.width = "100%";
@@ -447,11 +447,9 @@ function question1getanswer() {
   
   var Country = inCountry.value;
   //Binance us href
-  console.log(BinancePOINTS);
   if (Country == "United States") {
     BinancePOINTS--;
   }
-  console.log(BinancePOINTS);
   WalletsOrder(
     BinancePOINTS,
     BitmexPOINTS,
@@ -467,11 +465,9 @@ function question1getanswerBack() {
   
   var Country = inCountry.value;
   //Binance us href
-  console.log(BinancePOINTS);
   if (Country == "United States") {
     BinancePOINTS++;
   }
-  console.log(BinancePOINTS);
   WalletsOrder(
     BinancePOINTS,
     BitmexPOINTS,
