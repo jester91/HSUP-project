@@ -10,7 +10,8 @@ body#indexBody {
   animation: gradient 10s ease infinite;
   /* background-color: #0d093b; */
 }
-#galleria{height: 600px}
+.galleria{height: 500px}
+
 * {
   font-family: "Montserrat", sans-serif;
   font-weight: 1000;
@@ -636,6 +637,10 @@ footer .fab {
 }
 #progressnumber0 {
   display: block;
+}
+
+.question0label{
+  font-size: 35px;
 }
 #progressnumber1 {
   display: none;

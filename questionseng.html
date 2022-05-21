@@ -4,6 +4,7 @@
     <title>HSUP PROJECT</title>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="author" content="Váradi-Szabó András">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -70,8 +71,8 @@
       <h2 id="Recommendtxt">Based on your answers, we recommend the following Wallets:</h2>
       <div id="questionsWallets">
         <form class="question" id="question0" action="javascript:question0next()" method="post" novalidate>
-          <label><h2>Date of birth:</h2><br><input type="date" name="question0date" id="question0date"></label>
-          <label><h2>Favorite color:</h2><br><input type="color" name="question0color" id="question0color"></label>
+          <label class="question0label">Date of birth:<br><input type="date" name="question0date" id="question0date"></label>
+          <label class="question0label">Favorite color:<br><input type="color" name="question0color" id="question0color"></label>
           <div class="errorTxt"></div>
           <div class="questionbuttons">
             <input class="ButtonQuestionButton" type="submit" value="Next">
@@ -305,7 +306,7 @@
   
         <form class="question" id="question3" action="javascript:question3next();question3getanswer();">
           <h2>Where do you want to store your cryptocurrencies?</h2>
-          <label><input name="safety" class="inratio" type="radio" id="question3radio1">In a place where I have <abbr class="tooltip" title="If only you know your private key, no one else can access your tokens">my own private key</abbr></label>
+          <label><input name="safety" class="inratio" type="radio" id="question3radio1"> <div class="labeltooltip">In a place where I have <abbr class="tooltip" title="If only you know your private key, no one else can access your tokens">my own private key</abbr></div></label>
           <label><input name="safety" class="inratio" type="radio" id="question3radio2">Centralized side</label>
           <div class="errorTxt"></div>
           <div class="questionbuttons">
@@ -456,46 +457,48 @@
     </div>
     <script src="./Scripts/myScript.js"></script>
     <script src="./Scripts/apiCall.js"></script>
+
+    <footer>
+      <div id="FooterList">
+        <div id="FooterList1">
+          <h2>SOLUTIONS</h2>
+          <p>Marketing</p>
+          <p>Analitics</p>
+          <p>Commerce</p>
+          <p>Insights</p>
+        </div>
+        <div id="FooterList2">
+          <h2>SUPPORT</h2>
+          <p>Pricing</p>
+          <p>Documentation</p>
+          <p>Guides</p>
+          <p>API Status</p>
+        </div>
+        <div id="FooterList3">
+          <h2>COMPANY</h2>
+          <p>About</p>
+          <p>Blog</p>
+          <p>Press</p>
+          <p>Partners</p>
+        </div>
+        <div id="FooterList4">
+          <h2>LEGAL</h2>
+          <p>Claim</p>
+          <p>Privacy</p>
+          <p>Terms</p>
+        </div>
+      </div>
+      <div id="FooterLent">
+        <p>© 2022 HSUP projekt, Inc. All Rights reserved</p>
+        <div id="FooterSocial">
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-github"></a>
+          <a href="#" class="fab fa-dribbble"></a>
+        </div>
+      </div>
+    </footer>
   </body>
 
-  <footer>
-    <div id="FooterList">
-      <div id="FooterList1">
-        <h2>SOLUTIONS</h2>
-        <p>Marketing</p>
-        <p>Analitics</p>
-        <p>Commerce</p>
-        <p>Insights</p>
-      </div>
-      <div id="FooterList2">
-        <h2>SUPPORT</h2>
-        <p>Pricing</p>
-        <p>Documentation</p>
-        <p>Guides</p>
-        <p>API Status</p>
-      </div>
-      <div id="FooterList3">
-        <h2>COMPANY</h2>
-        <p>About</p>
-        <p>Blog</p>
-        <p>Press</p>
-        <p>Partners</p>
-      </div>
-      <div id="FooterList4">
-        <h2>LEGAL</h2>
-        <p>Claim</p>
-        <p>Privacy</p>
-        <p>Terms</p>
-      </div>
-    </div>
-    <div id="FooterLent">
-      <p>© 2022 HSUP projekt, Inc. All Rights reserved</p>
-      <div id="FooterSocial">
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-github"></a>
-        <a href="#" class="fab fa-dribbble"></a>
-      </div>
-    </div>
-  </footer>
+
 </html>
