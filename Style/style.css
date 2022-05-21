@@ -669,15 +669,15 @@ footer .fab {
   margin-top: 100px;
   text-align: center;
 }
-#progressnumber0 {
+/* #progressnumber0 {
   display: block;
-}
+} */
 
-.question0label{
+/* .question0label{
   font-size: 35px;
-}
+} */
 #progressnumber1 {
-  display: none;
+  display: block;
 }
 #progressnumber2 {
   display: none;
@@ -749,13 +749,13 @@ div.error {
   width: 100%;
 }
 
-#question0date{
+/* #question0date{
   margin-left: 5%;
   height: 30px;
   width: 50%;
-}
+} */
 
-#question0color{
+/* #question0color{
   margin-left: 5%;
   height: 30px;
   width: 50%;
@@ -763,7 +763,7 @@ div.error {
 
 #question0 h2 {
   width: 50%;
-}
+} */
 
 .intext {
   width: 100%;
@@ -831,7 +831,7 @@ label {
 }
 
 #question1 {
-  display: none;
+  display: block;
 }
 
 #question2 {

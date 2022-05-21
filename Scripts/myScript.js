@@ -8,19 +8,19 @@ function menu() {
 }
 
 //Question page "next" and "back" button event
-$(document).ready(function () {
-  $("#question0").validate({
-    rules: {
-      question0date: "required",
+// $(document).ready(function () {
+//   $("#question0").validate({
+//     rules: {
+//       question0date: "required",
       
-    },
-    messages: {
-      question0date: "Enter your year of birth!",
-    },
-    errorElement : 'div',
-    errorLabelContainer: '.errorTxt'
-  });
-});
+//     },
+//     messages: {
+//       question0date: "Enter your year of birth!",
+//     },
+//     errorElement : 'div',
+//     errorLabelContainer: '.errorTxt'
+//   });
+// });
 
 
 $(document).ready(function () {
@@ -102,13 +102,13 @@ $(document).ready(function () {
   });
 });
 
-function question0next() {
-  document.getElementById("question0").style.display = "none";
-  document.getElementById("question1").style.display = "flex";
-  document.getElementById("progressbarpart1").style.backgroundColor = "#2de1af";
-  document.getElementById("progressnumber0").style.display = "none";
-  document.getElementById("progressnumber1").style.display = "block";
-}
+// function question0next() {
+//   document.getElementById("question0").style.display = "none";
+//   document.getElementById("question1").style.display = "flex";
+//   document.getElementById("progressbarpart1").style.backgroundColor = "#2de1af";
+//   document.getElementById("progressnumber0").style.display = "none";
+//   document.getElementById("progressnumber1").style.display = "block";
+// }
 
 function question1next() {
   document.getElementById("question1").style.display = "none";
@@ -118,13 +118,13 @@ function question1next() {
   document.getElementById("progressnumber2").style.display = "block";
 }
 
-function question1back() {
-  document.getElementById("question1").style.display = "none";
-  document.getElementById("question0").style.display = "flex";
-  document.getElementById("progressbarpart1").style.backgroundColor = "#ffffff00";
-  document.getElementById("progressnumber1").style.display = "none";
-  document.getElementById("progressnumber0").style.display = "block";
-}
+// function question1back() {
+//   document.getElementById("question1").style.display = "none";
+//   document.getElementById("question0").style.display = "flex";
+//   document.getElementById("progressbarpart1").style.backgroundColor = "#ffffff00";
+//   document.getElementById("progressnumber1").style.display = "none";
+//   document.getElementById("progressnumber0").style.display = "block";
+// }
 
 function question2next() {
   document.getElementById("question2").style.display = "none";
