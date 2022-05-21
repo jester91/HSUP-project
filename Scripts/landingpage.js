@@ -42,13 +42,47 @@ $(document).ready(function () {
 });
 
 //Open image galery
-function opengalery() {
+function opengalery1() {
   document.getElementById("teamMemberFloat1").style.display = "block";
 }
 
-function closegalery() {
+function closegalery1() {
   document.getElementById("teamMemberFloat1").style.display = "none";
 }
+
+function opengalery2() {
+  document.getElementById("teamMemberFloat2").style.display = "block";
+}
+
+function closegalery2() {
+  document.getElementById("teamMemberFloat2").style.display = "none";
+}
+
+function opengalery3() {
+  document.getElementById("teamMemberFloat3").style.display = "block";
+}
+
+function closegalery3() {
+  document.getElementById("teamMemberFloat3").style.display = "none";
+}
+
+function opengalery4() {
+  document.getElementById("teamMemberFloat4").style.display = "block";
+}
+
+function closegalery4() {
+  document.getElementById("teamMemberFloat4").style.display = "none";
+}
+
+function opengalery5() {
+  document.getElementById("teamMemberFloat5").style.display = "block";
+}
+
+function closegalery5() {
+  document.getElementById("teamMemberFloat5").style.display = "none";
+}
+
+
 
 //Change navbar backround on scroll
 window.addEventListener("scroll", function () {

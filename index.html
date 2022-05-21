@@ -319,9 +319,15 @@
           <i
             id="floatTeamX"
             class="fa-solid fa-xmark"
-            onclick="closegalery()"
+            onclick="closegalery1()"
           ></i>
-          <div id="images">
+
+          <img class="TeamMemberFloatImg" src="./Images/Team_member/József_Till.jpg" alt="József_Till">
+          <div class="TeamMemberFloatTxt">
+            <h2>Till József</h2>
+            <p class="TeamMemberFloatp">Szakmai pályafutásomat a minőségirányítás területén töltöttem, számos fejlesztési projektben vettem részt. Mindig is szívügyem volt a minőség, amelyet kamatoztatok a projektek menedzsmentje során.<br/>A crypto világával néhány éve kezdtem el ismerkedni. Kezdetben nehéz volt összegyűjteni az információt, mellyel el lehet indulni a befektetés útján. Erre nyújt megoldást a platform.</p>
+          </div>
+          <!-- <div id="images">
             <img
               class="floatimage"
               src="./Images/Team_member/Kovács_Konrád_gallery.png"
@@ -337,11 +343,72 @@
               src="./Images/Team_member/Váradi-Szabó_András_gallery.png"
               alt="Csapattag1.png"
             />
+          </div> -->
+        </div>
+
+        <div class="floatTeam" id="teamMemberFloat2">
+          <i
+            id="floatTeamX"
+            class="fa-solid fa-xmark"
+            onclick="closegalery2()"
+          ></i>
+
+          <img class="TeamMemberFloatImg" src="./Images/Team_member/Tihanyiné_Perei_Krisztina.jpg" alt="Tihanyiné_Perei_Krisztina">
+          <div class="TeamMemberFloatTxt">
+            <h2>Tihanyi Krisztina</h2>
+            <p class="TeamMemberFloatp">Kiskorom óta vonzott a számok világa, így evidens volt, hogy a hivatásomat is a pénzügyi szektorban fogom megtalálni. Hamar rájöttem, hogy a sokak által keresett precizitást és tervezhetőséget a pénzügy és számvitel világa adja nekem. A crypto világgal 2018-ban ismerkedtem meg, vonzott az újdonsága a változatossága. 
+            </p>
           </div>
         </div>
+
+        <div class="floatTeam" id="teamMemberFloat3">
+          <i
+            id="floatTeamX"
+            class="fa-solid fa-xmark"
+            onclick="closegalery3()"
+          ></i>
+
+          <img class="TeamMemberFloatImg" src="./Images/Team_member/Kovács_Konrád.jpg" alt="Kovács Konrád">
+          <div class="TeamMemberFloatTxt">
+            <h2>Kovács Konrád</h2>
+            <p class="TeamMemberFloatp">2016-ban kezdtem el foglalkozni a kriptovaluta világával, első perctől kezdve a technológia érdekelt, a nagy profit(ok) csak második volt számára. Több saját okos-szerződés dolgozoztam (Solidity és Rust nyelven), de volt alkalma dolgozni egy ICO-val kapcsolatos startupban, mint frontend/smart contract fejlesztő. Ebben a projektben amiatt látok fantáziát, mert így az eddig megszerzett tapasztalatommal értéket tudok teremteni a kezdőknek és a haladóknak is egyaránt üzleti, de leginkább technológiai oldalról.
+            </p>
+          </div>
+        </div>
+
+        <div class="floatTeam" id="teamMemberFloat4">
+          <i
+            id="floatTeamX"
+            class="fa-solid fa-xmark"
+            onclick="closegalery4()"
+          ></i>
+
+          <img class="TeamMemberFloatImg" src="./Images/Team_member/Váradi-Szabó_András.jpg" alt="Váradi-Szabó András">
+          <div class="TeamMemberFloatTxt">
+            <h2>Váradi-Szabó András</h2>
+            <p class="TeamMemberFloatp">2018 környékén kezdtem el először foglalkozni a kriptovalutákkal, mint érdekes témakörrel. Fő célom a technológia megértése és megismerése volt. 2020-ban elkezdtem több energiát fektetni a témakörbe és a profitlehetőségek megismerésébe. Ezenkívül az NFT-k világa is elkezdett érdekelni és az, hogy a jövőben milyen felhasználása lesz ezeknek a technológiáknak.
+            </p>
+          </div>
+        </div>
+
+        <div class="floatTeam" id="teamMemberFloat5">
+          <i
+            id="floatTeamX"
+            class="fa-solid fa-xmark"
+            onclick="closegalery5()"
+          ></i>
+
+          <img class="TeamMemberFloatImg" src="./Images/Team_member/Csörgő_László.jpg" alt="Csörgő_László">
+          <div class="TeamMemberFloatTxt">
+            <h2>Csörgő László</h2>
+            <p class="TeamMemberFloatp">Ez vagyok én.
+            </p>
+          </div>
+        </div>
+
         <h2>Csapatunk</h2>
-        <div id="TeamMembers" onclick="opengalery()">
-          <div class="TeamMember" id="TeamMember1">
+        <div id="TeamMembers">
+          <div class="TeamMember" id="TeamMember1"  onclick="opengalery1()">
             <img
               class="TeamMemberImg"
               src="./Images/Team_member/József_Till.jpg"
@@ -349,7 +416,7 @@
             />
             <p>Till József</p>
           </div>
-          <div class="TeamMember" id="TeamMember2">
+          <div class="TeamMember" id="TeamMember2"  onclick="opengalery2()">
             <img
               class="TeamMemberImg"
               src="./Images/Team_member/Tihanyiné_Perei_Krisztina.jpg"
@@ -358,7 +425,7 @@
             <p>Tihanyi Krisztina</p>
           </div>
 
-          <div class="TeamMember" id="TeamMember3">
+          <div class="TeamMember" id="TeamMember3"  onclick="opengalery3()">
             <img
               class="TeamMemberImg"
               src="./Images/konrad1.png"
@@ -367,7 +434,7 @@
             <p>Kovács Konrád</p>
           </div>
 
-          <div class="TeamMember" id="TeamMember4">
+          <div class="TeamMember" id="TeamMember4" onclick="opengalery4()">
             <img
               class="TeamMemberImg"
               src="./Images/Team_member/Váradi-Szabó_András.jpg"
@@ -376,7 +443,7 @@
             <p>Váradi-Szabó András</p>
           </div>
 
-          <div class="TeamMember" id="TeamMember5">
+          <div class="TeamMember" id="TeamMember5"  onclick="opengalery5()">
             <img
               class="TeamMemberImg"
               src="./Images/Team_member/Csörgő_László.jpg"
