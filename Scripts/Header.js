@@ -19,7 +19,7 @@ function FunctionProduct() {
 }
 
 function FunctionTeam() {
-  var TargetArticle = document.getElementById("SaidAboutUs");
+  var TargetArticle = document.getElementById("Team");
   TargetArticle.scrollIntoView({ behavior: "smooth" });
   document.getElementById("NavSolution").style.backgroundColor = "#0D093B";
   document.getElementById("NavProduct").style.backgroundColor = "#0D093B";

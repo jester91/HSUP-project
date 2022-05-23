@@ -10,7 +10,9 @@ body#indexBody {
   animation: gradient 10s ease infinite;
   /* background-color: #0d093b; */
 }
-.galleria{height: 500px}
+.galleria {
+  height: 500px;
+}
 
 * {
   font-family: "Montserrat", sans-serif;
@@ -58,10 +60,9 @@ body#contactBody {
   font-size: 0.8vw;
 }
 
-#ENGHUPage{
+#ENGHUPage {
   background-color: #2de1af;
 }
-
 
 nav {
   padding: 0;
@@ -494,7 +495,7 @@ article {
   padding: 12%;
 }
 
-.TeamMemberFloatTxt{
+.TeamMemberFloatTxt {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -503,27 +504,21 @@ article {
   padding: 5%;
   justify-content: center;
   align-items: center;
-
 }
 
 .TeamMemberFloatTxt h2 {
   margin-top: 0;
-
 }
-.TeamMemberFloatp{
+.TeamMemberFloatp {
   margin: 0;
   font-size: 15px !important;
   width: 94%;
   text-align: center;
-  
-  
-  
 }
 
-.TeamMemberFloatImg{
+.TeamMemberFloatImg {
   display: block;
   width: 80%;
-  margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -549,7 +544,7 @@ article {
   position: fixed;
   right: 0;
   top: 0;
-} 
+}
 /*Contact Form*/
 #HomeForm .errorTxt {
   margin-top: 20px;
@@ -714,7 +709,7 @@ footer .fab {
   border-radius: 50px;
   margin-top: 100px;
   padding: 3%;
-  
+
   width: 94%;
   left: 0;
   display: flex;
@@ -774,7 +769,7 @@ div.error {
   font-size: 25px;
   border-radius: 10px;
 }
-.labeltooltip{
+.labeltooltip {
   display: flex;
   flex-direction: column;
 }
@@ -1269,9 +1264,8 @@ label {
   abbr:hover::after {
     bottom: 100%;
     left: 100%;
-    padding: 1em; 
+    padding: 1em;
     width: 280px;
-
   }
 }
 
@@ -1546,7 +1540,7 @@ html {
 
 abbr {
   font-style: italic;
-  position: relative
+  position: relative;
 }
 
 abbr:hover::after {
@@ -1555,9 +1549,10 @@ abbr:hover::after {
   bottom: 100%;
   content: attr(title);
   display: block;
-  
+
   padding: 1em;
-  position: absolute;    
+  position: absolute;
   width: 280px;
   z-index: 1;
 }
+
