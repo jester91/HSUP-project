@@ -550,32 +550,50 @@ article {
 }
 
 /*Roadmap*/
+#RoadMap h2{
+  text-align: center;
+}
+
 #RoadMap{
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  background-image: url(/Images/Roadmap/Dotted-line2.png);
+  /* background-image: url(/Images/Roadmap/Dotted-line2.png);
   background-repeat: repeat-y;
-  background-position: right;
+  background-position: center; */
   
 
 }
-#RoadMap h2{
+.RoadMapBlock h2{
+  text-align: left !important;
   font-size: 20px;
 
+}
+
+.RoadMapBlockDiv{
+  width: auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.RoadmapDiamond{
+  background-color: #0d093b;
+  height: 45px;
+  width: 45px;
+  align-self: center;
+  transform: rotate(45deg);
+  float: right;
+  border-radius: 20%;
 }
 
 .RoadMapBlock{
   background-color: #2de1af;
   padding: 5%;
-  margin: 5%;
-  margin-top: 0%;
-  margin-bottom: 20%;
-  width: 50%;
-}
-
-#RoadMapBlock4{
-  margin-bottom: 0;
+  width: 80%;
+  border-radius: 10px;
 }
 
 
@@ -1214,10 +1232,28 @@ label {
   } 
 
   /*Road Map*/
+.RoadMapBlock h2 {
+  font-size: 45px;
+}
+
+  .RoadMapBlock{
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #RoadMapBlock1{
+    margin-right: auto;
+  }
+
   #RoadMapBlock2{
     margin-left: auto;
   }
-  
+
+  #RoadMapBlock3{
+    margin-right: auto;
+  }
+
   #RoadMapBlock4{
     margin-left: auto;
   }
