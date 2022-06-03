@@ -100,7 +100,7 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   var element = document.querySelector("#Product");
   var position = element.getBoundingClientRect();
-  if (position.top+800 < window.innerHeight && position.bottom >= 0) {
+  if (position.top+1100 < window.innerHeight && position.bottom >= 0) {
     document.getElementById("NavSolution").style.backgroundColor = "#0D093B";
     document.getElementById("NavProduct").style.backgroundColor = "#2de1af";
     document.getElementById("NavTeam").style.backgroundColor = "#0D093B";

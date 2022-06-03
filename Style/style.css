@@ -8,7 +8,6 @@ body#indexBody {
   );
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
-  /* background-color: #0d093b; */
 }
 .galleria {
   height: 500px;
@@ -84,9 +83,11 @@ nav ul {
 
 nav li {
   display: inline-block;
-  width: 90%;
+  width: 88%;
   text-align: center;
   margin: 0;
+  margin-left: 1%;
+  margin-right: 1%;
   padding: 5%;
 }
 nav li a {
@@ -152,18 +153,15 @@ article {
 #ButtonUser {
   background-color: transparent;
   color: #2de1af;
-  /* background-color: #0d093b; */
   border-radius: 5px;
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
-  /* color: #ffffff; */
 }
 
 #Art1Txt1 {
   width: 100%;
   color: #ffffff;
   padding-top: 15%;
-  /* color: #2de1af ; */
   text-align: center;
 }
 article {
@@ -194,7 +192,6 @@ article {
 .ButtonFillOut {
   background-color: transparent;
   color: #2de1af;
-  /* color: #0d093b; */
   text-align: center;
   text-decoration: none;
   border: 2px solid #2de1af;
@@ -207,8 +204,6 @@ article {
 #ButtonContactUs {
   background-color: transparent;
   color: #2de1af;
-  /* background-color: #0d093b; */
-  /* color: #ffffff; */
   text-align: center;
   text-decoration: none;
   width: 30%;
@@ -226,7 +221,6 @@ article {
   justify-content: center;
   margin-top: 35px;
   color: #ffffff;
-  /* color: #2de1af ; */
 }
 
 .InfoTxtArt1 {
@@ -240,7 +234,6 @@ article {
 }
 
 /* Toggle switch */
-
 .toggle {
   --width: 80px;
   --height: calc(var(--width) / 3);
@@ -284,11 +277,11 @@ article {
 }
 
 .toggle input:checked + .slider {
-  border-color: #2de1af;
+  border-color: #0d093b;
 }
 
 .toggle input:checked + .slider::before {
-  border-color: #2de1af;
+  border-color: #0d093b;
   background-color: #c6e5ff;
   transform: translateX(calc(var(--width) - var(--height)));
 }
@@ -414,7 +407,6 @@ article {
 
 #Product h2 {
   color: #ffffff;
-  /* color:#2de1af ; */
 }
 
 #ProductGif {
@@ -526,19 +518,6 @@ article {
   margin-right: auto;
 }
 
-/* .galleria-container {
-  position: fixed !important;
-  top: 15%;
-  width: 76% !important;
-  height: 70% !important;
-}
-
-.floatTeamimg {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}*/
-
 #floatTeamX {
   margin-top: 50px;
   margin-right: 5%;
@@ -550,20 +529,17 @@ article {
 }
 
 /*Roadmap*/
-#RoadMap h2{
+#RoadMapTitle{
   text-align: center;
+  color: #ffffff;
 }
 
 #RoadMap{
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  /* background-image: url(/Images/Roadmap/Dotted-line2.png);
-  background-repeat: repeat-y;
-  background-position: center; */
-  
-
 }
+
 .RoadMapBlock h2{
   text-align: left !important;
   font-size: 20px;
@@ -610,9 +586,6 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite; */
   overflow: hidden;
 }
 
@@ -717,13 +690,7 @@ footer .fab {
   margin-top: 100px;
   text-align: center;
 }
-/* #progressnumber0 {
-  display: block;
-} */
 
-/* .question0label{
-  font-size: 35px;
-} */
 #progressnumber1 {
   display: block;
 }
@@ -796,22 +763,6 @@ div.error {
   padding: 0;
   width: 100%;
 }
-
-/* #question0date{
-  margin-left: 5%;
-  height: 30px;
-  width: 50%;
-} */
-
-/* #question0color{
-  margin-left: 5%;
-  height: 30px;
-  width: 50%;
-}
-
-#question0 h2 {
-  width: 50%;
-} */
 
 .intext {
   width: 100%;
@@ -1126,8 +1077,6 @@ label {
   #ButtonContactUs:hover {
     background-color: #0d093b;
     color: #ffffff;
-    /* background-color: #2de1af ;
-    color: #0d093b; */
   }
 
   #ButtonInterest:hover {
@@ -1142,8 +1091,6 @@ label {
   #ButtonSendMessage:hover {
     background-color: #0d093b;
     color: #ffffff;
-    /* background-color: #2de1af ;
-    color: #0d093b; */
   }
   /*Coins*/
 
@@ -1240,6 +1187,7 @@ label {
     width: 50%;
     margin-left: 5%;
     margin-right: 5%;
+    padding: 2%;
   }
 
   #RoadMapBlock1{
@@ -1362,9 +1310,6 @@ section {
   min-height: 10vh;
   width: 100%;
   background-color: #2de1af;
-  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite; */
   overflow: hidden;
 }
 
@@ -1529,97 +1474,6 @@ section .heading b {
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #2de1af;
-}
-
-/* Toggle switch */
-.toggle {
-  --width: 80px;
-  --height: calc(var(--width) / 3);
-
-  position: relative;
-  display: inline-block;
-  width: var(--width);
-  height: var(--height);
-  border-radius: var(--height);
-  cursor: pointer;
-}
-
-.toggle input {
-  display: none;
-}
-
-.toggle .slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: var(--height);
-  border: 2px solid #969696;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  transition: all 0.4s ease-in-out;
-}
-
-.toggle .slider::before {
-  content: "";
-  position: absolute;
-  top: 2.5px;
-  left: 2px;
-  width: calc(var(--height) * 0.6);
-  height: calc(var(--height) * 0.6);
-  border-radius: calc(var(--height) / 2);
-  border: 3px solid #969696;
-  background-color: #dbdbdb;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-  transition: all 0.4s ease-in-out;
-}
-
-.toggle input:checked + .slider {
-  border-color: #0d093b;
-}
-
-.toggle input:checked + .slider::before {
-  border-color: #0d093b;
-  background-color: #c6e5ff;
-  transform: translateX(calc(var(--width) - var(--height)));
-}
-
-.toggle .labels {
-  position: absolute;
-  top: 8px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #4d4d4d;
-  font-size: 12px;
-  font-family: sans-serif;
-  transition: all 0.4s ease-in-out;
-}
-
-.toggle .labels::after {
-  content: attr(data-off);
-  position: absolute;
-  right: 5px;
-  opacity: 1;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-  transition: all 0.4s ease-in-out;
-}
-
-.toggle .labels::before {
-  content: attr(data-on);
-  position: absolute;
-  left: 5px;
-  opacity: 0;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
-  transition: all 0.4s ease-in-out;
-}
-
-.toggle input:checked ~ .labels::after {
-  opacity: 0;
-}
-
-.toggle input:checked ~ .labels::before {
-  opacity: 1;
 }
 
 html {
