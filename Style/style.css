@@ -540,6 +540,11 @@ article {
   margin-top: 50px;
 }
 
+.RoadMapBlock h3{
+  text-align: center;
+  font-size: 15px;
+}
+
 .RoadMapBlock h2{
   text-align: left !important;
   font-size: 20px;
@@ -1179,9 +1184,14 @@ label {
   } 
 
   /*Road Map*/
-.RoadMapBlock h2 {
-  font-size: 45px;
-}
+  .RoadMapBlock h3{
+    font-size: 30px;
+  }
+
+
+  .RoadMapBlock h2 {
+    font-size: 45px;
+  }
 
   .RoadMapBlock{
     width: 50%;
