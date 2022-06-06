@@ -546,9 +546,13 @@ article {
 }
 
 .RoadMapBlock h2{
-  text-align: left !important;
+  text-align: center !important;
   font-size: 20px;
 
+}
+
+.RoadMapBlock p{
+  margin-left: 10%;
 }
 
 .RoadMapBlockDiv{
@@ -646,6 +650,11 @@ article {
 }
 
 /*Footer*/
+#HSUP_Logo{
+  width: auto;
+  height: 100px;
+}
+
 footer {
   background-color: #0d093b;
   width: 100%;
@@ -1156,7 +1165,7 @@ label {
   }
 
   #TeamMember1 {
-    margin-top: 600px;
+    margin-top: 170px;
   }
 
   #TeamMember2 {
@@ -1214,6 +1223,10 @@ label {
 
   #RoadMapBlock4{
     margin-left: auto;
+  }
+
+  #RoadMapBlock5{
+    margin-right: auto;
   }
 
   /*Contact Us*/
