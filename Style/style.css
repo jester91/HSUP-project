@@ -1167,19 +1167,15 @@ label {
 
   #TeamMember2 {
     margin-left: 3%;
-    margin-top: 170px;
   }
 
-  #TeamMember2 {
-    margin-top: 450px;
-  }
 
   #TeamMember3 {
     margin-left: 3%;
   }
 
   #TeamMember4 {
-    margin-top: 450px;
+    margin-left: 3%;
   }
 
   #TeamMember5 {
@@ -1527,3 +1523,6 @@ abbr:hover::after {
   font-size: 24px!important;
 }
 
+#CaseStudies a{
+  text-decoration: none!important;
+}
