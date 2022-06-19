@@ -540,12 +540,21 @@ article {
   margin-top: 50px;
 }
 
-.RoadMapBlock h2 {
-  text-align: left !important;
+.RoadMapBlock h3{
+  text-align: center;
+  font-size: 15px;
+}
+
+.RoadMapBlock h2{
+  text-align: center !important;
   font-size: 20px;
 }
 
-.RoadMapBlockDiv {
+.RoadMapBlock p{
+  margin-left: 10%;
+}
+
+.RoadMapBlockDiv{
   width: auto;
   display: flex;
   flex-direction: column;
@@ -637,6 +646,11 @@ article {
 }
 
 /*Footer*/
+#HSUP_Logo{
+  width: auto;
+  height: 100px;
+}
+
 footer {
   background-color: #0d093b;
   width: 100%;
@@ -1153,6 +1167,11 @@ label {
 
   #TeamMember2 {
     margin-left: 3%;
+    margin-top: 170px;
+  }
+
+  #TeamMember2 {
+    margin-top: 450px;
   }
 
   #TeamMember3 {
@@ -1160,7 +1179,7 @@ label {
   }
 
   #TeamMember4 {
-    margin-left: 3%;
+    margin-top: 450px;
   }
 
   #TeamMember5 {
@@ -1176,6 +1195,11 @@ label {
   }
 
   /*Road Map*/
+  .RoadMapBlock h3{
+    font-size: 30px;
+  }
+
+
   .RoadMapBlock h2 {
     font-size: 45px;
   }
@@ -1201,6 +1225,10 @@ label {
 
   #RoadMapBlock4 {
     margin-left: auto;
+  }
+
+  #RoadMapBlock5{
+    margin-right: auto;
   }
 
   /*Contact Us*/
