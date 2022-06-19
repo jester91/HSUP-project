@@ -332,6 +332,7 @@ article {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  padding-top: 5%;
 }
 .coin {
   display: flex;
@@ -475,7 +476,6 @@ article {
 
 /*Team Member float*/
 
-
 .floatTeam {
   display: none;
   position: fixed;
@@ -511,7 +511,7 @@ article {
 
 .TeamMemberFloatImg {
   border-radius: 30px;
-  border:#0d093b 5px solid;
+  border: #0d093b 5px solid;
   display: block;
   width: 80%;
   margin-left: auto;
@@ -529,33 +529,31 @@ article {
 }
 
 /*Roadmap*/
-#RoadMapTitle{
+#RoadMapTitle {
   text-align: center;
   color: #ffffff;
 }
 
-#RoadMap{
+#RoadMap {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
 }
 
-.RoadMapBlock h2{
+.RoadMapBlock h2 {
   text-align: left !important;
   font-size: 20px;
-
 }
 
-.RoadMapBlockDiv{
+.RoadMapBlockDiv {
   width: auto;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
 }
 
-.RoadmapDiamond{
+.RoadmapDiamond {
   background-color: #0d093b;
   height: 45px;
   width: 45px;
@@ -565,14 +563,12 @@ article {
   border-radius: 20%;
 }
 
-.RoadMapBlock{
+.RoadMapBlock {
   background-color: #2de1af;
   padding: 5%;
   width: 80%;
   border-radius: 10px;
 }
-
-
 
 /*Contact Form*/
 #HomeForm .errorTxt {
@@ -963,7 +959,7 @@ label {
   }
 
   #FooterSocial {
-    padding-right: 10%;
+    padding-right: 0%;
   }
   section .heading {
     font-size: 72px !important;
@@ -974,6 +970,7 @@ label {
   }
 
   .coin-list {
+    padding-top: 5%;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -1151,58 +1148,58 @@ label {
   }
 
   #TeamMember1 {
-    margin-top: 600px;
+    margin-left: 3%;
   }
 
   #TeamMember2 {
-    margin-top: 300px;
+    margin-left: 3%;
   }
 
   #TeamMember3 {
-    margin-top: 0px;
+    margin-left: 3%;
   }
 
   #TeamMember4 {
-    margin-top: 300px;
+    margin-left: 3%;
   }
 
   #TeamMember5 {
-    margin-top: 600px;
+    margin-left: 3%;
   }
 
-  .TeamMemberFloatImg{
+  .TeamMemberFloatImg {
     width: 500px;
   }
 
-  .TeamMemberFloatp{
+  .TeamMemberFloatp {
     font-size: 25px !important;
-  } 
+  }
 
   /*Road Map*/
-.RoadMapBlock h2 {
-  font-size: 45px;
-}
+  .RoadMapBlock h2 {
+    font-size: 45px;
+  }
 
-  .RoadMapBlock{
+  .RoadMapBlock {
     width: 50%;
     margin-left: 5%;
     margin-right: 5%;
     padding: 2%;
   }
 
-  #RoadMapBlock1{
+  #RoadMapBlock1 {
     margin-right: auto;
   }
 
-  #RoadMapBlock2{
+  #RoadMapBlock2 {
     margin-left: auto;
   }
 
-  #RoadMapBlock3{
+  #RoadMapBlock3 {
     margin-right: auto;
   }
 
-  #RoadMapBlock4{
+  #RoadMapBlock4 {
     margin-left: auto;
   }
 
@@ -1496,5 +1493,9 @@ abbr:hover::after {
   position: absolute;
   width: 280px;
   z-index: 1;
+}
+
+.smallerText{
+  font-size: 24px!important;
 }
 
